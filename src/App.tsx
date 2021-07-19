@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -9,21 +9,30 @@ interface Show {
   url?: string;
 }
 
-function Player(props: {playing: boolean, setPlaying: (a: boolean) => void, show: Show}) {
+function usePrevious(value: any) {
+  const ref = useRef();
+  useEffect(() => {
+    ref.current = value;
+  });
+  return ref.current;
+}
+
+function Player(props: {playing: boolean, setPlaying: (a: boolean) => void, show: Show, previousShow: Show}) {
   let playing = props.playing;
   let setPlaying = props.setPlaying;
   let show = props.show;
+  let previousShow = props.previousShow;
 
   useEffect(() => {
-    console.log(`set show to ${show.name} at URL: ${show.url}`);
-    if (show.url) {
+    if (show.url && show.url !== previousShow?.url) {
+      console.log(`set show to ${show.name} at URL: ${show.url}`);
       audio?.pause();  // Stop any previous player
       audio = new Audio(show.url);
       if (playing) {
         audio.play();
       }
     }
-  }, [playing, show]);
+  }, [playing, show, previousShow]);
 
   useEffect(() => {
     console.log(`playing is now ${playing}`);
@@ -68,12 +77,13 @@ function ShowPicker(props: {setActiveShow: any}) {
 function App() {
   const [playing, setPlaying] = useState(false);
   const [activeShow, setActiveShow] = useState({} as Show);
+  const previousShow = usePrevious(activeShow) as unknown as Show;
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Player playing={playing} setPlaying={setPlaying} show={activeShow} />
+        <Player playing={playing} setPlaying={setPlaying} show={activeShow} previousShow={previousShow} />
         <ShowPicker setActiveShow={setActiveShow} />
       </header>
     </div>
