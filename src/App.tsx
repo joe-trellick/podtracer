@@ -56,9 +56,13 @@ function ShowPicker(props: {setActiveShow: any}) {
       <button onClick={() => {setActiveShow({name: 'Drum N Bass', url: 'https://stream.psychedelik.com:8030/listen.mp3'})}}>
         Drum N Bass
       </button>
+      <button onClick={() => {setActiveShow({name: 'Metamuse', url: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3'})}}>
+        Metamuse
+      </button>
     </div>
   );
 }
+
 
 function App() {
   const [playing, setPlaying] = useState(false);
