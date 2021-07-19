@@ -17,11 +17,15 @@ function usePrevious(value: any) {
   return ref.current;
 }
 
-function Player(props: {playing: boolean, setPlaying: (a: boolean) => void, show: Show, previousShow: Show}) {
-  let playing = props.playing;
-  let setPlaying = props.setPlaying;
-  let show = props.show;
-  let previousShow = props.previousShow;
+interface PlayerProps {
+  playing: boolean;
+  setPlaying: (a: boolean) => void;
+  show: Show;
+  previousShow: Show;
+}
+
+function Player(props: PlayerProps) {
+  const {playing, setPlaying, show, previousShow} = props;
 
   useEffect(() => {
     if (show.url && show.url !== previousShow?.url) {
