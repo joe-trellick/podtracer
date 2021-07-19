@@ -9,21 +9,21 @@ interface Show {
   url?: string;
 }
 
-function Player(props: {playing: boolean, setPlaying: (a: boolean) => void, audioUrl: string | undefined}) {
+function Player(props: {playing: boolean, setPlaying: (a: boolean) => void, show: Show}) {
   let playing = props.playing;
   let setPlaying = props.setPlaying;
-  let audioUrl = props.audioUrl;
+  let show = props.show;
 
   useEffect(() => {
-    console.log(`set audioUrl to ${audioUrl}`);
-    if (audioUrl) {
+    console.log(`set show to ${show.name} at URL: ${show.url}`);
+    if (show.url) {
       audio?.pause();  // Stop any previous player
-      audio = new Audio(audioUrl);
+      audio = new Audio(show.url);
       if (playing) {
         audio.play();
       }
     }
-  }, [playing, audioUrl]);
+  }, [playing, show]);
 
   useEffect(() => {
     console.log(`playing is now ${playing}`);
@@ -38,9 +38,10 @@ function Player(props: {playing: boolean, setPlaying: (a: boolean) => void, audi
 
   return (
     <div id="player">
-      <button onClick={() => setPlaying(!playing)} disabled={audioUrl === undefined}>
+      <button onClick={() => setPlaying(!playing)} disabled={show.url === undefined}>
         {buttonText}
       </button>
+      <div>{show.name || ''}</div>
     </div>
   );
 }
@@ -66,19 +67,13 @@ function ShowPicker(props: {setActiveShow: any}) {
 
 function App() {
   const [playing, setPlaying] = useState(false);
-  const [audioUrl, setAudioUrl] = useState(undefined as string | undefined);
   const [activeShow, setActiveShow] = useState({} as Show);
-
-  useEffect(() => {
-    console.log(`Set activeShow to ${activeShow.name}`);
-    setAudioUrl(activeShow.url as string);
-  }, [activeShow]);
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Player playing={playing} setPlaying={setPlaying} audioUrl={audioUrl} />
+        <Player playing={playing} setPlaying={setPlaying} show={activeShow} />
         <ShowPicker setActiveShow={setActiveShow} />
       </header>
     </div>
