@@ -16,8 +16,12 @@ function Player(props: {playing: boolean, setPlaying: (a: boolean) => void, audi
 
   useEffect(() => {
     console.log(`set audioUrl to ${audioUrl}`);
+    audio?.pause();  // Stop any previous player
     if (audioUrl) {
       audio = new Audio(audioUrl);
+      if (playing) {
+        audio.play();
+      }
     }
   }, [audioUrl]);
 
