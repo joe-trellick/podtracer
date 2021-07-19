@@ -9,13 +9,16 @@ interface Show {
   url?: string;
 }
 
-function Player() {
-  const [playing, setPlaying] = useState(false);
-  const [audioUrl, setAudioUrl] = useState('https://stream.psychedelik.com:8000/listen.mp3');
+function Player(props: {playing: boolean, setPlaying: (a: boolean) => void, audioUrl: string | undefined}) {
+  let playing = props.playing;
+  let setPlaying = props.setPlaying;
+  let audioUrl = props.audioUrl;
 
   useEffect(() => {
     console.log(`set audioUrl to ${audioUrl}`);
-    audio = new Audio(audioUrl);
+    if (audioUrl) {
+      audio = new Audio(audioUrl);
+    }
   }, [audioUrl]);
 
   useEffect(() => {
@@ -31,22 +34,18 @@ function Player() {
 
   return (
     <div id="player">
-      <button onClick={() => setPlaying(!playing)}>
+      <button onClick={() => setPlaying(!playing)} disabled={audioUrl === undefined}>
         {buttonText}
       </button>
     </div>
   );
 }
 
-function SourcePicker() {
-  const [activeShow, setActiveShow] = useState({} as Show);
-
-  useEffect(() => {
-    console.log(`Set activeShow to ${activeShow.name}`);
-  });
+function ShowPicker(props: {setActiveShow: any}) {
+  let setActiveShow = props.setActiveShow
 
   return (
-    <div id="sourcepicker">
+    <div id="showpicker">
       <button onClick={() => {setActiveShow({name: 'Psytrance', url: 'https://stream.psychedelik.com:8000/listen.mp3'})}}>
         Psytrance
       </button>
@@ -58,12 +57,21 @@ function SourcePicker() {
 }
 
 function App() {
+  const [playing, setPlaying] = useState(false);
+  const [audioUrl, setAudioUrl] = useState(undefined as string | undefined);
+  const [activeShow, setActiveShow] = useState({} as Show);
+
+  useEffect(() => {
+    console.log(`Set activeShow to ${activeShow.name}`);
+    setAudioUrl(activeShow.url as string);
+  }, [activeShow]);
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Player />
-        <SourcePicker />
+        <Player playing={playing} setPlaying={setPlaying} audioUrl={audioUrl} />
+        <ShowPicker setActiveShow={setActiveShow} />
       </header>
     </div>
   );
