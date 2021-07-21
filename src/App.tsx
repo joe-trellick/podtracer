@@ -1,4 +1,6 @@
+import Parser from 'rss-parser';
 import React, { useEffect, useState, useRef } from 'react';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -59,20 +61,20 @@ function Player(props: PlayerProps) {
   );
 }
 
-function ShowPicker(props: {setActiveShow: any}) {
-  let setActiveShow = props.setActiveShow
+function ShowPicker(props: any) {
+  const {setActiveShow, shows} = props;
 
   return (
     <div id="showpicker">
-      <button onClick={() => {setActiveShow({name: 'Psytrance', url: 'https://stream.psychedelik.com:8000/listen.mp3'})}}>
-        Psytrance
-      </button>
-      <button onClick={() => {setActiveShow({name: 'Drum N Bass', url: 'https://stream.psychedelik.com:8030/listen.mp3'})}}>
-        Drum N Bass
-      </button>
-      <button onClick={() => {setActiveShow({name: 'Metamuse', url: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3'})}}>
-        Metamuse
-      </button>
+      <ul>
+      {shows.map((show: Show, i: number) => {
+        return (
+          <li key={i} onClick={() => {setActiveShow(show)}}>
+            {show.name}
+          </li>
+        );
+      })}
+      </ul>
     </div>
   );
 }
@@ -83,12 +85,40 @@ function App() {
   const [activeShow, setActiveShow] = useState({} as Show);
   const previousShow = usePrevious(activeShow) as unknown as Show;
 
+  const [posts, setPosts] = useState([] as Show[]);
+
+  useEffect(() => {
+    const parser = new Parser();
+
+    const fetchPosts = async () => {
+      // NOTE: Currently mocked up with local file to avoid CORS issues.
+      //       Will need a proxy in real life.
+      const url = 'feeds.feedburner.com/headphonecommutepodcast.xml';
+      const feed = await parser.parseURL(url);
+      console.log(`got feed with title ${feed.title}`);
+
+      var shows = [] as Show[];
+      // A few test shows
+      shows.push({name: 'Metamuse', url: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3'});
+      shows.push({name: 'Psytrance', url: 'https://stream.psychedelik.com:8000/listen.mp3'});
+      shows.push({name: 'Drum N Bass', url: 'https://stream.psychedelik.com:8030/listen.mp3'});
+
+      feed.items.forEach(item => {
+        console.log(`* ${item.title} at ${item.link} with ${item.enclosure?.url}`);
+        shows.push({name: item.title, url: item.enclosure?.url})
+      });
+      setPosts(shows);
+      // setPosts(feed.items);
+    }
+
+    fetchPosts();
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <Player playing={playing} setPlaying={setPlaying} show={activeShow} previousShow={previousShow} />
-        <ShowPicker setActiveShow={setActiveShow} />
+        <ShowPicker setActiveShow={setActiveShow} shows={posts}/>
       </header>
     </div>
   );

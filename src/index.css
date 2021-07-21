@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#showpicker {
+  padding: 10px;
+  padding-top: 50px;
+}
+
+#showpicker ul {
+  padding-inline-start: 0px;
+}
+
+#showpicker li {
+  list-style-type: none;
+  cursor: default;
+}
+
+#showpicker li:hover {
+  background-color: lightgoldenrodyellow;
+  color: black;
+}
+
+#player {
+  background-color: darkgrey;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+}

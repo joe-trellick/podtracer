@@ -1,0 +1,1686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://www.rssboard.org/media-rss" version="2.0">
+  <channel>
+    <title>Metamuse</title>
+    <link>https://museapp.com/podcast</link>
+    <lastBuildDate>Thu, 08 Jul 2021 11:47:20 +0000</lastBuildDate>
+    <language>en-US</language>
+    <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+    <description>Tools for thought, product design, and how to have good ideas.</description>
+    <itunes:subtitle>Tools for thought, product design, and how to have good ideas.</itunes:subtitle>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:owner>
+      <itunes:name>hello@museapp.com</itunes:name>
+      <itunes:email>hello@museapp.com</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Technology"/>
+    <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+    <image>
+      <url>https://media.museapp.com/podcast/metamuse-cover-2.png</url>
+      <title>Metamuse</title>
+      <link>https://museapp.com/podcast</link>
+    </image>
+
+    <item>
+      <title>34 // Bring your own client with Geoffrey Litt</title>
+      <itunes:title>34 // Bring your own client with Geoffrey Litt</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Geoffrey Litt</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Geoffrey Litt</itunes:author>
+      <pubDate>Thu, 08 Jul 2021 11:47:20 +0000</pubDate>
+      <link>https://museapp.com/podcast/34-bring-your-own-client</link>
+      <guid>https://museapp.com/podcast/34-bring-your-own-client</guid>
+      <description><![CDATA[
+        <p>In today’s world, apps and their data are tightly coupled—but what if each person could pick and choose their own tool for use in a collaborative project? Geoffrey Litt is a researcher working on this problem at MIT. He joins Mark and Adam to talk about email as the original BYOC case study; how shared protocols enable niche software; whether it’s possible to design software for someone other than yourself; and how to accidentally become an expert.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://www.geoffreylitt.com/">Geoffrey Litt</a> / <a href="https://twitter.com/geoffreylitt">@geoffreylitt</a></p>
+        <p><a href="https://quoteinvestigator.com/2015/08/25/sea/">&ldquo;teach them to yearn for the vast and endless sea&rdquo;</a></p>
+        <p><a href="https://www.inkandswitch.com/cambria.html">Project Cambria</a></p>
+        <p><a href="http://sdg.csail.mit.edu/">MIT Software Design Group</a></p>
+        <p><a href="https://www.inkandswitch.com/">Ink &amp; Switch</a></p>
+        <p><a href="https://www.interaction-design.org/literature/topics/human-computer-interaction">Human-Computer Interaction</a></p>
+        <p><a href="https://dougengelbart.org/">Doug Engelbart</a></p>
+        <p><a href="https://every.to/superorganizers/action-item-how-to-see-the-future?p=d08be86a3e63fb38266a3b7f25e34350dbef20c5c34b4465625e16fb09b2b3fe">Superorganizers profile of Geoffrey including Muse screenshots</a></p>
+        <p><a href="https://www.geoffreylitt.com/2021/03/05/bring-your-own-client.html">Bring Your Own Client</a></p>
+        <p><a href="http://openmap.bbn.com/~tomlinso/ray/firstemailframe.html">email as one of the first internet protocols</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Pine_(email_client)">Pine</a>, <a href="http://www.mutt.org/">Mutt</a></p>
+        <p><a href="https://superhuman.com/">Superhuman</a>, <a href="https://front.com/">Front</a>, <a href="https://www.yourtempo.co/">Tempo</a></p>
+        <p><a href="https://www.litmus.com/blog/video-in-email/">not many clients support video in HTML emails</a></p>
+        <p><a href="https://www.tractorsupply.com/tsc/catalog/tractor-3-point-attachments">tractor attachments</a> and the <a href="https://en.wikipedia.org/wiki/Three-point_hitch">three-point hitch</a></p>
+        <p>HTML meta tags for <a href="https://developers.google.com/search/docs/advanced/crawling/special-tags">Google</a> and <a href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary">Twitter</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement">progress enhancement</a></p>
+        <p><a href="https://searchsoftwarequality.techtarget.com/definition/reverse-engineering">reverse engineering</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Ad_blocking">ad blockers</a></p>
+        <p><a href="https://www.inkandswitch.com/end-user-programming.html">end-user programming</a></p>
+        <p><a href="https://www.youtube.com/watch?v=NBFlyG60ar4#t=4m50s">aspiring programmer progressing from Livejournal to HTML coding</a></p>
+        <p><a href="https://www.php.net/">PHP</a></p>
+        <p><a href="https://www.hubspot.com/">Hubspot</a>, <a href="https://mailchimp.com/">Mailchimp</a></p>
+        <p><a href="https://museapp.com/podcast/26-no-data-moat/">“toolmaker humility” from Balint @ Craft</a></p>
+        <p><a href="https://solidproject.org/">Solid</a></p>
+        <p><a href="https://dgergle.soc.northwestern.edu/resources/Maitraye-CSCW2019.pdf">accessibility in collaborative writing</a></p>
+        <p><a href="https://blog.robenkleene.com/2020/09/21/the-era-of-visual-studio-code/">VS Code won the text editor wars</a></p>
+        <p><a href="https://www.gnu.org/fun/jokes/ed-msg.en.html">&ldquo;ed is the standard text editor&rdquo;</a></p>
+        <p><a href="https://museapp.com/podcast/28-learning-from-games/">episode on video games</a></p>
+        <p><a href="https://thehistoryoftheweb.com/the-story-of-flash/">Flash</a>, <a href="https://en.wikipedia.org/wiki/Jakarta_Servlet">Java servlet</a></p>
+        <p><a href="https://mitpress.mit.edu/books/changing-minds">Changing Minds</a></p>
+        <p><a href="https://artifex.org/~bonnie/">Bonnie Nardi</a></p>
+        <p><a href="https://artifex.org/~bonnie/pdf/Nardi_spreadsheet.pdf">ethnographic study of distributed problem-solving in spreadsheets</a></p>
+        <p><a href="https://www.geoffreylitt.com/wildcard/">Wildcard</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>58:33</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/34-bring-your-own-client.mp3" length="70305109" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/34-bring-your-own-client.mp3" length="70305109" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>33 // Cities with Devon Zuegel</title>
+      <itunes:title>33 // Cities with Devon Zuegel</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Devon Zuegel</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Devon Zuegel</itunes:author>
+      <pubDate>Thu, 24 Jun 2021 08:05:57 +0000</pubDate>
+      <link>https://museapp.com/podcast/33-cities</link>
+      <guid>https://museapp.com/podcast/33-cities</guid>
+      <description><![CDATA[
+        <p>Tech product designers could learn from the immense challenges of designing cities. Devon joins Adam and Mark to share her knowledge and passion on urban design and economics. Theey discuss how open source communities compare to cities; historical preservation versus growth and change; the messy middle of public and private goods; wi-fi spectrum ownership; and what to do when the neighbor’s new building puts shade on your vegetable garden.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://devonzuegel.com/">Devon Zuegel</a> / <a href="https://twitter.com/devonzuegel">@devonzuegel</a></p>
+        <p><a href="https://mitpress.mit.edu/books/order-without-design">Order without Design (book)</a></p>
+        <p><a href="https://devonzuegel.com/post/owd-0-welcome-to-order-without-design">Order Without Design (podcast)</a></p>
+        <p><a href="https://museapp.com/podcast/15-leaving-san-francisco/">episode on Seattle and Berlin</a></p>
+        <p>urban <a href="https://en.wikipedia.org/wiki/Urban_economics">economics</a>, <a href="https://www.britannica.com/topic/urban-planning">planning</a>, and <a href="http://www.urbandesign.org/elements.html">design</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/World_Bank">The World Bank</a></p>
+        <p><a href="https://news.crunchbase.com/news/global-2020-funding-and-exit/">Venture funding in 2020</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/City_walls_of_Paris">Paris city walls</a></p>
+        <p><a href="https://marketbusinessnews.com/financial-glossary/path-dependence-definition-meaning/">path dependence</a></p>
+        <p><a href="https://www.miamiandbeaches.com/thing-to-do/attractions/art-deco-historic-district/2116">Miami Art Deco historic protection</a></p>
+        <p><a href="https://www.economicshelp.org/blog/glossary/central-planning/">centrally-planned economy</a></p>
+        <p><a href="https://www.computerhope.com/jargon/t/tcpip.htm">TCP/IP</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Commissioners%27_Plan_of_1811">Manhattan street grid plan (1811)</a></p>
+        <p><a href="https://www.investopedia.com/terms/e/eminent-domain.asp">Eminent Domain</a></p>
+        <p><a href="https://www.bloomberg.com/news/articles/2019-07-23/the-unfinished-history-of-u-s-freeway-revolts">1960s highway revolts</a></p>
+        <p><a href="https://sf.curbed.com/2013/4/17/10252934/what-the-heck-is-discretionary-review">Discretionary Review</a></p>
+        <p><a href="https://www.theguardian.com/commentisfree/2021/apr/23/berlin-rent-cap-defeated-landlords-empty">Berlin rent cap</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Aristocracy">artistocracy</a></p>
+        <p><a href="https://sfpopos.com/">San Francisco’s privately-owned public spaces (POPOS)</a></p>
+        <p><a href="https://sfist.com/2016/06/21/public_space_at_linkedin_building_i/">LinkedIn public cafe</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Sacr%C3%A9-C%C5%93ur,_Paris">Sacré-Cœur Basilica</a></p>
+        <p><a href="http://urbanplanet.info/urbanism/la-defense-a-unique-business-district-france/">La Défense Paris business district</a></p>
+        <p><a href="https://www.goodreads.com/book/show/640466.Eiffel">biography of Gustave Eiffel</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/First-past-the-post_voting">first-past-the-post voting</a></p>
+        <p><a href="https://www.seasteading.org/">seasteading</a></p>
+        <p><a href="https://www.chartercitiesinstitute.org/intro">charter cities</a></p>
+        <p><a href="https://www.investopedia.com/terms/s/sez.asp">Special Economic Zone</a></p>
+        <p><a href="https://www.youtube.com/watch?v=SGJ5cZnoodY">Shenzen</a></p>
+        <p><a href="https://theconversation.com/wireless-spectrum-is-for-sale-but-what-is-it-11794">electromagnetic spectrum auction</a></p>
+        <p><a href="https://rationalwiki.org/wiki/Georgism">Georgism</a></p>
+        <p><a href="https://www.thebalance.com/universal-basic-income-4160668">universal basic income</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Air_rights">air rights</a></p>
+        <p><a href="https://astralcodexten.substack.com/p/prospectus-on-prospera">Prospectus On Próspera</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Voxel">voxel</a></p>
+        <p><a href="https://urbankchoze.blogspot.com/2014/04/japanese-zoning.html">zoning laws in Japan</a></p>
+        <p><a href="https://www.strongtowns.org/journal/2019/10/1/lessons-from-the-streets-of-tokyo">no on-street parking in Tokyo</a></p>
+        <p><a href="https://www.goodreads.com/book/show/101843.The_High_Cost_of_Free_Parking">The High Cost of Free Parking</a></p>
+        <p><a href="https://www.goodreads.com/book/show/18378011-a-history-of-future-cities">A History of Future Cities</a></p>
+        <p><a href="https://www.goodreads.com/book/show/6726085-city-of-gold">City of Gold: Dubai and the Dream of Capitalism</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>1:08:16</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/33-cities.mp3" length="81955694" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/33-cities.mp3" length="81955694" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>32 // Pricing</title>
+      <itunes:title>32 // Pricing</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Lennart Ziburski</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Lennart Ziburski</itunes:author>
+      <pubDate>Thu, 10 Jun 2021 07:58:25 +0000</pubDate>
+      <link>https://museapp.com/podcast/32-pricing</link>
+      <guid>https://museapp.com/podcast/32-pricing</guid>
+      <description><![CDATA[
+        <p>Pricing a product is one of the most difficult and high-stakes part of running a software business. Adam, Mark, and Lennart discuss the latest pricing updates for Muse; the pros and cons of selling through the iOS App Store; concerns with subscription payments for software; and why it’s important to be experimental and iterative with your prices.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://www.lennartziburski.com/">Lennart Ziburski</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Potsdam">Potsdam, Germany</a></p>
+        <p><a href="https://www.inkandswitch.com/muse-studio-for-ideas.html">Ink &amp; Switch essay on the Muse prototype</a></p>
+        <p><a href="https://desktopneo.com/">Desktop Neo</a></p>
+        <p><a href="https://thecloudfall.com/">The Cloudfall</a></p>
+        <p><a href="https://museapp.com/pricing/">Muse pricing</a></p>
+        <p><a href="http://www.stansburyweaver.com/the-idea-maze/">idea maze</a></p>
+        <p><a href="https://www.rd.com/article/why-prices-end-in-99/">psychology of why most prices end in .99</a></p>
+        <p><a href="https://www.indeed.com/career-advice/career-development/how-to-calculate-conversion-rate">conversion rate</a></p>
+        <p><a href="https://www.investopedia.com/terms/f/freemium.asp">freemium</a></p>
+        <p><a href="https://www.investopedia.com/terms/t/totalcostofownership.asp">total cost of ownership</a></p>
+        <p><a href="https://culturedcode.com/things/">Things</a></p>
+        <p><a href="https://softwareengineering.stackexchange.com/questions/159637/what-is-the-mars-curiosity-rovers-software-built-in">Mars rover software</a></p>
+        <p><a href="https://pediaa.com/what-is-the-difference-between-static-and-dynamic-linking/">static linking</a></p>
+        <p><a href="https://www.heroku.com/pricing">Heroku pricing</a></p>
+        <p>pricing books: <a href="https://www.goodreads.com/book/show/6929509-priceless">Priceless</a>, <a href="https://www.goodreads.com/book/show/7039888-don-t-just-roll-the-dice---a-usefully-short-guide-to-software-pricing">Don&rsquo;t Just Roll the Dice</a>, <a href="https://www.goodreads.com/book/show/1213568.Pricing_on_Purpose">Pricing on Purpose</a></p>
+        <p><a href="https://www.heavybit.com/devguild/enterprise-ready-products/">pricing for the enterprise</a></p>
+        <p><a href="https://medium.com/keep-productive/is-1-000-notion-blocks-enough-3f2d0cf3eb97">Notion previous pricing / free tier with 1000 blocks</a></p>
+        <p><a href="https://www.sublimetext.com/">Sublime Text</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Shareware#Nagware">nagware</a></p>
+        <p><a href="https://torrentfreak.com/microsoft-weve-always-had-freemium-its-called-piracy-141021/">We’ve Always Had Freemium, It’s Called Piracy</a></p>
+        <p><a href="https://museapp.com/email-updates/003/">Muse newsletter where we first asked beta users to weigh in on price</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>1:05:25</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/32-pricing.mp3" length="78533722" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/32-pricing.mp3" length="78533722" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>31 // Social media with Tobias Rose-Stockwell</title>
+      <itunes:title>31 // Social media with Tobias Rose-Stockwell</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Tobias Rose-Stockwell</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Tobias Rose-Stockwell</itunes:author>
+      <pubDate>Thu, 27 May 2021 09:01:24 +0000</pubDate>
+      <link>https://museapp.com/podcast/31-social-media</link>
+      <guid>https://museapp.com/podcast/31-social-media</guid>
+      <description><![CDATA[
+        <p>Twitter, Facebook, and Instagram have transformed how we come to a shared understanding about our world. Tobias has been writing about social media for half a decade. He joins Mark and Adam to discuss velocity and virality in information dissemination; how to train your YouTube algorithm; rage tweeting; and how to improve the internet we all inhabit.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://tobias.cc/">Tobias Rose-Stockwell</a> and <a href="https://tobias.cc/reading">his writing</a></p>
+        <p><a href="https://mud.fandom.com/wiki/MUD">MUD</a></p>
+        <p><a href="https://tintin.mudhalla.net/">TinTin++</a></p>
+        <p><a href="https://cleantechnica.com/2018/10/05/want-to-be-a-techno-optimist-here-are-some-basic-guidelines/">techno-optimism</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Clickbait">clickbait</a></p>
+        <p><a href="https://tobiasrose.medium.com/the-enemy-in-our-feeds-e86511488de">This Is How Your Fear and Outrage Are Being Sold for Profit</a></p>
+        <p><a href="https://www.netflix.com/title/81254224">The Social Dilemma</a></p>
+        <p><a href="https://www.theatlantic.com/magazine/archive/2019/12/social-media-democracy/600763/">The Dark Psychology of Social Networks</a></p>
+        <p><a href="https://jonathanhaidt.com/">Jonathan Haidt</a></p>
+        <p><a href="https://www.wired.com/preview/story/6058ae3f217bbd8932a2227b">How to Stop Misinformation Before It Gets Shared</a></p>
+        <p><a href="http://www.reneediresta.com/">Renée DiResta</a></p>
+        <p><a href="https://ethicsunwrapped.utexas.edu/glossary/moral-psychology">moral psychology</a></p>
+        <p><a href="https://sproutsocial.com/insights/social-media-algorithms/">algorithmic feeds</a></p>
+        <p><a href="https://www.bettercognitions.com/articles/system-1-and-system-2-thinking/">System 1 and System 2 thinking</a></p>
+        <p><a href="https://www.psychologytoday.com/us/basics/dopamine">dopamine hit</a></p>
+        <p><a href="https://slate.com/technology/2017/12/dunking-is-delicious-and-also-probably-making-twitter-terrible.html">dunk quote-tweeting</a></p>
+        <p><a href="https://www.goodreads.com/book/show/22451908-the-revolt-of-the-public-and-the-crisis-of-authority">The Revolt of the Public and the Crisis of Authority</a></p>
+        <p><a href="http://www.paulgraham.com/disagree.html">How to Disagree</a></p>
+        <p><a href="https://bigthink.com/institute-for-humane-studies/the-psychology-of-moral-grandstanding">moral grandstanding</a></p>
+        <p><a href="https://museapp.com/podcast/9-the-information-age/">episode on The Information Age</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Intellectual_dark_web">the intellectual dark web</a></p>
+        <p><a href="https://www.theatlantic.com/business/archive/2008/06/mr-warhol-i-apos-m-ready-for-my-close-up/3640/">“The internet is the Freak Liberation Front.”</a></p>
+        <p><a href="https://www.healthyway.com/content/how-did-the-government-get-the-food-pyramid-so-terribly-wrong/">the food pyramid</a></p>
+        <p><a href="https://www.thoughtco.com/yellow-journalism-basics-1773358">yellow journalism</a></p>
+        <p><a href="https://infogalactic.com/info/1874_Central_Park_Zoo_Escape">Central Park zoo escape (1874)</a></p>
+        <p><a href="https://www.saturdayeveningpost.com/2020/08/the-great-moon-hoax-of-1835/">Great Moon Hoax (1835)</a></p>
+        <p><a href="https://www.investopedia.com/terms/p/prisoners-dilemma.asp">Prisoner&rsquo;s Dilemma</a></p>
+        <p><a href="https://substack.com/">Substack</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Plandemic">Plandemic</a></p>
+        <p><a href="https://www.wired.com/story/free-speech-is-not-the-same-as-free-reach/">Free Speech Is Not the Same As Free Reach</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>50:29</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/31-social-media.mp3" length="60617055" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/31-social-media.mp3" length="60617055" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>30 // Computers and creativity with Molly Mielke</title>
+      <itunes:title>30 // Computers and creativity with Molly Mielke</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Molly Mielke</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Molly Mielke</itunes:author>
+      <pubDate>Wed, 12 May 2021 06:49:54 +0000</pubDate>
+      <link>https://museapp.com/podcast/30-computers-and-creativity</link>
+      <guid>https://museapp.com/podcast/30-computers-and-creativity</guid>
+      <description><![CDATA[
+        <p>Great tools can enable co-creation between humans and computers. Molly Mielke joins Mark and Adam to talk about her thesis on the subject. They discuss product design as a fusion of creative and analytical; how consumer preferences may conflict with the Engelbart/Kay vision of computing; the emerging social norms of collaborative software; and why we should bring back skeuomorphism.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://www.mollymielke.com/">Molly Mielke</a></p>
+        <p><a href="https://archive.org/details/wholeearth">Whole Earth Catalog</a> and <a href="http://sb.longnow.org/SB_homepage/Home.html">Stewart Brand</a></p>
+        <p><a href="https://www.studiobinder.com/blog/what-is-biopic-definition/">biopic</a></p>
+        <p><a href="https://www.netflix.com/title/80057883">Abstract</a></p>
+        <p><a href="https://www.notion.so/Computing-History-Hub-be72f307fc2e4b05abe3dc67eb937521">Computing History Hub</a></p>
+        <p><a href="https://www.urbandictionary.com/define.php?term=Senioritis">senioritis</a></p>
+        <p><a href="https://museapp.com/podcast/12-growing-ideas/">episode with Andy Matuschak</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Kid_Pix">Kid Pix</a></p>
+        <p><a href="https://www.mollymielke.com/cc">Computers and Creativity</a></p>
+        <p><a href="https://www.computerhope.com/jargon/t/the-mother-of-all-demos.htm">The Mother of All Demos</a></p>
+        <p><a href="https://www.imdb.com/title/tt0084827/">TRON</a></p>
+        <p><a href="https://museapp.com/podcast/26-no-data-moat/">Balint Orosz on toolmaker humility</a></p>
+        <p><a href="https://museapp.com/podcast/23-collaborative-creativity/">episode with Nikolas Klein</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System">CVS</a> and <a href="https://en.wikipedia.org/wiki/Apache_Subversion">Subversion</a></p>
+        <p><a href="https://www.latex-project.org/">LaTeX</a></p>
+        <p><a href="https://knowyourmeme.com/memes/wait-its-all-ohio-always-has-been">Always Has Been meme</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Flow_(psychology)">flow state</a></p>
+        <p><a href="https://www.calnewport.com/books/deep-work/">deep work</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Operational_transformation">operational transform</a>, <a href="https://crdt.tech/">CRDTs</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development">Tuckman’s stages of group development</a></p>
+        <p><a href="https://stevenmsmith.com/ar-satir-change-model/">the Satir change model</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Google_Docs#History">Writely</a></p>
+        <p><a href="https://www.bbc.com/news/magazine-22840833">skeuomorphism</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>01:06:38</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/30-computers-and-creativity.mp3" length="79992090" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/30-computers-and-creativity.mp3" length="79992090" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>29 // Thinking in probabilities with Taimur Abdaal</title>
+      <itunes:title>29 // Thinking in probabilities with Taimur Abdaal</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Taimur Abdaal</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Taimur Abdaal</itunes:author>
+      <pubDate>Thu, 29 Apr 2021 05:46:56 +0000</pubDate>
+      <link>https://museapp.com/podcast/29-thinking-in-probabilities</link>
+      <guid>https://museapp.com/podcast/29-thinking-in-probabilities</guid>
+      <description><![CDATA[
+        <p>Probabilistic modeling is useful for answering all kinds of questions, from assessing financial risk to making engineering time estimates. Yet spreadsheets are poor at this job, which is why Taimur and his colleagues are building Casual. Taimur talks with Mark and Adam about ranges as an intuitive way to estimate; the usefulness of Monte Carlo simulations; and the role of math in dating cave paintings.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://twitter.com/TaimurAbdaal">Taimur Abdaal</a></p>
+        <p><a href="https://www.causal.app/">Casual</a></p>
+        <p><a href="https://notoverthinking.com/">Not Overthinking</a></p>
+        <p><a href="https://airtable.com/">Airtable</a></p>
+        <p><a href="https://www.seti.org/drake-equation-index">Drake‘s equation</a></p>
+        <p><a href="https://www.investopedia.com/terms/l/line-of-best-fit.asp">line of best fit</a></p>
+        <p><a href="https://rationalwiki.org/wiki/Not_even_wrong">“not even wrong”</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Flatland">Flatland</a></p>
+        <p><a href="https://www.investopedia.com/terms/m/montecarlosimulation.asp">Monte Carlo simulation</a></p>
+        <p><a href="https://www.r-project.org/">R</a></p>
+        <p><a href="https://mathworld.wolfram.com/Closed-FormSolution.html">closed-form solution</a></p>
+        <p><a href="https://www.robocup.org/">RoboCup</a></p>
+        <p><a href="https://www.goodreads.com/book/show/123715.Slack">Slack (management book)</a></p>
+        <p><a href="https://www.thoughtco.com/queuing-theory-4171870">queueing theory</a></p>
+        <p><a href="https://www.goodreads.com/book/show/6278270-the-principles-of-product-development-flow">The Principles of Product Development Flow</a></p>
+        <p><a href="https://www.wallstreetmojo.com/tail-risk/">tail risk</a></p>
+        <p><a href="https://www.khanacademy.org/math/statistics-probability/random-variables-stats-library/random-variables-discrete/a/expected-value-basic">expected value</a></p>
+        <p><a href="https://www.investopedia.com/terms/g/gamblersfallacy.asp">gambler’s fallacy</a></p>
+        <p><a href="https://www.mathbootcamps.com/common-shapes-of-distributions/">distribution shapes e.g. bell curve</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Fan_chart_(time_series)">fan chart</a></p>
+        <p><a href="https://samoburja.com/">Samo Burja</a> of <a href="https://www.bismarckanalysis.com/#/">Bismark Analysis</a></p>
+        <p><a href="https://www.sciencedirect.com/topics/neuroscience/meta-analysis">meta-analysis</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Preregistration_(science)">preregistered studies</a></p>
+        <p><a href="https://www.census.gov/programs-surveys/saipe/guidance/confidence-intervals.html">confidence interval</a></p>
+        <p><a href="http://www.differencebetween.net/science/difference-between-false-positive-and-false-negative/">false positive, false negative</a></p>
+        <p><a href="https://museapp.com/podcast/14-onboarding/">onboarding episode</a></p>
+        <p><a href="https://www.optimizely.com/optimization-glossary/aa-testing/">A/A testing</a></p>
+        <p><a href="https://www.popularmechanics.com/science/a34389129/crab-evolution-carcinization/">carcinization</a></p>
+        <p><a href="https://mathigon.org/world/Combinatorics">combinatorics</a></p>
+        <p><a href="https://www.investopedia.com/terms/t/two-tailed-test.asp">two-tailed test</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>53:17</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/29-thinking-in-probabilities.mp3" length="63982122" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/29-thinking-in-probabilities.mp3" length="63982122" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>28 // Learning from games</title>
+      <itunes:title>28 // Learning from games</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+      <pubDate>Thu, 15 Apr 2021 05:15:37 +0000</pubDate>
+      <link>https://museapp.com/podcast/28-learning-from-games</link>
+      <guid>https://museapp.com/podcast/28-learning-from-games</guid>
+      <description><![CDATA[
+        <p>Video games are often on the leading edge of technical, design, and social innovation in the software world. Mark and Adam discuss what productivity tools can learn from games including the culture of performance; tools like Twitch and Discord; and end-user programming via scripting and modding.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://smalltownwashington.com/cherry-blossoms-in-seattle/">Seattle cherry blossoms</a></p>
+        <p>episodes with <a href="https://museapp.com/podcast/27-playful-software/">Rasmus Andersson</a> and <a href="https://museapp.com/podcast/16-no-more-boring-apps/">Andy.Works</a></p>
+        <p><a href="https://www.andy.works/words/serious-play">Serious Play</a></p>
+        <p><a href="https://arstechnica.com/gaming/2011/05/the-death-march-the-problem-of-crunch-time-in-game-development/">“death march” in game development</a></p>
+        <p><a href="https://everydeveloper.com/developer-experience/">developer experience</a></p>
+        <p><a href="https://www.vox.com/2018/6/27/17505604/esports-netflix-explained-video-gaming-league-of-legends">esports</a></p>
+        <p><a href="https://www.ageofempires.com/games/aoeiide/">Age of Empires II</a></p>
+        <p><a href="https://www.gamespot.com/articles/dust-to-dust-the-history-of-counter-strike/1100-6419676/">Counter-Strike</a></p>
+        <p><a href="http://www.fezgame.com/">FEZ</a>; <a href="https://papersplea.se/">Papers, Please</a>; <a href="https://www.hempuli.com/baba/">Baba Is You</a></p>
+        <p><a href="https://www.youtube.com/channel/UCT7njg__VOy3n-SvXemDHvg">Core-A Gaming</a></p>
+        <p><a href="http://www.sirlin.net/ptw/">Playing to Win</a></p>
+        <p><a href="https://everything2.com/title/metagame">the metagame</a></p>
+        <p><a href="https://www.olympic.org/">the Olympics</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Nvidia">Nvidia</a></p>
+        <p><a href="https://tecagile.com/fps-test/">frame rate counters</a></p>
+        <p><a href="https://www.nintendo.com/switch/">Nintendo Switch</a></p>
+        <p><a href="https://hero35.com/jsnation/2017/makepad-rethinking-web-uis-with-webgl">Makepad</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Code_folding">code folding</a></p>
+        <p><a href="https://www.libsdl.org/">Simple DirectMedia Layer (SDL)</a></p>
+        <p><a href="https://www.cyberpunk.net/">Cyberpunk 2077</a> and <a href="https://www.bloomberg.com/news/newsletters/2021-01-05/money-stuff-dystopian-future-securities-fraud">everything is securities fraud</a></p>
+        <p><a href="https://dukenukem.fandom.com/wiki/Duke_Nukem_Forever">Duke Nukem Forever</a></p>
+        <p><a href="https://www.nomanssky.com/?cli_action=1618412763.268">No Man’s Sky</a> and <a href="https://en.wikipedia.org/wiki/No_Man%27s_Sky#Controversy_leading_up_to_and_during_launch">launch controversy</a></p>
+        <p><a href="https://www.ea.com/games/mass-effect">Mass Effect</a>, <a href="https://www.ign.com/articles/2017/02/20/horizon-zero-dawn-review">Horizon Zero Dawn</a></p>
+        <p><a href="https://twitter.com/MuseAppHQ/status/1295785374795599884">Muse onboarding</a></p>
+        <p>scripting, <a href="https://www.pcgamer.com/a-beginners-guide-to-mods/">modding</a>, skinning</p>
+        <p><a href="https://en.wikipedia.org/wiki/Tower_defense">tower defense</a></p>
+        <p><a href="https://mitpress.mit.edu/books/small-matter-programming">A Small Matter of Programming</a></p>
+        <p><a href="http://www.digitalculture.org/books/my-life-as-a-night-elf-priest/">My Life as a Night Elf Priest</a></p>
+        <p><a href="https://worldofwarcraft.com/">World of Warcraft</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Free-to-play">free-to-play (F2P) games</a></p>
+        <p><a href="https://www.teamfortress.com/">Team Fortress</a></p>
+        <p><a href="https://www.valvesoftware.com/en/">Valve</a></p>
+        <p><a href="https://store.steampowered.com/app/500/Left_4_Dead/">Left 4 Dead</a></p>
+        <p><a href="https://store.steampowered.com/">Steam</a></p>
+        <p><a href="https://cdn.cloudflare.steamstatic.com/apps/valve/Valve_NewEmployeeHandbook.pdf">Valve employee handbook</a></p>
+        <p><a href="https://www.king.com/game/candycrush">Candy Crush</a>, <a href="https://www.wooga.com/">Wooga</a>, <a href="https://www.zynga.com/games/farmville-2/">FarmVille</a></p>
+        <p><a href="https://www.twitch.tv/">Twitch</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Justin.tv">Justin.tv</a></p>
+        <p><a href="https://www.twitch.tv/cgpgrey">CGP Grey on Twitch</a></p>
+        <p><a href="https://americantrucksimulator.com/">American Truck Simulator</a></p>
+        <p><a href="https://store.steampowered.com/app/945360/Among_Us/">Among Us</a>, <a href="https://www.bbc.com/news/technology-54630330">US congressperson livestreams</a></p>
+        <p><a href="https://www.investopedia.com/terms/c/consumer_surplus.asp">consumer surplus</a></p>
+        <p><a href="https://discord.com/">Discord </a></p>
+        <p><a href="https://www.twitch.tv/t90official">T90</a></p>
+        <p><a href="https://www.escapistmagazine.com/v2/category/zero-punctuation/">Zero Punctuation</a>, <a href="https://www.girlfriend.reviews/">Girlfriend Reviews</a></p>
+        <p><a href="https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw">Game Maker’s Toolkit</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Metroid_(video_game)">Metroid</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Nintendo_Power">Nintendo Power magazine</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Haptic_technology">haptic feedback</a></p>
+        <p><a href="https://www.giantbomb.com/detective-mode/3015-6244/">Batman: Arkham Asylum / detective mode</a></p>
+        <p><a href="https://www.newyorker.com/culture/cultural-comment/the-revolution-in-classic-tetris">Tetris max-out score</a></p>
+        <p><a href="https://www.history.com/this-day-in-history/first-four-minute-mile">four-minute mile</a></p>
+        <p><a href="https://www.speedrun.com/">speedruns</a></p>
+        <p><a href="https://help.twitch.tv/s/article/subscriber-emote-guide?language=en_US">Twitter paid subscriber emotes</a></p>
+        <p><a href="https://www.filfre.net/2020/02/myst-or-the-drawbacks-to-success/">Myst built in Hypercard</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Strider_(1989_arcade_game)">Strider</a>, <a href="https://rephial.org/">Angband</a>, <a href="https://en.wikipedia.org/wiki/Roguelike">rougelikes</a></p>
+        <p><a href="https://www.dukope.com/">Lucas Pope</a>, <a href="https://obradinn.com/">Return of the Obra Dinn</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>56:30</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/28-learning-from-games.mp3" length="67830647" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/28-learning-from-games.mp3" length="67830647" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>27 // Playful software with Rasmus Andersson</title>
+      <itunes:title>27 // Playful software with Rasmus Andersson</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Rasmus Andersson</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Rasmus Andersson</itunes:author>
+      <pubDate>Thu, 01 Apr 2021 07:52:23 +0000</pubDate>
+      <link>https://museapp.com/podcast/27-playful-software</link>
+      <guid>https://museapp.com/podcast/27-playful-software</guid>
+      <description><![CDATA[
+        <p>Design and engineering polymath Rasmus Andersson joins Mark and Adam to talk about his new project, Playbit. Play as a means of discovery and learning; virtualization as an underexploited technology for making safe playspaces for programming; and whether macOS will still exist in ten years.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://rsms.me/">Rasmus Andersson</a> <a href="https://twitter.com/rsms">@rsms</a></p>
+        <p><a href="https://playb.it/">Playbit</a></p>
+        <p><a href="https://www.britannica.com/plant/weed">What counts as a weed?</a></p>
+        <p><a href="https://sv.wikipedia.org/wiki/Maskrossl%C3%A4ktet">maskros flowers</a></p>
+        <p><a href="https://kalzumeus.com/2020/10/09/four-years-at-stripe/">“write access to your entire worldview”</a></p>
+        <p><a href="https://museapp.com/podcast/17-rethink-the-os/">Jason Yuan on fidgitability</a></p>
+        <p><a href="https://vpostrel.com/future-and-its-enemies">Virginia Postrel on work vs play</a></p>
+        <p><a href="https://www.rust-lang.org/">Rust</a></p>
+        <p><a href="https://www.space.com/39612-spacex-starman-tesla-roadster-live-views.html">Roadster in space</a></p>
+        <p><a href="https://www.healthline.com/health/foam-roller-benefits">foam roll</a></p>
+        <p><a href="https://gist.github.com/adamwiggins/5687294">“Adamisms” e.g. make it real</a></p>
+        <p><a href="https://fonts.adobe.com/fonts/hobo">Hobo</a></p>
+        <p><a href="https://golang.org/">Go</a>, <a href="https://gobyexample.com/">Go by Example</a></p>
+        <p><a href="https://www.nickgrossman.xyz/2012/defragging-your-brain-the-slow-hunch-and-open-commonplace-books/">slow hunch</a></p>
+        <p><a href="https://malleable.systems/blog/2020/04/01/the-most-successful-malleable-system-in-history/">malleable software</a></p>
+        <p><a href="https://www.x.org/releases/current/doc/man/man5/xorg.conf.5.xhtml">xorg.conf</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Convention_over_configuration">convention over configuration</a></p>
+        <p><a href="https://gist.github.com/rsms/a13319b881d94e04b6d4da644b981a32">macOS notarization woes</a></p>
+        <p><a href="https://chromeenterprise.google/os/">Chrome OS</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Sandbox_(computer_security)">sandboxing</a></p>
+        <p><a href="https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html">GPU</a></p>
+        <p><a href="https://www.britannica.com/technology/time-sharing">time-sharing</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Write_once,_run_anywhere">write once, run anywhere</a></p>
+        <p><a href="https://developer.apple.com/documentation/virtualization">macOS virtualization</a>, <a href="https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/">Hyper-V</a>, <a href="https://www.linux-kvm.org/page/Main_Page">KVM</a></p>
+        <p><a href="https://opensource.com/article/19/10/namespaces-and-containers-linux">Linux namespaces</a></p>
+        <p><a href="https://opensource.com/article/19/10/namespaces-and-containers-linux">Ruby gem: bundle</a></p>
+        <p><a href="https://support.apple.com/guide/directory-utility/about-the-root-user-dirub32398f1/mac">root user</a></p>
+        <p><a href="https://www.robinsloan.com/notes/home-cooked-app/">An app can be a home-cooked meal</a></p>
+        <p><a href="http://repl.it/">Replit</a></p>
+        <p><a href="https://www.playstation.com/en-us/games/dreams/">Dreams</a></p>
+        <p><a href="http://catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/">The Cathedral and the Bazaar</a></p>
+        <p><a href="https://macromedia.fandom.com/wiki/Macromedia_Director">Macromedia Director</a></p>
+        <p><a href="https://geekfeminism.wikia.org/wiki/Demoscene">demoscene</a>, <a href="http://www.bbsdocumentary.com/what/index.html">BBS culture</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Music_tracker">MOD trackers</a></p>
+        <p><a href="https://www.youtube.com/watch?v=cFz43VTRyE4">Gameboy DJ performance</a></p>
+        <p><a href="https://www.raspberrypi.org/">Raspberry Pi</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Flip-disc_display">flip displays</a></p>
+        <p><a href="https://teenage.engineering/">teenage engineering</a></p>
+        <p><a href="https://flipdots.com/">Alfazeta flipdots vendor</a></p>
+      ]]></description>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:duration>01:22:00</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/27-playful-software.mp3" length="98440428" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/27-playful-software.mp3" length="98440428" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>26 // No data moat with Balint Orosz</title>
+      <itunes:title>26 // No data moat with Balint Orosz</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Balint Orosz</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Balint Orosz</itunes:author>
+      <pubDate>Thu, 18 Mar 2021 07:27:03 +0000</pubDate>
+      <link>https://museapp.com/podcast/26-no-data-moat</link>
+      <guid>https://museapp.com/podcast/26-no-data-moat</guid>
+      <description><![CDATA[
+        <p>When you pay for software, are you paying for the data storage or the interface? Balint is the founder of Craft, a writing app designed for iPad. He chats with Adam and Mark about design conventions for multimodal input; why import/export is so important; and how to have humility about how your product fits into your customer’s life.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://twitter.com/balintorosz">Balint Orosz</a> of <a href="https://www.craft.do/">Craft</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Budapest">Budapest</a>: <a href="https://theculturetrip.com/europe/hungary/articles/a-guide-to-budapests-bridges/">bridges</a>, <a href="https://thecreativeadventurer.com/the-best-visitors-guide-to-budapests-stunning-hungarian-parliament-building/">parliament building</a>, <a href="https://www.tripadvisor.com/Attraction_Review-g274887-d276804-Reviews-Buda_Castle-Budapest_Central_Hungary.html">castle</a></p>
+        <p><a href="https://adamwiggins.com/making-computers-better/">Making computers better</a></p>
+        <p><a href="https://www.skyscanner.de/?previousCultureSource=GEO_LOCATION&amp;redirectedFrom=www.skyscanner.com">Skyscanner</a></p>
+        <p><a href="https://commonmark.org/help/">Markdown</a></p>
+        <p><a href="https://developer.apple.com/mac-catalyst/">Mac Catalyst</a></p>
+        <p><a href="https://www.macworld.co.uk/feature/retina-display-3466732/">retina displays</a></p>
+        <p><a href="https://www.khanacademy.org/science/high-school-biology/hs-human-body-systems/hs-body-structure-and-homeostasis/a/homeostasis">homeostasis</a></p>
+        <p><a href="https://sites.cs.ucsb.edu/~mturk/Papers/TurkPRL2013.pdf">multimodal input</a></p>
+        <p><a href="https://www.craft.do/s/5EYqvXdOUIrNu5">Craft on data ownership</a></p>
+        <p><a href="https://ulysses.app/">Ulysses</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Input/output">I/O</a></p>
+        <p><a href="http://textbundle.org/">TestBundle format</a></p>
+        <p><a href="https://www.okta.com/blog/2020/09/best-of-breed-technology/">best of breed</a></p>
+        <p><a href="https://www.instagram.com/">Instagram</a></p>
+        <p><a href="https://www.adobe.com/creativecloud/photography/discover/dslr-camera.html">DSLR cameras</a>, <a href="https://blog.halide.cam/the-power-of-raw-on-iphone-part-1-shooting-raw-ef02becb7002">RAW format</a>, <a href="https://lightroom.adobe.com/">Lightroom</a></p>
+        <p><a href="https://maggieappleton.com/bidirectionals">bidirectional links</a></p>
+        <p><a href="https://www.microsoft.com/en-us/microsoft-365/excel">Excel</a></p>
+        <p><a href="http://blog.lrei.org/math-commons/low-floor-high-ceiling-problems/">low floor, high ceiling </a></p>
+        <p><a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/sharing-and-actions/">iOS share sheet</a></p>
+        <p><a href="https://www.eisfunke.com/article/svg-the-good-the-bad-and-the-ugly.html">SVG</a></p>
+        <p><a href="https://www.json.org/json-en.html">JSON</a></p>
+        <p><a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
+        <p><a href="https://twitter.com/dflieb/status/1326586058289471491">Google Photos going paid</a></p>
+        <p><a href="https://productcraft.com/perspectives/product-management-101-churn/">churn</a></p>
+        <p><a href="https://museapp.com/podcast/24-small-giants/">Small Giants</a></p>
+        <p><a href="https://www.microsoft.com/investor/reports/ar20/index.html">Office 365 revenue via Microsoft 2020 annual report</a></p>
+        <p><a href="https://www.investopedia.com/terms/b/bootstrap.asp">bootstrapping</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>55:47</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/26-no-data-moat.mp3" length="66987593" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/26-no-data-moat.mp3" length="66987593" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>25 // Time-based notes with Alexander Griekspoor</title>
+      <itunes:title>25 // Time-based notes with Alexander Griekspoor</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Alexander Griekspoor</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Alexander Griekspoor</itunes:author>
+      <pubDate>Thu, 04 Mar 2021 08:21:06 +0000</pubDate>
+      <link>https://museapp.com/podcast/25-time-based-notes</link>
+      <guid>https://museapp.com/podcast/25-time-based-notes</guid>
+      <description><![CDATA[
+        <p>Agenda is software that encodes an unusual philosophy for note-taking. Alex of Agenda joins Mark and Adam to talk about being an indie developer; note-taking as a technique for calming the mind; and the benefits of community and learning tools socially.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://twitter.com/mekentosj">Alexander Griekspoor</a></p>
+        <p><a href="https://agenda.com/">Agenda</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Easter_egg_(media)">easter egg</a></p>
+        <p><a href="https://www.papersapp.com/">Papers</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Wet_lab">biology wet lab</a></p>
+        <p><a href="https://www.r-project.org/">R</a>, <a href="https://jupyter.org/">Jupyter</a>, <a href="https://www.mathworks.com/">Matlab</a></p>
+        <p><a href="https://www.nxp.com/design/software/development-software/codewarrior-development-tools:CW_HOME">CodeWarrior</a></p>
+        <p><a href="http://www.didigetthingsdone.com/open-loops-managing-action-and-getting-things-done/">open loops</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Parkinson%27s_law">Parkinson’s law</a></p>
+        <p><a href="https://twitter.com/drewmccormack">Drew McCormack</a></p>
+        <p><a href="https://agenda.community/">Agenda community</a></p>
+        <p><a href="https://zettelkasten.de/introduction/">Zettelkasten</a></p>
+        <p><a href="https://agenda.community/t/zettelkasten-roam-obsidian-remnote-notion-and-cong-does-not-work-as-expected/71102">deep dive on notes tools</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Search_engine_optimization">search engine optimization</a></p>
+        <p><a href="https://agenda.community/c/languages/15">localizations by Agenda community volunteers</a></p>
+        <p><a href="https://museapp.com/podcast/11-authentic-marketing/">authentic marketing</a></p>
+        <p><a href="https://medium.com/@drewmccormack/a-cash-cow-is-on-the-agenda-138a11995595">“cash cow” business model</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>48:29</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/25-time-based-notes.mp3" length="58225755" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/25-time-based-notes.mp3" length="58225755" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>24 // Small Giants</title>
+      <itunes:title>24 // Small Giants</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+      <pubDate>Thu, 18 Feb 2021 09:33:59 +0000</pubDate>
+      <link>https://museapp.com/podcast/24-small-giants</link>
+      <guid>https://museapp.com/podcast/24-small-giants</guid>
+      <description><![CDATA[
+        <p>A “small giant” is a company that chooses to optimize for mojo instead of growth. Mark and Adam describe how Muse was inspired to follow this path, designing the business model, team makeup, and funding source accordingly. Plus: a digression into tender offers and the fine points of US tax law.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://museapp.com/podcast/4-partnership-freedom-responsibility/">Partnership, freedom, and responsibility</a></p>
+        <p><a href="https://adamwulf.me/about/">Adam Wulf</a></p>
+        <p><a href="https://www.goodreads.com/book/show/100467.Small_Giants">Small Giants</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/S%26P_500">S&amp;P 500</a></p>
+        <p><a href="https://www.clifbar.com/">Clif Bar</a>, <a href="https://eu.wholefoodsmarket.com/?destination=www.wholefoodsmarket.com%2F">Whole Foods</a>, <a href="https://www.unionsquarecafe.com/">Union Square Cafe</a></p>
+        <p><a href="http://www.paulgraham.com/growth.html">Startup = Growth</a></p>
+        <p><a href="https://sites.millersville.edu/bikenaga/math-proof/existence-proofs/existence-proofs.html">existence proof</a></p>
+        <p><a href="https://signal.org/en/">Signal</a>, <a href="https://panic.com/">Panic</a>, <a href="https://vanguard.com/">Vanguard</a></p>
+        <p><a href="https://www.investopedia.com/terms/i/indexfund.asp#:~:text=An%20index%20fund%20is%20a%20portfolio%20of%20stocks%20or%20bonds,follow%20a%20passive%20investment%20strategy.">index funds</a> and <a href="https://www.investopedia.com/terms/e/etf.asp#:~:text=An%20exchange%20traded%20fund%20(ETF)%20is%20a%20basket%20of%20securities,day%20after%20the%20market%20closes.">ETFs</a></p>
+        <p><a href="https://www.netflix.com/title/80007945">Chef&#39;s Table</a></p>
+        <p><a href="https://www.bloomberg.com/opinion/articles/2021-02-09/the-sec-wants-reddit-meme-stocks-to-admit-they-re-dangerous">meme stocks</a></p>
+        <p><a href="https://gust.com/launch/blog/why-startup-delaware-c-corporation">Delaware C-corp</a></p>
+        <p><a href="https://www.harrisonmetal.com/">Harrison Metal</a></p>
+        <p><a href="https://concepts.effectivealtruism.org/concepts/career-capital/">career capital</a></p>
+        <p><a href="https://techcrunch.com/2021/01/06/revenue-based-financing-the-next-step-for-private-equity-and-early-stage-investment/">revenue-based financing</a></p>
+        <p><a href="http://www.paulgraham.com/makersschedule.html">maker vs manager</a></p>
+        <p><a href="https://hackernoon.com/vc-math-2848971a34a0">VC Math</a></p>
+        <p><a href="https://www.investopedia.com/terms/t/tenderoffer.asp">tender offer</a></p>
+        <p><a href="https://www.investopedia.com/articles/02/041702.asp#:~:text=A%20stock%20buyback%2C%20also%20known,on%20the%20market%20is%20reduced.">stock buyback</a></p>
+        <p><a href="https://www.investopedia.com/terms/d/dividend.asp">dividends</a></p>
+        <p><a href="https://trustcommerce.com/">TrustCommerce</a></p>
+        <p><a href="https://www.investopedia.com/articles/investing/080113/income-value-and-growth-stocks.asp">growth stocks vs income stocks</a></p>
+        <p>foundations: <a href="https://foundation.mozilla.org/en/">Mozilla</a>, <a href="https://www.apache.org/">Apache</a>, <a href="https://processingfoundation.org/">Processing</a>, <a href="https://wikimediafoundation.org/">Wikimedia</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>58:36</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/24-small-giants.mp3" length="70350748" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/24-small-giants.mp3" length="70350748" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>23 // Collaborative creativity with Nikolas Klein</title>
+      <itunes:title>23 // Collaborative creativity with Nikolas Klein</itunes:title>
+      <dc:creator>Nikolas Klein, Adam Wiggins, Mark McGranaghan</dc:creator>
+      <itunes:author>Nikolas Klein, Adam Wiggins, Mark McGranaghan</itunes:author>
+      <pubDate>Thu, 04 Feb 2021 11:45:01 +0000</pubDate>
+      <link>https://museapp.com/podcast/23-collaborative-creativity</link>
+      <guid>https://museapp.com/podcast/23-collaborative-creativity</guid>
+      <description><![CDATA[
+        <p>As a product designer at Figma, Niko sees how collaborative tools are changing team culture for collaboration. He joins Mark and Adam to discuss how guardrails can increase comfort with working collaboratively; changing mindset from “my ideas” to “our ideas”; and screensharing as an intimate act.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="http://nikolasklein.de/">Nikolas Klein</a> <a href="https://twitter.com/nikolasklein">@nikolasklein</a></p>
+        <p><a href="https://twitter.com/andreasklinger/status/1344233350169550848">time logistics for teams spanning US and Europe</a></p>
+        <p><a href="hhttps://sketchrunner.com/">Sketch Runner</a></p>
+        <p><a href="http://artifacts.fyi/">Artifacts</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Schw%C3%A4bisch_Gm%C3%BCnd">Schwäbisch Gmünd</a> / <a href="https://www.hfg-gmuend.de/">Hochschule für Gestaltung</a></p>
+        <p><a href="https://blog.repl.it/clui">CLUI</a></p>
+        <p><a href="https://polaris.shopify.com/">Shopify design system</a> and <a href="https://github.com/Shopify/polaris-telescope">Polaris Telescope</a></p>
+        <p><a href="https://www.figma.com/">Figma</a></p>
+        <p><a href="https://hbr.org/2008/04/managing-hypergrowth">hypergrowth</a></p>
+        <p><a href="https://twitter.com/mikemiller_12/status/1348827658017239049?s=20">user redesign of Figma comments</a></p>
+        <p><a href="https://newsroom.tiktok.com/en-gb/sea-shanty-tiktok-nathanevanss">sea shanty TikTok</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Remix_culture">remix culture</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/The_Act_of_Creation">bisociation / Arthur Koestler</a></p>
+        <p><a href="https://learning-notes.mistermicheels.com/mindset/hammock-driven-development/">hammock-driven development</a></p>
+        <p><a href="https://www.sciencedirect.com/book/9780123740373/sketching-user-experiences">Sketching User Experiences</a></p>
+        <p><a href="https://obsproject.com/">OBS Studio</a></p>
+        <p><a href="https://www.elgato.com/en/ring-light">ring light</a></p>
+        <p><a href="https://nerdschalk.com/zoom-studio-effects-change-face-parts/">Zoom Studio</a></p>
+        <p><a href="https://twitter.com/mwneill/status/1189936556146081802?s=20">Figma cursor Halloween costumes</a></p>
+        <p><a href="https://www.designernews.co/stories/74791-figma-10">Designer News reaction to Figma launch</a></p>
+        <p><a href="https://twitter.com/patio11/status/1348810220789661698">people who understand the capabilities of software</a></p>
+        <p><a href="https://www.goodreads.com/book/show/41438647-the-dream-machine">The Dream Machine</a></p>
+      ]]></description>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:duration>1:07:31</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/23-collaborative-creativity.mp3" length="81054723" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/23-collaborative-creativity.mp3" length="81054723" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>22 // Brand</title>
+      <itunes:title>22 // Brand</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+      <pubDate>Thu, 21 Jan 2021 12:17:44 +0000</pubDate>
+      <link>https://museapp.com/podcast/22-brand</link>
+      <guid>https://museapp.com/podcast/22-brand</guid>
+      <description><![CDATA[
+        <p>Brand is not just a name or a logo—it’s the character of a company and its products. Adam and Mark discuss the memetic and emotive elements of branding; brand as tribal identity; and Muse brand values like thoughtfulness and curiosity.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://www.goodreads.com/book/show/882277.Brand%5C_New">Brand New</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Heinz#Foundation">history of the Heinz brand</a></p>
+        <p><a href="https://en.99designs.de/blog/logo-branding/logotype-vs-logomark-vs-logo/">logomark</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Richard_Branson">Richard Branson</a> / <a href="https://www.virgin.com/">Virgin</a></p>
+        <p><a href="https://www.pixar.com/">Pixar</a></p>
+        <p><a href="https://www.nike.com/">Nike</a> / <a href="https://en.wikipedia.org/wiki/Swoosh">the Swoosh</a> / <a href="https://www.creativereview.co.uk/just-do-it-slogan/">Just Do It</a></p>
+        <p><a href="https://37signals.com/">37signals</a></p>
+        <p><a href="https://www.tarsnap.com/">Tarsnap</a></p>
+        <p><a href="https://sabaki.yichuanshen.de">Sabaki</a></p>
+        <p><a href="https://museapp.com/email-updates">the Muse newsletter</a></p>
+        <p><a href="https://www.goodreads.com/book/show/1565533.The_22_Immutable_Laws_of_Branding">The 22 Immutable Laws of Branding</a></p>
+        <p><a href="https://www.goodreads.com/book/show/648357.Changing_How_the_World_Does_Business">FedEx business biography</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Memetics">memetic</a></p>
+        <p><a href="https://www.bluebed.net/Notion">Notion illustrations</a> by <a href="https://www.bluebed.net/about">Roman Muradov</a></p>
+        <p><a href="https://craigslist.org/">Cragistlist</a> and <a href="https://brutalistwebsites.com/">brutalist web design</a></p>
+        <p><a href="https://www.investopedia.com/terms/p/proof-work.asp">proof of work</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Typography_of_Apple_Inc.">typography of Apple, Inc.</a></p>
+        <p><a href="https://en.99designs.de/product-packaging-design">packaging design on 99designs</a></p>
+        <p><a href="https://www.harley-davidson.com/">Harley-Davidson</a></p>
+        <p><a href="https://www.bmc.com/blogs/consumerization-of-it/">consumerization of IT and Bring Your Own Device</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/BlackBerry">BlackBerry</a>, <a href="https://www.perimeter81.com/resources/corporate-vpn-solution">corporate VPNs</a></p>
+        <p><a href="https://www.goodreads.com/review/show/161881299?book_show_action=false&amp;from_review_page=1">administrative legibility</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>39:53</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/22-brand.mp3" length="47903649" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/22-brand.mp3" length="47903649" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>21 // Listener questions</title>
+      <itunes:title>21 // Listener questions</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+      <pubDate>Thu, 07 Jan 2021 09:50:37 +0000</pubDate>
+      <link>https://museapp.com/podcast/21-listener-questions</link>
+      <guid>https://museapp.com/podcast/21-listener-questions</guid>
+      <description><![CDATA[
+        <p>How to prototype advanced gestures; how to organize your Muse boards; and how to spot good ideas. Plus, a peek at the long-term Muse roadmap.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://www.wooji-juice.com/products/ferrite/">Ferrite</a></p>
+        <p><a href="https://twitter.com/_adamwiggins_/status/1339631767142199298">listener questions thread</a></p>
+        <p><a href="https://balsamiq.com/">Balsamiq</a>, <a href="https://www.framer.com/">Framer</a>, <a href="https://origami.design/">Origami Studio</a></p>
+        <p><a href="https://gist.github.com/adamwiggins/5687294#make-it-real">Make it real</a></p>
+        <p><a href="https://museapp.com/memos/2020-12-infinite-canvas/">infinite canvas memo</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Reductionism">reductionism</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Spatial_ability">spatial reasoning</a></p>
+        <p><a href="https://museapp.com/podcast/12-growing-ideas/">Growing ideas with Andy Matuschak</a></p>
+        <p><a href="https://retromat.org/blog/what-is-a-retrospective/">retrospective</a></p>
+        <p><a href="https://paulbuchheit.blogspot.com/">Paul Buchheit</a></p>
+        <p><a href="https://www.inkandswitch.com/slow-software.html">Slow Software</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Self-hosting_(compilers)">self-hosting</a></p>
+        <p><a href="https://www.inkandswitch.com/end-user-programming.html">End-user programming</a></p>
+        <p><a href="https://minecraft.fandom.com/wiki/Redstone_Circuits">Minecraft redstone</a></p>
+        <p><a href="https://news.codecademy.com/myspace-and-the-coding-legacy/">MySpace customization</a></p>
+        <p><a href="https://www.figma.com/blog/introducing-figma-plugins/">Figma plugins</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>55:05</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/21-listener-questions.mp3" length="66141470" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/21-listener-questions.mp3" length="66141470" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>20 // Thinking in maps with Anne-Laure Le Cunff</title>
+      <itunes:title>20 // Thinking in maps with Anne-Laure Le Cunff</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Anne-Laure Le Cunff</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Anne-Laure Le Cunff</itunes:author>
+      <pubDate>Thu, 24 Dec 2020 08:16:50 +0000</pubDate>
+      <link>https://museapp.com/podcast/20-thinking-in-maps</link>
+      <guid>https://museapp.com/podcast/20-thinking-in-maps</guid>
+      <description><![CDATA[
+        <p>Maps can visualize space, time, biological processes, social graphs, and much more. Anne-Laure of Ness Labs talks with Mark and Adam about the multi-thousand-year history of map-based thinking, and how we can use maps in our own creative work today.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://anne-laure.net/">Anne-Laure Le Cunff</a> <a href="https://twitter.com/anthilemoon">@anthilemoon</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Winter_solstice">winter solstice</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Algerian_cuisine">Algerian food</a></p>
+        <p><a href="https://nesslabs.com/">Ness Labs</a> <a href="https://twitter.com/ness_labs">@ness_labs</a></p>
+        <p><a href="https://nesslabs.com/mindful-productivity-2">mindful productivity</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">the Dunning-Kruger effect</a></p>
+        <p><a href="https://www.goodreads.com/book/show/623922.How_to_Be_Idle">How to Be Idle</a></p>
+        <p><a href="https://nesslabs.com/thinking-in-maps">Thinking in maps</a></p>
+        <p><a href="http://www.piggin.net/stemmahist/cassiodorus.htm">Cassiodorus</a></p>
+        <p><a href="https://www.britishmuseum.org/collection/object/W_1882-0714-509">Babylonian map of the world</a></p>
+        <p><a href="https://www.lesswrong.com/tag/the-map-is-not-the-territory">the map is not the territory </a></p>
+        <p><a href="https://www.goodreads.com/book/show/23995249-the-invention-of-nature">The Invention of Nature</a></p>
+        <p><a href="https://storymaps.esri.com/stories/2016/humboldt/index.html">Alexander von Humboldt&rsquo;s Chimborazo map</a></p>
+        <p><a href="https://hbr.org/2013/05/what-makes-a-good-corporate-st">Disney business process map (1957)</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Citric_acid_cycle">Krebs cycle</a></p>
+        <p><a href="https://www.hanselman.com/blog/the-floppy-disk-means-save-and-14-other-old-people-icons-that-dont-make-sense-anymore">floppy disc save icon</a></p>
+        <p><a href="https://d3js.org/">D3.js</a></p>
+        <p><a href="https://parametric.press/">Parametric Press</a></p>
+        <p><a href="https://www.connectedpapers.com/">Connected Papers</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Digital_object_identifier">digital object identifier (DOI)</a></p>
+        <p><a href="https://www.youtube.com/watch?v=aXV-yaFmQNk">babies using touch gestures on magazines</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Head-up_display">heads-up display (HUD)</a></p>
+        <p><a href="https://www.literatureandlatte.com/scapple/overview">Scapple</a> by <a href="https://www.literatureandlatte.com/">Literature and Latte</a></p>
+        <p><a href="https://fs.blog/2019/10/focused-diffuse-thinking/">focused mode and diffuse mode</a> / <a href="https://barbaraoakley.com/">Barbara Oakley</a></p>
+        <p><a href="https://www.nngroup.com/articles/affinity-diagram/">affinity maps</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>54:03</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/20-thinking-in-maps.mp3" length="64903744" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/20-thinking-in-maps.mp3" length="64903744" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>19 // Progress with Jason Crawford</title>
+      <itunes:title>19 // Progress with Jason Crawford</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Jason Crawford</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Jason Crawford</itunes:author>
+      <pubDate>Thu, 10 Dec 2020 08:05:14 +0000</pubDate>
+      <link>https://museapp.com/podcast/19-progress</link>
+      <guid>https://museapp.com/podcast/19-progress</guid>
+      <description><![CDATA[
+        <p>Jason Crawford writes about the history of technology and the philosophy of progress. He joins Mark and Adam to talk about technologies like messenger RNA vaccines, nanotech, and supersonic jets. Plus society-level questions like whether we are in a period of stagnation, how we fund maverick ideas, and why we need hubris.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://jasoncrawford.org/">Jason Crawford</a> / <a href="https://rootsofprogress.org/">The Roots of Progress</a> / <a href="https://twitter.com/jasoncrawford">@jasoncrawford</a></p>
+        <p><a href="https://jasoncrawford.org/what-happened-at-fieldbook">Fieldbook</a></p>
+        <p><a href="https://mitpress.mit.edu/books/small-matter-programming">A Small Matter of Programming</a></p>
+        <p><a href="https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/">We Need a New Science of Progress</a></p>
+        <p><a href="https://progressstudies.school/the-torch-of-progress-ep-13-with-adam-wiggins/">The Torch of Progress&nbsp;—&nbsp;Ep. 13 with Adam Wiggins</a></p>
+        <p><a href="https://www.penguinrandomhouse.com/books/265612/the-great-stagnation-by-tyler-cowen/">The Great Stagnation</a></p>
+        <p><a href="https://twitter.com/jasoncrawford/status/1187075762819461121%5C">Bessemer steel process</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Germ_theory_of_disease">germ theory</a></p>
+        <p><a href="https://som.yale.edu/blog/peter-thiel-at-yale-we-wanted-flying-cars-instead-we-got-140-characters">We wanted flying cars, instead we got 140 characters</a></p>
+        <p><a href="https://press.princeton.edu/books/paperback/9780691175805/the-rise-and-fall-of-american-growth">The Rise and Fall of American Growth</a> and <a href="https://rootsofprogress.org/summary-the-rise-and-fall-of-american-growth">Jason&#39;s summary</a></p>
+        <p><a href="https://www.goodreads.com/book/show/42036377-where-is-my-flying-car">Where Is My Flying Cars?</a> and <a href="https://rootsofprogress.org/where-is-my-flying-car">Jason&#39;s summary</a></p>
+        <p><a href="https://www.history.com/news/who-were-the-luddites">Luddites</a></p>
+        <p><a href="https://science.jrank.org/pages/11558/Victorianism-Victorianism-Progress.html">Victorian-era concept of Progress</a></p>
+        <p><a href="https://press.princeton.edu/books/paperback/9780691180960/a-culture-of-growth">A Culture of Growth</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Francis_Bacon">Francis Bacon</a></p>
+        <p><a href="https://www.brainpickings.org/2014/01/29/carol-dweck-mindset/">growth mindset</a></p>
+        <p><a href="https://sites.wustl.edu/prosper/on-the-origins-of-the-march-of-progress/">The March of Progress</a></p>
+        <p><a href="https://www.google.com/search?q=world%27s+fair+posters&amp;tbm=isch">World&#39;s Fair posters</a></p>
+        <p><a href="https://www.fda.gov/patients/drug-development-process/step-3-clinical-research">phase 3 clinical trials</a></p>
+        <p><a href="https://www.dancarlin.com/hardcore-history-series/">Hardcore History</a></p>
+        <p><a href="https://www.nytimes.com/2019/09/28/opinion/sunday/silicon-valley-techno-optimism.html">techno-optimism</a></p>
+        <p><a href="https://www.youtube.com/watch?v=Gvq0vwLaeko">1927 Charles Lindbergh ticker-tape parade</a></p>
+        <p><a href="https://rootsofprogress.org/celebrations-of-progress">Why haven&#39;t we celebrated any major achievements lately?</a></p>
+        <p><a href="https://thoughtandindustry.com/">Academy of Thought and Industry</a></p>
+        <p><a href="https://boomsupersonic.com/">Boom</a></p>
+        <p><a href="https://www.goodreads.com/book/show/1267151.747">747: Creating the World&#39;s First Jumbo Jet</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Concorde">Concorde</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>57:47</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/19-progress.mp3" length="69478997" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/19-progress.mp3" length="69478997" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>18 // Privacy</title>
+      <itunes:title>18 // Privacy</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+      <pubDate>Thu, 26 Nov 2020 10:01:38 +0000</pubDate>
+      <link>https://museapp.com/podcast/18-privacy</link>
+      <guid>https://museapp.com/podcast/18-privacy</guid>
+      <description><![CDATA[
+        <p>Thinking and creativity require privacy. In this data-intensive age, what does &rdquo;privacy&ldquo; mean for a tool for thought? Mark and Adam discuss product decisions in the context of digital privacy for the tech industry and society overall.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://www.c-span.org/supremeCourt/">US Supreme Court oral arguments live</a></p>
+        <p><a href="https://www.cs.cornell.edu/~shmat/courses/cs5436/warren-brandeis.pdf">The Right to Privacy (1890)</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/LiveJournal">LiveJournal</a></p>
+        <p><a href="https://gdpr-info.eu/">GDPR</a></p>
+        <p><a href="https://brave.com/">Brave</a>, <a href="https://duckduckgo.com/">Duck Duck Go</a>, <a href="https://protonmail.com/">ProtonMail</a>, <a href="https://usefathom.com/">Fathom</a></p>
+        <p><a href="https://signal.org/en/">Signal</a>, <a href="https://telegram.org/">Telegram</a></p>
+        <p><a href="https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/">TLS</a></p>
+        <p><a href="https://www.exabeam.com/information-security/clipper-chip/">Clipper Chip</a></p>
+        <p><a href="https://www.iwm.org.uk/history/how-alan-turing-cracked-the-enigma-code">Alan Turing and the Enigma Machine</a></p>
+        <p><a href="https://www.inkandswitch.com/local-first.html">Local-first software</a></p>
+        <p><a href="https://www.fastcompany.com/company/open-whisper-systems">Open Whisper Systems</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Web_of_trust">web of trust</a></p>
+        <p><a href="https://support.signal.org/hc/en-us/articles/360007060632">Signal contact verification</a></p>
+        <p><a href="https://github.com/zoom/zoom-e2e-whitepaper/blob/master/zoom_e2e.pdf">Zoom end-to-end encryption whitepaper</a></p>
+        <p><a href="https://gnupg.org/">PGP</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Telemetry">telemetry</a></p>
+        <p><a href="https://searchsecurity.techtarget.com/definition/personally-identifiable-information-PII">PII</a></p>
+        <p><a href="https://www.whatismybrowser.com/guides/learn/cookies/why-do-websites-warn-about-cookies">cookie warnings</a></p>
+        <p><a href="https://blog.mozilla.org/internetcitizen/2018/07/26/this-is-your-digital-fingerprint/">browser fingerprinting</a></p>
+        <p><a href="https://www.torproject.org/">Tor</a></p>
+        <p><a href="https://www.macrumors.com/2020/06/25/tiktok-clipboard-access-ios-14-caught/">TikTok iOS 14 clipboard notifications</a></p>
+        <p><a href="https://arxiv.org/pdf/1708.05905.pdf">Designing for Pragmatists and Fundamentalists</a></p>
+        <p><a href="https://edwardsnowden.com/">Edward Snowden</a>, <a href="https://www.imdb.com/title/tt4044364/">Citizenfour</a></p>
+        <p><a href="https://tails.boum.org/">Tails</a></p>
+        <p><a href="https://www.bstu.de/en/the-stasi/introduction/">The Stasi</a></p>
+        <p><a href="https://www.imdb.com/title/tt0405094/">The Lives of Others</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>56:31</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/18-privacy.mp3" length="67969765" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/18-privacy.mp3" length="67969765" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>17 // Rethink the OS with Jason Yuan</title>
+      <itunes:title>17 // Rethink the OS with Jason Yuan</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Jason Yuan</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Jason Yuan</itunes:author>
+      <pubDate>Thu, 12 Nov 2020 08:56:07 +0000</pubDate>
+      <link>https://museapp.com/podcast/17-rethink-the-os</link>
+      <guid>https://museapp.com/podcast/17-rethink-the-os</guid>
+      <description><![CDATA[
+        <p>Jason Yuan believes that we all should feel empowered to think about ways to improve our computer's operating system. He joins Mark and Adam to talk about stage design, dreaming big versus delivering practical products, and why software should be fun.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://jasonyuan.design/">Jason Yuan</a> / <a href="https://twitter.com/jasonyuandesign">@jasonyuandesign</a></p>
+        <p><a href="https://www.mercuryos.com/">Mercury OS</a></p>
+        <p><a href="https://makespace.fun/">MakeSpace</a></p>
+        <p><a href="https://screenotate.com/">Screenotate</a></p>
+        <p><a href="https://omar.website/index.html">Omar Rizwan</a></p>
+        <p><a href="https://www.ty.works/">Tyler Angert</a></p>
+        <p><a href="https://repl.it/">Repl.it</a></p>
+        <p><a href="https://weiweihsu.com/">Weiwei Hsu</a></p>
+        <p><a href="https://desktopneo.com/">Desktop Neo</a></p>
+        <p><a href="http://artifacts.fyi/">Artifacts</a></p>
+        <p><a href="https://support.apple.com/en-us/HT207122">iOS 14 widgets</a></p>
+        <p><a href="https://www.sketch.com/">Sketch</a></p>
+        <p><a href="https://origami.design/">Orgami</a></p>
+        <p><a href="https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzComposerUserGuide/qc_intro/qc_intro.html">Quartz Composer</a></p>
+        <p><a href="https://fossbytes.com/best-android-launchers/">Android launchers</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/John_Gall_(author)#Gall&#39;s_law">Gall&#39;s law</a></p>
+        <p><a href="https://www.theverge.com/circuitbreaker/2018/11/21/18105423/ipod-click-wheel-button-music-control-hardware-design">the iPod click wheel</a></p>
+        <p><a href="https://www.pcworld.com/article/2894354/dont-forget-one-of-linuxs-best-features-how-to-use-multiple-workspaces.html">virtual workspaces</a></p>
+        <p><a href="https://dynamicland.org/">Dynamicland</a></p>
+        <p><a href="http://worrydream.com/">Bret Victor</a></p>
+        <p><a href="https://developer.android.com/guide/topics/graphics/spring-animation">spring damping</a></p>
+        <p><a href="https://www.netflix.com/title/80216393">David Attenborough: A Life on Our Planet</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Project_Xanadu">Xanadu</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Philosopher%27s_stone">philosopher&#39;s stone</a></p>
+        <p><a href="https://www.dougengelbart.org/content/view/209/448/">The Mother of All Demos</a></p>
+      ]]></description>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:duration>1:04:47</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/17-rethink-the-os.mp3" length="77889167" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/17-rethink-the-os.mp3" length="77889167" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>16 // No more boring apps with Andy.Works</title>
+      <itunes:title>16 // No more boring apps with Andy.Works</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Andy.Works</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Andy.Works</itunes:author>
+      <pubDate>Thu, 29 Oct 2020 08:40:46 +0000</pubDate>
+      <link>https://museapp.com/podcast/16-no-more-boring-apps</link>
+      <guid>https://museapp.com/podcast/16-no-more-boring-apps</guid>
+      <description><![CDATA[
+        <p>Andy.Works believes in design-forward products, as seen in his work on Paper for iPad to a handmade analog clock for his young kids. Mark, Adam, and Andy discuss products as vector for culture; maverick game designers; innovation budgets; and pushing back against the idea of scale in software.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://twitter.com/asallen">Andy</a> of <a href="https://andy.works/">Andy.Works</a></p>
+        <p><a href="https://twitter.com/asallen/status/1235268950482513920">Andy&#39;s clock project</a></p>
+        <p><a href="https://www.cnet.com/news/the-inside-story-of-how-microsoft-killed-its-courier-tablet/">Microsoft Courier</a></p>
+        <p><a href="https://www.microsoft.com/en-us/surface/devices/surface-duo">Surface Duo</a></p>
+        <p><a href="https://www.fiftythree.com/">FiftyThree</a></p>
+        <p><a href="https://paper.bywetransfer.com/">Paper</a></p>
+        <p><a href="https://paste.bywetransfer.com/">Paste</a></p>
+        <p><a href="https://www.andy.works/words/no-more-boring-apps">No More Boring Apps</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Performance_indicator">KPI</a></p>
+        <p><a href="https://www.shortoftheweek.com/2012/05/16/a-brief-history-of-john-baldessari/">John Baldessari</a></p>
+        <p><a href="http://museapp.com/podcast/13-interface-innovation">Muse podcast with Josh Miller</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/User-centered_design">user-centered design</a></p>
+        <p><a href="https://franklloydwright.org/">Frank Lloyd Wright</a></p>
+        <p><a href="https://www.guggenheim.org/">The Guggenheim</a></p>
+        <p><a href="http://mathonline.wikidot.com/local-maxima-and-minima-and-absolute-maxima-and-minima">local maxima</a></p>
+        <p><a href="https://www.goodreads.com/book/show/111537.Making_Movies">Making Movies</a></p>
+        <p><a href="https://playdead.com/">Playdead</a> / Limbo, Inside</p>
+        <p><a href="https://twitter.com/osksta?lang=en">Oskar Stålberg</a> / <a href="https://www.thisiscolossal.com/2020/10/townscaper-oskar-stalberg/">Townscraper</a></p>
+        <p><a href="https://twitter.com/Jonathan_Blow?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Jonathan Blow</a> / <a href="https://store.steampowered.com/app/26800/Braid/">Braid</a></p>
+        <p><a href="https://twitter.com/notch">Notch</a> / <a href="https://www.minecraft.net/en-us">Minecraft</a></p>
+        <p><a href="https://twitter.com/jmechner">Jordan Mechner</a> / <a href="https://en.wikipedia.org/wiki/Prince_of_Persia">Prince of Persia</a></p>
+        <p><a href="https://medium.com/@davinc/it-is-never-a-user-s-fault-b4800e5c00f2">not the user&#39;s fault</a></p>
+        <p><a href="https://mcfunley.com/choose-boring-technology">Choose Boring Technology</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>55:43</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/16-no-more-boring-apps.mp3" length="66998272" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/16-no-more-boring-apps.mp3" length="66998272" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>15 // Leaving San Francisco</title>
+      <itunes:title>15 // Leaving San Francisco</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+      <pubDate>Fri, 16 Oct 2020 10:04:01 +0000</pubDate>
+      <link>https://museapp.com/podcast/15-leaving-san-francisco</link>
+      <guid>https://museapp.com/podcast/15-leaving-san-francisco</guid>
+      <description><![CDATA[
+        <p>It's a new world: many creative professionals can now choose where they live, independent of where their employer is headquartered. Mark and Adam discuss the implications of this. Plus: the magic of Silicon Valley, cities that feed your creative soul, and strategies for making big life decisions.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://kevinlynagh.com/newsletter/2020_08_extreme_outcomes/">Emigration and other hedges</a></p>
+        <p><a href="https://www.bloomberg.com/news/articles/2020-09-15/stripe-employees-who-relocate-to-get-20-000-bonus-and-a-pay-cut">Stripe relocation incentive</a> and <a href="https://www.businessinsider.com/zapier-san-francisco-cost-of-living-2017-3">Zapier relocation incentive</a></p>
+        <p><a href="https://www.ycombinator.com/">Y Combinator</a></p>
+        <p><a href="https://www.brookings.edu/research/amazon-hq2-how-did-we-get-here-what-comes-next/">Amazon HQ2</a></p>
+        <p><a href="https://stripe.com/atlas">Stripe Atlas</a> and <a href="https://firstbase.io/">Firstbase</a></p>
+        <p><a href="https://www.bbc.com/news/business-53416206">Apple and Ireland tax case</a></p>
+        <p><a href="https://itep.org/a-visual-history-of-sales-tax-collection-at-amazon-com/">Amazon and sales tax collection</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>45:31</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/15-leaving-san-francisco.mp3" length="21994528" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/15-leaving-san-francisco.mp3" length="21994528" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>14 // Onboarding with Jane Portman</title>
+      <itunes:title>14 // Onboarding with Jane Portman</itunes:title>
+      <dc:creator>Adam Wiggins, Julia Roggatz, Jane Portman</dc:creator>
+      <itunes:author>Adam Wiggins, Julia Roggatz, Jane Portman</itunes:author>
+      <pubDate>Thu, 01 Oct 2020 06:57:55 +0000</pubDate>
+      <link>https://museapp.com/podcast/14-onboarding</link>
+      <guid>https://museapp.com/podcast/14-onboarding</guid>
+      <description><![CDATA[
+        <p>Jane Portman of Userlist joins Julia and Adam to share her expertise with onboarding. Why guided tours don't work, the legacy of Clippy, and drip campaigns that are more personal and considerate.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://uibreakfast.com/">Jane Portman</a> <a href="https://twitter.com/uibreakfast">@uibreakfast</a></p>
+        <p><a href="https://userlist.com/user-onboarding/">User Onboarding: The Ultimate Guide for SaaS Founders</a></p>
+        <p><a href="https://userlist.com/">Userlist</a></p>
+        <p><a href="https://twitter.com/benediktdeicke">Benedikt Deicke</a></p>
+        <p><a href="https://www.intercom.com/">Intercom</a></p>
+        <p><a href="https://blog.dotdigital.com/lifecycle-messaging-what-is-it-and-why-should-you-care/">lifecycle messaging</a></p>
+        <p><a href="https://twitter.com/clairesuellen">Claire Suellentrop</a>, <a href="https://www.forgetthefunnel.com/">Forget The Funnel</a></p>
+        <p><a href="https://uibreakfast.com/category/podcast/">UI Breakfast podcast</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Tooltip">tooltips</a></p>
+        <p><a href="https://userlist.com/blog/user-onboarding-at-userlist/">Inspire, Not Instruct</a></p>
+        <p><a href="https://www.appcues.com/blog/aha-moment-guide">aha moment</a></p>
+        <p><a href="https://helloclue.com/">Clue</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Out-of-box_experience">out-of-box-experience (OOBE)</a></p>
+        <p><a href="https://twitter.com/samuelhulick?lang=en">Samuel Hulick</a>, <a href="https://www.useronboard.com/">UserOnboard</a>, <a href="https://uibreakfast.com/103-ux-personalization-with-samuel-hulick/">podcast interview</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Office_Assistant">Clippy</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Call_to_action_(marketing)">call to action</a></p>
+        <p><a href="https://www.valgeisler.com/">Val Geisler</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Drip_marketing">drip campaign</a></p>
+        <p><a href="https://esgsuccess.com/strategies-for-making-high-touch-and-tech-touch-friends-not-enemies/">tech touch</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/A/B_testing">A/B test or split test</a></p>
+        <p><a href="https://twitter.com/macguru17">Max Seelemann</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>48:49</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/14-onboarding.mp3" length="58734318" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/14-onboarding.mp3" length="58734318" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>13 // Interface innovation with Josh Miller</title>
+      <itunes:title>13 // Interface innovation with Josh Miller</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Josh Miller</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Josh Miller</itunes:author>
+      <pubDate>Thu, 17 Sep 2020 09:39:14 +0000</pubDate>
+      <link>https://museapp.com/podcast/13-interface-innovation</link>
+      <guid>https://museapp.com/podcast/13-interface-innovation</guid>
+      <description><![CDATA[
+        <p>Josh Miller from The Browser Company joins Mark and Adam to discuss how to make a better web browser in 2020. The conversation ranges from user agency in software to architecture to social capital to end-user programming.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="http://joshm.co/">Josh Miller</a> <a href="https://twitter.com/joshm?lang=en">@joshm</a></p>
+        <p><a href="https://thebrowser.company/">The Browser Company</a></p>
+        <p><a href="https://www.fastcompany.com/1670904/branch-rethinks-the-social-cliches-that-wrack-twitter-and-facebook">Branch</a></p>
+        <p><a href="http://nateparrott.com/">Nate Parrott</a></p>
+        <p><a href="https://www.goodreads.com/author/quotes/9810.Albert_Einstein">Einstein quote</a></p>
+        <p><a href="https://zenhabits.net/beginner/">beginner&#39;s mind</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Evan_Williams_(Internet_entrepreneur)">Evan Williams</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Brownian_motion">Brownian motion</a></p>
+        <p><a href="https://rootsofprogress.org/">The Roots of Progress</a></p>
+        <p><a href="https://jtbd.info/2-what-is-jobs-to-be-done-jtbd-796b82081cca">Jobs to be Done</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/David_Adjaye">David Adjaye</a></p>
+        <p><a href="https://www.si.edu/museums/african-american-museum">Museum of African American History and Culture</a></p>
+        <p><a href="https://www.dol.gov/general/topic/disability/ada">Americans with Disabilities Act (ADA)</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Heating,_ventilation,_and_air_conditioning">HVAC</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Bjarke_Ingels">Bjarke Ingels</a></p>
+        <p><a href="https://www.netflix.com/title/80057883">Abstract</a></p>
+        <p><a href="https://www.goodreads.com/en/book/show/79766">A Pattern Language: Towns, Buildings, Construction</a></p>
+        <p><a href="https://www.sec.gov/Archives/edgar/data/1564408/000119312517029199/d270216ds1.htm">Snap S1</a></p>
+        <p><a href="https://support.snapchat.com/en-US/a/about-snapcodes">Snapcodes</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Evan_Spiegel">Evan Spiegel</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Norton_Commander">Norton Commander</a></p>
+        <p><a href="https://www.electronjs.org/">Electron</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Sociology">sociology</a></p>
+        <p><a href="https://twitter.com/joshm/status/1293234199592230913">web browser as Figma canvas</a></p>
+        <p><a href="https://home.cern/science/computing/birth-web/short-history-web">CERN and the birth of the web</a></p>
+        <p><a href="https://techcrunch.com/2008/12/16/taxi-magic-hail-a-cab-from-your-iphone-at-the-push-of-a-button/">Taxi Magic</a></p>
+        <p><a href="https://gist.github.com/adamwiggins/5687294#timing-matters">timing matters / Adam&#39;s Heroku values</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Robert_D._Putnam">Robert D. Putnam</a></p>
+        <p><a href="http://bowlingalone.com/">Bowling Alone</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Scott_Heiferman">Scott Heiferman</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Greasemonkey">Greasemonkey</a></p>
+        <p><a href="https://www.rust-lang.org/">Rust</a></p>
+      ]]></description>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:duration>1:08:52</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/13-interface-innovation.mp3" length="82784852" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/13-interface-innovation.mp3" length="82784852" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>12 // Growing ideas with Andy Matuschak</title>
+      <itunes:title>12 // Growing ideas with Andy Matuschak</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Andy Matuschak</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Andy Matuschak</itunes:author>
+      <pubDate>Thu, 03 Sep 2020 07:42:01 +0000</pubDate>
+      <link>https://museapp.com/podcast/12-growing-ideas</link>
+      <guid>https://museapp.com/podcast/12-growing-ideas</guid>
+      <description><![CDATA[
+        <p>Andy Matuschak joins Mark and Adam to talk about rituals for deep thought, how to develop an inkling over time, and the public goods problem of research.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p>Andy Matuschak: <a href="https://andymatuschak.org/">homepage</a> <a href="https://twitter.com/andy_matuschak">Twitter</a> <a href="https://www.patreon.com/quantumcountry">Patreon</a></p>
+        <p><a href="https://numinous.productions/ttft/">How can we develop transformative tools for thought?</a></p>
+        <p><a href="http://michaelnielsen.org/">Michael Nielsen</a></p>
+        <p><a href="https://vimeo.com/115154289">Bret Victor on representation of thought</a></p>
+        <p><a href="https://quantum.country/">Quantum Country</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Spaced_repetition">spaced repetition</a></p>
+        <p><a href="https://apps.ankiweb.net/">Anki</a></p>
+        <p><a href="https://www.ideo.com/">IDEO</a></p>
+        <p><a href="https://www.apple.com/apple-books/">iBooks</a></p>
+        <p><a href="https://jamesclear.com/beginners-guide-deliberate-practice">deliberate practice</a></p>
+        <p><a href="https://theamericanscholar.org/solitude-and-leadership/">Solitude and Leadership</a></p>
+        <p><a href="https://www.liquidtext.net/">LiquidText</a></p>
+        <p><a href="https://notes.andymatuschak.org/Evergreen_notes">evergreen notes</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Exponential_backoff">exponential backoff</a></p>
+        <p><a href="https://github.com/usmanbashir/haikunator">Heroku haiku names</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Positivism">positivism</a> and <a href="https://en.wikipedia.org/wiki/Existentialism">existentialism</a></p>
+        <p><a href="https://plato.stanford.edu/entries/ethics-deontological/">deontological ethics</a></p>
+        <p><a href="https://nintil.com/bloom-sigma/">intelligent tutoring systems</a></p>
+        <p><a href="https://www.aleks.com/">ALEKS</a></p>
+        <p><a href="https://www.goodreads.com/book/show/54140556-working-in-public">Working in Public: The Making and Maintenance of Open Source Software</a></p>
+        <p><a href="https://www.goodreads.com/book/show/54140556-working-in-public">Ivan Sutherland / Sketchpad</a></p>
+        <p><a href="https://palladiummag.com/">Palladium Magazine</a></p>
+        <p><a href="https://www.reddit.com/r/MechanicalKeyboards/">mechanical keyboards on Reddit</a></p>
+        <p><a href="https://kevinlynagh.com/notes/pricing-niche-products/">Pricing niche products: Why sell a mechanical keyboard kit for $1,668?</a></p>
+        <p><a href="https://autm.net/about-tech-transfer/what-is-tech-transfer">tech transfer</a></p>
+        <p><a href="https://www.gene.com/stories/biotech-basics">Genentech and recombinant DNA</a></p>
+        <p><a href="https://www.dolby.com/">Dolby</a></p>
+        <p><a href="https://www.pixar.com/">Pixar</a></p>
+        <p><a href="https://benjaminreinhardt.com/wddw">Why does DARPA work?</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>1:13:39</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/12-growing-ideas.mp3" length="35497779" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/12-growing-ideas.mp3" length="35497779" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>11 // Authentic marketing with Lisa Enckell</title>
+      <itunes:title>11 // Authentic marketing with Lisa Enckell</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Lisa Enckell</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Lisa Enckell</itunes:author>
+      <pubDate>Thu, 20 Aug 2020 08:30:10 +0000</pubDate>
+      <link>https://museapp.com/podcast/11-authentic-marketing</link>
+      <guid>https://museapp.com/podcast/11-authentic-marketing</guid>
+      <description><![CDATA[
+        <p>Lisa Enckell joins Mark and Adam to talk about picking a category, aspirational creativity, and the purpose of product launches.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://twitter.com/enckelli">Lisa Enckell</a></p>
+        <p><a href="https://www.antler.co">Antler</a></p>
+        <p><a href="http://museapp.com/podcast/8-principled-products">episode with Max Schoening</a></p>
+        <p><a href="https://www.perell.com/podcast/patrick-mckenzie-internet-famous">Patrick McKenzie on North Star podcast</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Platform_as_a_service">Platform-as-a-Service</a></p>
+        <p><a href="https://hackernoon.com/what-is-containerization-83ae53a709a6">containerization</a></p>
+        <p><a href="https://www.heroku.com/dynos">dynos</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Serverless_computing">serverless</a></p>
+        <p><a href="https://www.goodreads.com/book/show/760025.Positioning">Positioning: The Battle for Your Mind</a></p>
+        <p><a href="https://mixpanel.com/topics/points-of-parity-vs-points-of-difference/">Points of Parity, Points of Difference</a></p>
+        <p><a href="https://www.goodreads.com/book/show/641604.Purple_Cow">purple cow</a></p>
+        <p><a href="https://n26.com/">N26</a></p>
+        <p><a href="https://www.circles.life/sg/">Circles.Life</a></p>
+        <p><a href="https://www.pophistorydig.com/topics/ipod-silhouettes-2000-2011/">silhouette iPod ads</a></p>
+        <p><a href="https://julian.digital/2020/03/28/signaling-as-a-service/">Signaling as a Service</a></p>
+        <p><a href="https://hey.com">hey.com</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Library_of_Trinity_College_Dublin">library of Trinity College Dublin</a></p>
+        <p><a href="https://www.goodreads.com/book/show/261651.The_Substance_of_Style">The Substance of Style</a></p>
+        <p><a href="https://konmari.com">Marie Kondo</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Marc_Benioff">Marc Benioff</a></p>
+        <p><a href="http://www.paulgraham.com/popular.html">"It's not when people notice you're there that they pay attention; it's when they notice you're still there."</a></p>
+        <p><a href="https://www.salesforce.com/dreamforce/">DreamForce</a>, <a href="https://events.google.com/io/">Google I/O</a></p>
+        <p><a href="https://www.markshuttleworth.com/archives/tag/release-management">Ubuntu release cycle</a></p>
+        <p><a href="https://sifted.eu/articles/wrapp-swedish-startup/">Wrapp</a></p>
+        <p><a href="https://www.23andme.com/">23andMe</a></p>
+        <p><a href="https://www.genome.gov/dna-day">DNA Day</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>43:00</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/11-authentic-marketing.mp3" length="20780094" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/11-authentic-marketing.mp3" length="20780094" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>10 // Tools for thought</title>
+      <itunes:title>10 // Tools for thought</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+      <pubDate>Fri, 07 Aug 2020 08:08:54 +0000</pubDate>
+      <link>https://museapp.com/podcast/10-tools-for-thought</link>
+      <guid>https://museapp.com/podcast/10-tools-for-thought</guid>
+      <description><![CDATA[
+        <p>The rich history of tools for thought stretches back to the 1960s. Adam and Mark talk about how today&rsquo;s computing, from iPads to Twitch to AI, might help us gain knoweldge and develop novel ideas.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="http://www.rheingold.com/texts/tft/index.html">Tools For Thought</a></p>
+        <p><a href="https://numinous.productions/ttft/">How can we develop transformative tools for thought?</a></p>
+        <p><a href="https://www.brainpickings.org/2011/12/21/steve-jobs-bicycle-for-the-mind-1990/">bicycle for the mind</a></p>
+        <p><a href="https://www.smithsonianmag.com/innovation/douglas-engelbart-invented-future-180967498/">Doug Engelbart</a></p>
+        <p><a href="https://amturing.acm.org/award_winners/kay_3972189.cfm">Alan Kay</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Vannevar_Bush">Vannevar Bush</a></p>
+        <p><a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">As We May Think</a></p>
+        <p><a href="https://www.inkandswitch.com/capstone-manuscript.html#creative-professionals-two-step-process">the two-step process for developing ideas</a></p>
+        <p><a href="https://roamresearch.com/">Roam Research</a></p>
+        <p><a href="https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow">Thinking, Fast and Slow</a></p>
+        <p><a href="https://www.amazon.com/gp/product/B00009LI4K">industrial-strength noise-canceling headphones</a></p>
+        <p><a href="https://museapp.com/email-updates/001/">white-noise generators in a Muse email update</a></p>
+        <p><a href="https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential">GPT-3</a></p>
+        <p><a href="https://www.goodreads.com/book/show/31934455-deep-thinking">Deep Thinking: Where Machine Intelligence Ends and Human Creativity Begins</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Generative_design">generative design</a></p>
+        <p><a href="https://www.twitch.tv/">Twitch</a></p>
+        <p><a href="https://discord.com/">Discord</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>41:21</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/10-tools-for-thought.mp3" length="19988539" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/10-tools-for-thought.mp3" length="19988539" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>9 // The Information Age</title>
+      <itunes:title>9 // The Information Age</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+      <pubDate>Thu, 23 Jul 2020 09:41:23 +0000</pubDate>
+      <link>https://museapp.com/podcast/9-the-information-age</link>
+      <guid>https://museapp.com/podcast/9-the-information-age</guid>
+      <description><![CDATA[
+        <p>This modern Information Age can make it challenging for a creative professional to keep their focus. At the same time, there are many benefits to being plugged in. Mark and Adam discuss.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://www.goodreads.com/book/show/32919530-a-mind-at-play">A Mind at Play: How Claude Shannon Invented the Information Age</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Information_Age">the Information Age</a></p>
+        <p><a href="https://www.ben-evans.com/benedictevans/2019/5/28/the-end-of-mobile">The end of mobile</a></p>
+        <p><a href="https://jjbeshara.com/2018/11/20/the-information-pathology-2/">The Information Pathology</a></p>
+        <p><a href="https://www.spiegel.de/international/zeitgeist/smartphone-addiction-is-part-of-the-design-a-1104237.html">The Slot Machine in Your Pocket</a></p>
+        <p><a href="https://www.vox.com/2019/1/28/18196379/digital-detox-fuss-about-and-how-does-it-actually-work">digital detox</a></p>
+        <p><a href="https://www.history.com/topics/industrial-revolution/industrial-revolution">the Industrial Revolution</a></p>
+        <p><a href="https://press.princeton.edu/books/paperback/9780691175805/the-rise-and-fall-of-american-growth">The Rise and Fall of American Growth</a></p>
+        <p><a href="https://www.cgpgrey.com/blog/cyclops">Thinking About Attention</a></p>
+        <p><a href="https://www.rescuetime.com/">RescueTime</a></p>
+        <p><a href="https://support.apple.com/en-us/HT208982">Screen Time</a></p>
+        <p><a href="https://www.goodreads.com/book/show/22668729-hooked">Hooked: How to Build Habit-Forming Products</a></p>
+        <p><a href="https://www.calnewport.com/books/digital-minimalism/">Digital Minimalism: Choosing a Focused Life in a Noisy World</a></p>
+        <p><a href="https://humanetech.com/">Center for Humane Technology</a></p>
+        <p><a href="https://www.epsilontheory.com/gell-mann-amnesia/">Gell-Mann Amnesia</a></p>
+        <p><a href="https://www.goodreads.com/en/book/show/22451908">The Revolt of the Public and the Crisis of Authority</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>55:45</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/9-the-information-age.mp3" length="53036956" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/9-the-information-age.mp3" length="53036956" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>8 // Principled products with Max Schoening</title>
+      <itunes:title>8 // Principled products with Max Schoening</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Max Schoening</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Max Schoening</itunes:author>
+      <pubDate>Fri, 10 Jul 2020 23:34:48 +0000</pubDate>
+      <link>https://museapp.com/podcast/8-principled-products</link>
+      <guid>https://museapp.com/podcast/8-principled-products</guid>
+      <description><![CDATA[
+        <p>Max Schoening of GitHub joins Mark and Adam to talk about principled design, authentic marketing, tools for thought, and more.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://max.dev/">Max Schoening</a></p>
+        <p><a href="https://twitter.com/mschoening?lang=en">@mschoening</a></p>
+        <p><a href="https://www.inkandswitch.com/end-user-programming.html">end-user programming</a></p>
+        <p><a href="https://mitpress.mit.edu/books/tools-thought">tools for thought</a></p>
+        <p><a href="https://www.sqlite.org/index.html">SQLite</a></p>
+        <p><a href="https://www.sqlite.org/locrsf.html">US Library of Congress recommended storage formats</a></p>
+        <p><a href="https://museapp.com/podcast/3-read-the-fabulous-manual">Read the Fabulous Manual</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Composability">composability</a></p>
+        <p><a href="https://12factor.net/">The Twelve-Factor App</a></p>
+        <p><a href="https://github.com/features/actions">GitHub Actions</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Ivory_tower">ivory tower</a></p>
+        <p><a href="https://help.trello.com/article/820-card-aging">Trello / card aging</a></p>
+        <p><a href="https://www.designingmlearning.com/resources/ZenOfPalm.pdf">Zen of Palm</a></p>
+        <p><a href="https://www.google.com/googlebooks/chrome/">Google Chrome launch comic</a></p>
+        <p><a href="https://culturedcode.com/things/">Things</a></p>
+        <p><a href="https://www.omnigroup.com/omnifocus/">OmniFocus</a></p>
+        <p><a href="https://exponent.fm/episode-177-principle-stacks/">Exponent / Principle Stacks</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Standard_streams">unix / everything is a text stream</a></p>
+        <p><a href="https://overcast.fm/">Overcast</a></p>
+        <p><a href="https://marco.org/">Marco Arment</a></p>
+        <p><a href="https://divinations.substack.com/p/the-open-podcast-ecosystem-is-dying">free and open podcasts</a></p>
+        <p><a href="https://brave.com/">Brave</a></p>
+        <p><a href="https://signal.org/en/">Signal</a></p>
+        <p><a href="https://telegram.org/">Telegram</a></p>
+        <p><a href="https://usefathom.com/">Fathom Analytics</a></p>
+        <p><a href="https://www.reddit.com/r/linux/comments/3038d4/when_was_the_first_year_of_the_linux_desktop/">the year of Linux on the desktop</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Flaming_(Internet)">flame war</a></p>
+        <p><a href="https://www.mensjournal.com/style/best-khaki-pants-men/">khaki pants</a></p>
+        <p><a href="https://daringfireball.net/">Daring Fireball</a></p>
+        <p><a href="https://museapp.com/email-updates/">Muse email updates</a></p>
+        <p><a href="https://www.inkandswitch.com/muse-studio-for-ideas.html#design-goals">no spinners</a></p>
+        <p><a href="https://www.gwern.net/docs/technology/2004-03-30-shirky-situatedsoftware.html">Situated Software</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>55:45</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/8-principled-products.mp3" length="26898170" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/8-principled-products.mp3" length="26898170" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>7 // From prototype to product with Lachlan Campbell</title>
+      <itunes:title>7 // From prototype to product with Lachlan Campbell</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Lachlan Campbell</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Lachlan Campbell</itunes:author>
+      <pubDate>Wed, 24 Jun 2020 09:24:41 +0000</pubDate>
+      <link>https://museapp.com/podcast/7-from-prototype-to-product</link>
+      <guid>https://museapp.com/podcast/7-from-prototype-to-product</guid>
+      <description><![CDATA[
+        <p>Lachlan Campbell of Hack Club joins Mark and Adam to talk about path from research prototype to released product.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://lachlanjc.me/">Lachlan Campbell</a></p>
+        <p><a href="https://hackclub.com/">Hack Club</a></p>
+        <p><a href="https://itp.nyu.edu/ima/">interactive media arts at NYU</a></p>
+        <p><a href="https://notebook.lachlanjc.me/2019-11-05_real_web_development_on_ipad/">Real web development on iPad</a></p>
+        <p><a href="https://notebook.lachlanjc.me/2020-04-13_fonts_on_ipad/">Fonts on iPad</a></p>
+        <p><a href="https://www.goodnotes.com/">GoodNotes</a></p>
+        <p><a href="https://ia.net/writer">iA Writer</a></p>
+        <p><a href="https://apps.apple.com/us/app/shortcuts/id915249334">Shortcuts</a></p>
+        <p><a href="https://www.nngroup.com/articles/usability-testing-101/">usability tests</a></p>
+        <p><a href="https://www.agilealliance.org/glossary/mvp/">Minimum Viable Product</a></p>
+        <p><a href="https://www.notion.so/">Notion</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Software_release_life_cycle">software release life cycle</a></p>
+        <p><a href="https://slate.com/news-and-politics/2009/07/why-google-kept-gmail-in-beta-for-so-many-years.html">Gmail beta lasted five years</a></p>
+        <p><a href="https://www.inkandswitch.com/muse-studio-for-ideas.html#excerpting">excerpting and wormholes</a></p>
+        <p><a href="https://www.inkandswitch.com/muse-studio-for-ideas.html#shelf">shelf</a></p>
+        <p><a href="https://developer.apple.com/testflight/">TestFlight</a></p>
+        <p><a href="https://www.inkandswitch.com/local-first.html#longevity">The Long Now</a></p>
+        <p><a href="https://store.steampowered.com/earlyaccessfaq/?snr=1_200_200_Early+Access">Steam Early Access</a></p>
+        <p><a href="https://www.kickstarter.com/">Kickstarter</a></p>
+        <p><a href="https://www.patreon.com/">Patreon</a></p>
+        <p><a href="https://www.futurefonts.xyz/">Future Fonts</a></p>
+        <p><a href="https://devcenter.heroku.com/categories/labs">Heroku Labs</a></p>
+        <p><a href="https://www.androidauthority.com/gmail-labs-818310/">Gmail Labs</a></p>
+        <p><a href="https://ia.net/writer/support/ios/settings">iA Writer / Settings</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>38:28</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/7-from-prototype-to-product.mp3" length="46295527" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/7-from-prototype-to-product.mp3" length="46295527" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>6 // Human-Computer Interaction</title>
+      <itunes:title>6 // Human-Computer Interaction</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+      <pubDate>Fri, 12 Jun 2020 14:30:23 +0000</pubDate>
+      <link>https://museapp.com/podcast/6-human-computer-interaction</link>
+      <guid>https://museapp.com/podcast/6-human-computer-interaction</guid>
+      <description><![CDATA[
+        <p>HCI (Human-Computer Interaction) studies how people relate to their digital tools. Mark and Adam discuss their journey into HCI, how others can get into the field, and its influence on Muse.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://d37ugbyn3rpeym.cloudfront.net/stripe-press/TAODSAE_zine_press.pdf">You and Your Research</a></p>
+        <p><a href="https://press.stripe.com/#the-art-of-doing-science-and-engineering">The Art and Science of Doing Engineering</a></p>
+        <p><a href="https://press.stripe.com">Stripe Press</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Human-computer_interaction">Human-Computer Interaction</a></p>
+        <p><a href="https://www.inkandswitch.com">Ink & Switch</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/PARC_%28company%29">Xerox PARC</a></p>
+        <p><a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a></p>
+        <p><a href="https://dl.acm.org/doi/abs/10.1145/3132272.3134117">MeetAlive: Room-Scale Omni-Directional Display System</a></p>
+        <p><a href="http://chi2019.acm.org/for-attendees/proceedings/">CHI 2019 proceedings</a></p>
+        <p><a href="https://dl.acm.org/doi/10.1145/3290605.3300870">Peripheral Notifications in Large Displays</a></p>
+        <p><a href="https://www.microsoft.com/en-us/research/publication/sensing-posture-aware-pentouch-interaction-on-tablets/">Sensing Posture-Aware Pen+Touch Interactions on Tablets</a></p>
+        <p><a href="https://mitpress.mit.edu/books/small-matter-programming">A Small Matter of Programming</a></p>
+        <p><a href="http://christianremy.com/_publications/2019_candc.pdf">Strategies in Creative Professionals&rsquo; Use of Digital Tools</a></p>
+        <p><a href="https://mitpress.mit.edu/books/science-managing-our-digital-stuff">The Science of Managing Our Digital Stuff</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Associative_memory_(psychology)">Associative memory</a></p>
+        <p><a href="https://benjaminreinhardt.com">Ben Reinhardt</a> and <a href="https://benjaminreinhardt.com/innovation-org-principles/">innovation orgs</a></p>
+        <p><a href="http://worrydream.com">Brett Victor</a> and <a href="https://dynamicland.org">Dynamicland</a></p>
+        <p><a href="https://andymatuschak.org">Andy Matuschak</a> and <a href="https://quantum.country">a new mnemonic medium</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Jonathan_Blow">Johnathon blow</a> and <a href="http://braid-game.com">Braid</a>, <a href="https://inductive.no/jai/">Jai programming language</a></p>
+        <p><a href="https://www.youtube.com/watch?v=f84n5oFoZBc">Rich Hickey&rsquo;s Hammock Driven Development</a></p>
+        <p><a href="https://danluu.com/">Dan Luu</a> and <a href="https://danluu.com/input-lag/">Computer latency</a></p>
+        <p><a href="https://martin.kleppmann.com">Martin Kleppmann</a> and <a href="https://martin.kleppmann.com/papers/local-first.pdf">Local-First Software</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>50:08</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/6-human-computer-interaction.mp3" length="60314788" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/6-human-computer-interaction.mp3" length="60314788" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>5 // Gesture Programming for the iPad</title>
+      <itunes:title>5 // Gesture Programming for the iPad</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan, Julia Roggatz</dc:creator>
+      <itunes:author>Adam Wiggins, Mark McGranaghan, Julia Roggatz</itunes:author>
+      <pubDate>Tue, 26 May 2020 11:19:15 +0000</pubDate>
+      <link>https://museapp.com/podcast/5-gesture-programming-for-the-ipad</link>
+      <guid>https://museapp.com/podcast/5-gesture-programming-for-the-ipad</guid>
+      <description><![CDATA[
+        <p>Developing an iPad app with a rich gesture space and unique spatial-zooming visual model is technically challenging. Julia joins Mark and Adam to break down the software engineering behind Muse.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://developer.apple.com/documentation/xcode">Xcode</a></p>
+        <p><a href="https://help.apple.com/simulator/mac/current/#/deve44b57b2a">iOS Simulator</a></p>
+        <p><a href="https://swift.org/">Swift</a></p>
+        <p><a href="https://developer.apple.com/documentation/coredata">Core Data</a></p>
+        <p><a href="https://firebase.google.com/">Firebase</a></p>
+        <p><a href="https://betanews.com/2020/03/28/zoom-data-sharing-update/">Zoom privacy issue with Facebook SDK</a></p>
+        <p><a href="https://www.ruby-lang.org/en/">Ruby</a></p>
+        <p><a href="https://www.postgresql.org/">Postgres</a></p>
+        <p><a href="https://www.heroku.com/">Heroku</a></p>
+        <p><a href="https://mcfunley.com/choose-boring-technology">Choose Boring Technology</a></p>
+        <p><a href="https://blog.heroku.com/how-dataclips-power-insights-at-heroku">Dataclips</a></p>
+        <p><a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/gestures/">Gestures as defined by Apple&rsquo;s Human Interface Guidelines</a></p>
+        <p><a href="https://www.youtube.com/watch?v=yw1AVD_0_w8">Shannon Hughes / Detangling Gesture Recognizers</a></p>
+        <p><a href="https://www.omnigroup.com/">The Omni Group</a></p>
+        <p><a href="https://github.com/whattherestimefor/GestureVisualization">GestureVisualization</a></p>
+        <p><a href="https://developer.apple.com/documentation/uikit/uigesturerecognizer">UIGestureRecognizer</a></p>
+        <p><a href="https://museapp.com/handbook#to-scroll">two-finger scrolling in Muse</a></p>
+        <p><a href="https://www.inkandswitch.com/muse-studio-for-ideas.html#design-goals">Muse design goals</a></p>
+        <p><a href="https://museapp.com/handbook#to-move-between-boards">card-carry maneuver</a></p>
+        <p><a href="https://museapp.com/handbook#the-inbox">the inbox</a></p>
+        <p><a href="https://developer.apple.com/library/archive/documentation/ToolsLanguages/Conceptual/Xcode_Overview/ExaminingtheViewHierarchy.html">view hierarchy</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Loading_screen">loading screens</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Open_world">open-world games</a></p>
+        <p><a href="https://museapp.com/handbook#to-switch-tools">stylus swipe from screen edge to switch tools</a></p>
+        <p><a href="https://developer.apple.com/documentation/uikit/uiscreenedgepangesturerecognizer">UIScreenEdgePanGestureRecognizer</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Unix_shell">unix terminal</a></p>
+        <p><a href="http://web.cecs.pdx.edu/~rootd/catdoc/guide/TheGuide_38.html">ctrl-C to interrupt a program in unix</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Finite-state_machine">state machine</a></p>
+      ]]></description>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>38:35</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/5-gesture-programming-for-the-ipad.mp3" length="46448405" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/5-gesture-programming-for-the-ipad.mp3" length="46448405" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>4 // Partnership, Freedom, and Responsibility</title>
+      <itunes:title>4 // Partnership, Freedom, and Responsibility</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan</dc:creator>
+      <pubDate>Mon, 11 May 2020 14:42:48 +0000</pubDate>
+      <link>https://museapp.com/podcast/4-partnership-freedom-responsibility</link>
+      <guid>https://museapp.com/podcast/4-partnership-freedom-responsibility</guid>
+      <description><![CDATA[
+        <p>The company behind Muse is structured as a small partnership. Mark and Adam talk about why the team wanted this unusual approach and how it's working so far.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://museapp.com/engineering-partner">Muse is Hiring an Engineering Partner</a></p>
+        <p><a href="https://carta.com/blog/equity-101-stock-option-basics/">startup employee stock options</a></p>
+        <p><a href="https://igormroz.com/documents/netflix_culture.pdf">Netflix Freedom & Responsibility Culture</a></p>
+        <p><a href="https://www.startups.com/library/expert-advice/startup-founders-and-cofounders">startup founder</a></p>
+        <p><a href="https://www.goodreads.com/book/show/626601.Pour_Your_Heart_Into_It">Starbucks / Howard Shultz</a></p>
+        <p><a href="https://library.gv.com/how-google-sets-goals-okrs-a1f69b0b72c7">Google OKRs (Objectives and Key Results)</a></p>
+        <p><a href="https://trailhead.salesforce.com/en/content/learn/modules/manage_the_sfdc_organizational_alignment_v2mom/msfw_oav2m_creating_org_alignment_v2mom">Salesforce V2MOM (Vison, Values, Methods, Obstacles, Measures)</a></p>
+        <p><a href="https://hbr.org/2017/02/how-aligned-is-your-organization">alignment</a></p>
+        <p><a href="https://www.goodreads.com/book/show/900979.Management">Management by Peter Drucker</a></p>
+        <p><a href="https://blog.spendesk.com/en/expense-policy-guide">expensing</a></p>
+        <p><a href="https://cs.stanford.edu/~rishig/90-day-exercise-windows.html">exercise window</a></p>
+        <p><a href="https://www.holloway.com/definitions/vesting">vesting and cliffs</a></p>
+        <p><a href="https://www.holloway.com/definitions/dilution">dilution</a></p>
+        <p><a href="https://gawker.com/5040567/vesting-in-peace">vest in peace</a></p>
+        <p><a href="https://www.holloway.com/definitions/capitalization-table-or-cap-table">cap table</a></p>
+        <p><a href="https://en.wiktionary.org/wiki/re-up">re-up</a></p>
+        <p><a href="https://marketbusinessnews.com/financial-glossary/agency-definition/">agency</a></p>
+        <p><a href="https://www.imdb.com/title/tt0804503/">Mad Men</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Professional_services">professonal services</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Cult_of_personality">cult of personality</a></p>
+        <p><a href="https://www.goodreads.com/book/show/18114522-the-disneyland-story">Disney company transition after Walt's death</a></p>
+        <p><a href="https://thoughtbot.com/blog/8-simple-rules-for-dating-my-business-our-hiring">trial project / pilot project</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Indie">indie</a></p>
+      ]]></description>
+      <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>37:20</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/4-partnership-freedom-responsibility.mp3" length="45211988" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/4-partnership-freedom-responsibility.mp3" length="45211988" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>3 // Read the Fabulous Manual</title>
+      <itunes:title>3 // Read the Fabulous Manual</itunes:title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan</dc:creator>
+      <pubDate>Wed, 29 Apr 2020 10:02:54 +0000</pubDate>
+      <link>https://museapp.com/podcast/3-read-the-fabulous-manual</link>
+      <guid>https://museapp.com/podcast/3-read-the-fabulous-manual</guid>
+      <description><![CDATA[
+        <p>Professional tools need a manual to explain how they work, but not all manuals are created equal. Mark and Adam discuss their mutual love of manuals, what makes a manual great, and why we chose video as the primary medium for the Muse Interface Handbook.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://museapp.com/handbook">Muse Interface Handbook</a></p>
+        <p><a href="https://www.seattlecoffeegear.com/assets/user-manuals/rocket/rocket-espresso-instruction-manual.pdf">How to use your Rocket Espresso machine and make beautiful coffee</a></p>
+        <p><a href="https://gobyexample.com/">Go by Example</a></p>
+        <p><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></p>
+        <p><a href="https://ulysses.app/tutorials/">Ulysses tutorials</a></p>
+        <p><a href="https://workingcopyapp.com/manual.html">Working Copy Users&lsquo; guide</a></p>
+        <p><a href="https://support.goodnotes.com/hc/en-us/categories/360000080575-GoodNotes-5">GoodNotes how-to guides</a></p>
+        <p><a href="https://procreate.art/handbook/introduction">Procreate Handbook</a></p>
+        <p><a href="https://stripe.com/docs/api">Stripe API Reference</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Man_page">unix man pages</a></p>
+        <p><a href="https://medium.com/@samo.burja/the-youtube-revolution-in-knowledge-transfer-cb701f82096a">The YouTube Revolution in Knowledge Transfer</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Tacit_knowledge">tacit knowledge</a></p>
+        <p><a href="https://www.youtube.com/watch?v=0YhJxJZOWBw#t=8s">The Matrix / I know Kung Fu</a></p>
+        <p><a href="https://devcenter.heroku.com/categories/building-add-ons">Building Heroku Add-ons</a></p>
+        <p><a href="https://www.wordnik.com/words/glossary">glossary</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Mental_model">mental model</a></p>
+        <p><a href="https://www.inkandswitch.com/muse-studio-for-ideas.html">Muse design article</a></p>
+        <p><a href="https://www.inkandswitch.com/capstone-manuscript.html">Capstone manuscript</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Chroma_key">green screen</a></p>
+        <p><a href="https://iorama.studio/Looom-user-guide">Looom User Guide</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/RTFM">RTFM</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Out-of-box_experience">out-of-box experience (OOBE)</a></p>
+        <p><a href="https://bear.app/">Bear</a></p>
+        <p><a href="https://www.notion.so/Notion-Template-Gallery-181e961aeb5c4ee6915307c0dfd5156d">Notion templates</a></p>
+        <p><a href="https://www.vim.org/">vi</a></p>
+      ]]></description>
+      <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>37:56</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/3-read-the-fabulous-manual.mp3" length="45949020" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/3-read-the-fabulous-manual.mp3" length="45949020" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>2 // Having Good Ideas</title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan</dc:creator>
+      <pubDate>Thu, 16 Apr 2020 12:41:36 +0000</pubDate>
+      <link>https://museapp.com/podcast/2-having-good-ideas</link>
+      <guid>https://museapp.com/podcast/2-having-good-ideas</guid>
+      <description><![CDATA[
+        <p>Ideas are foundational for creative and knowledge work. Mark and Adam talk about fodder, making time to ideate, and the value of fresh surroundings.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://en.wikipedia.org/wiki/Ideation_(creative_process)">ideation</a></p>
+        <p><a href="https://www.imdb.com/title/tt0412142/">House M.D.</a></p>
+        <p><a href="https://www.goodreads.com/book/show/8034188-where-good-ideas-come-from">Where Good Ideas Come from</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Video_essay">video essays</a></p>
+        <p><a href="https://help.open.ac.uk/active-reading">active reading</a></p>
+        <p><a href="https://us.moleskine.com/en/">Moleskine</a></p>
+        <p><a href="https://fieldnotesbrand.com/">Field Notes</a></p>
+        <p><a href="https://www.post-it.com/3M/en_US/post-it/">post-it notes</a></p>
+        <p><a href="https://notebookofghosts.com/2018/02/25/a-brief-guide-to-keeping-a-commonplace-book/">commonplace book</a></p>
+        <p><a href="https://www.omnigroup.com/omnigraffle/ios/">OmniGraffle</a></p>
+        <p><a href="https://mindnode.com/">MindNode</a></p>
+        <p><a href="https://www.google.com/keep/">Google Keep</a></p>
+        <p><a href="https://bear.app/">Bear</a></p>
+        <p><a href="https://getdrafts.com/">Drafts</a></p>
+        <p><a href="https://basecamp.com/shapeup">Shape Up</a></p>
+        <p><a href="https://getpocket.com/">Pocket</a></p>
+        <p><a href="https://www.dropbox.com/">Dropbox</a></p>
+        <p><a href="https://www.goodreads.com/">Goodreads</a></p>
+        <p><a href="https://marginalrevolution.com/marginalrevolution/2015/04/tyler-cowens-three-laws.html">Cowen&lsquo;s Second Law</a></p>
+        <p><a href="https://www.inkandswitch.com/slow-software.html">Slow Software</a></p>
+        <p><a href="https://gist.github.com/adamwiggins/5687294#divide-and-conqueor">Wiggins&lsquo; Law</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Breadth-first_search">breadth-first</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Vertical_slice">vertical slice</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Flow_(psychology)">state of flow</a></p>
+        <p><a href="https://www.calnewport.com/books/deep-work/">Deep Work</a></p>
+        <p><a href="https://academia.stackexchange.com/questions/8557/what-is-an-academic-sabbatical">academic sabbatical</a></p>
+        <p><a href="https://gettingthingsdone.com/what-is-gtd/">Getting Things Done</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Mindfulness">mindfulness</a></p>
+      ]]></description>
+      <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>40:42</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:title>2 // Having Good Ideas</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/2-having-good-ideas.mp3" length="49257228" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/2-having-good-ideas.mp3" length="49257228" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+    <item>
+      <title>1 // Tool Switching</title>
+      <dc:creator>Adam Wiggins, Mark McGranaghan</dc:creator>
+      <pubDate>Tue, 24 Mar 2020 19:18:07 +0000</pubDate>
+      <link>https://museapp.com/podcast/1-tool-switching</link>
+      <guid>https://museapp.com/podcast/1-tool-switching</guid>
+      <description><![CDATA[
+        <p><a href="https://museapp.com/">Muse</a> has a modeless interface with no onscreen toolbars. Mark and Adam talk about the long research journey that led us here.</p>
+        <p><strong><a href="https://twitter.com/museapphq">@MuseAppHQ</a></strong></p>
+        <p><strong><a href="mailto:hello@museapp.com">hello@museapp.com</a></strong></p>
+        <hr/>
+        <h2>Show notes</h2>
+        <p><a href="https://en.wikipedia.org/wiki/Mode_(user_interface)">modelessness</a></p>
+        <p><a href="https://www.goodreads.com/en/book/show/344726">The Humane Interface</a></p>
+        <p><a href="https://tomayko.com/blog/2008/administrative-debris">administrative debris</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Mode_(user_interface)#Quasimodes">quasimode</a></p>
+        <p><a href="https://www.inkandswitch.com/tablet-platform-showdown.html">tablet platforms</a></p>
+        <p><a href="https://medium.com/@hirodusk/the-ipad-as-a-fast-precise-tool-for-creativity-21384ea18659">command glyphs</a></p>
+        <p><a href="https://www.inkandswitch.com/muse-studio-for-ideas.html">Muse design article</a></p>
+        <p><a href="https://procreate.art/">Procreate</a></p>
+        <p><a href="https://paper.bywetransfer.com/">Paper by FiftyThree</a></p>
+        <p><a href="https://developer.apple.com/design/human-interface-guidelines/">Apple Human Interface Guidelines</a></p>
+        <p><a href="https://www.inkandswitch.com/">Ink &amp; Switch</a></p>
+        <p><a href="https://www.microsoft.com/en-us/p/surface-studio-2/8sbjxm0m58t4?activetab=pivot%3aoverviewtab">Surface Studio</a></p>
+        <p><a href="https://www.microsoft.com/en-us/p/surface-dial/925r551sktgn?cid=msft_web_collection">Surface Dial</a></p>
+        <p><a href="https://gsuite.google.com/products/jamboard/">Google Jamboard</a></p>
+        <p><a href="https://developer.apple.com/mac-catalyst/">Catalyst</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/PARC_(company)">Xerox PARC</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Bell_Labs">Bell Labs</a></p>
+        <p><a href="https://concepts.app/">Concepts</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Technical_pen">technical pens</a></p>
+        <p><a href="https://iorama.studio/">Looom</a></p>
+        <p><a href="https://teenage.engineering/store/ortho-remote/">Teenage Engineering ortho remote</a></p>
+        <p><a href="https://www.wacom.com/">Wacom tablets</a></p>
+      ]]></description>
+      <itunes:author>Adam Wiggins, Mark McGranaghan</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>42:01</itunes:duration>
+      <itunes:image href="https://media.museapp.com/podcast/metamuse-cover-2.png" />
+      <itunes:title>1 // Tool Switching</itunes:title>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://media.museapp.com/podcast/1-tool-switching.mp3" length="50839664" type="audio/mpeg"/>
+      <media:content url="https://media.museapp.com/podcast/1-tool-switching.mp3" length="50839664" type="audio/mpeg" isDefault="true" medium="audio"/>
+    </item>
+
+  </channel>
+</rss>
