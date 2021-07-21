@@ -14,7 +14,11 @@ code {
 
 #showpicker {
   padding: 10px;
-  padding-top: 50px;
+  position: fixed;
+  top: 70px;
+  bottom: 0px;
+  overflow-y: scroll;
+  width: 100%;
 }
 
 #showpicker ul {
@@ -35,6 +39,7 @@ code {
   background-color: darkgrey;
   width: 100%;
   position: fixed;
+  height: 50px;
   top: 0;
   padding: 10px;
 }
