@@ -1,7 +1,6 @@
 import Parser from 'rss-parser';
 import React, { useEffect, useState, useRef } from 'react';
 
-import logo from './logo.svg';
 import './App.css';
 
 var audio: HTMLAudioElement | null;
