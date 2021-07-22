@@ -216,6 +216,7 @@ function App() {
 
       var shows = [] as Episode[];
       // A few test shows
+      shows.push({name: 'Toby Schachman: Cuttle, Apparatus, and Recursive Drawing', url: 'https://traffic.omny.fm/d/clips/c4157e60-c7f8-470d-b13f-a7b30040df73/564f493f-af32-4c48-862f-a7b300e4df49/27b6ee00-c968-4889-bb61-ad6c000a9322/audio.mp3?utm_source=Podcast&in_playlist=ac317852-8807-44b8-8eff-a7b300e4df52', guid: '27b6ee00-c968-4889-bb61-ad6c000a9322', indexInSource: 4});
       shows.push({name: 'Metamuse', url: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3', guid: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3', indexInSource: 0});
       shows.push({name: 'Psytrance', url: 'https://stream.psychedelik.com:8000/listen.mp3', guid: 'https://stream.psychedelik.com:8000/listen.mp3', indexInSource: 1});
       shows.push({name: 'Drum N Bass', url: 'https://stream.psychedelik.com:8030/listen.mp3', guid: 'https://stream.psychedelik.com:8030/listen.mp3', indexInSource: 2});
