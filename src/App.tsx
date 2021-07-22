@@ -44,6 +44,8 @@ function Player(props: PlayerProps) {
   const [duration, setDuration] = useState(undefined as number | undefined);
   const [speed, setSpeed] = useState(1);
 
+  let hasDuration = duration && duration !== Infinity;
+
   useEffect(() => {
     if (show.url && show.url !== previousShow?.url) {
       console.log(`set show to ${show.name} at URL: ${show.url}`);
@@ -86,9 +88,15 @@ function Player(props: PlayerProps) {
   if (currentTime) {
     currentTimeString = timeStringFromSeconds(currentTime);
   }
-  if (duration && duration !== Infinity) {
+  if (duration && hasDuration) {
     currentTimeString += ` of ${timeStringFromSeconds(duration)}`;
   }
+
+  const interactionEnd = (event: any) => {
+    if (audio) {
+      audio.currentTime = (event.target as HTMLInputElement).valueAsNumber;
+    }
+  };
 
   return (
     <div id="player">
@@ -96,8 +104,16 @@ function Player(props: PlayerProps) {
         {buttonText}
       </button>
       <div id="showname">{show.name || ''}</div>
-      <div id="currenttime">{currentTimeString}</div> 
-      <input id="speed" type="range" value={speed} min="0.5" max="2" step="0.25" onInput={(event) => {setSpeed((event.target as HTMLInputElement).valueAsNumber)}}/>
+      <div id="playbackbox">
+        <input id="timeslider" type="range" value={hasDuration ? currentTime : 0}
+          disabled={!hasDuration} min={0} max={duration}
+          onChange={(event) => {setCurrentTime((event.target as HTMLInputElement).valueAsNumber)}}
+          onMouseUp={interactionEnd}
+          onTouchEnd={interactionEnd}
+        />
+        <div id="currenttime">{currentTimeString}</div> 
+      </div>
+      <input id="speed" type="range" value={speed} min="0.5" max="2" step="0.25" onInput={(event) => {setSpeed((event.target as HTMLInputElement).valueAsNumber)}} />
     </div>
   );
 }

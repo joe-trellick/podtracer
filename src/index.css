@@ -46,3 +46,11 @@ code {
   display: flex;
   gap: 10px;
 }
+
+#playbackbox {
+  width: 200px;
+}
+
+#timeslider {
+  width: 100%;
+}
