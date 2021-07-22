@@ -8,6 +8,7 @@ var audio: HTMLAudioElement | null;
 interface Show {
   name?: string;
   url?: string;
+  durationString?: string;
 }
 
 function usePrevious(value: any) {
@@ -38,6 +39,30 @@ function timeStringFromSeconds(seconds: number): string {
   }
 }
 
+function durationStringToSeconds(durationString: string | undefined): number | undefined {
+  if (!durationString) {
+    return undefined;
+  }
+
+  let seconds = 0;
+  const parts = durationString.split(':').reverse();
+  if (parts.length == 0) {
+    return undefined;
+  }
+
+  let multiplier = 1;
+  parts.forEach(partString => {
+    const partNumber = Number.parseInt(partString);
+    if (partNumber == NaN) {
+      return undefined;
+    }
+    seconds += partNumber * multiplier;
+    multiplier *= 60;  // fails if you get into days or something
+  });
+
+  return seconds;
+}
+
 function Player(props: PlayerProps) {
   const {playing, setPlaying, show, previousShow} = props;
   const [currentTime, setCurrentTime] = useState(0 as number | undefined);
@@ -53,6 +78,8 @@ function Player(props: PlayerProps) {
       audio?.pause();  // Stop any previous player
       audio = new Audio(show.url);
       setSpeed(audio.playbackRate);
+      setDuration(durationStringToSeconds(show.durationString));
+      setCurrentTime(0);
       audio.addEventListener('timeupdate', (event) => {
         let source = event.target as HTMLAudioElement;
         if ((timeSlider.current as unknown as HTMLInputElement).dataset.interacting !== "true") {
@@ -149,6 +176,7 @@ function ShowPicker(props: any) {
   );
 }
 
+type CustomItem = {itunesDuration: string};
 
 function App() {
   const [playing, setPlaying] = useState(false);
@@ -158,7 +186,11 @@ function App() {
   const [posts, setPosts] = useState([] as Show[]);
 
   useEffect(() => {
-    const parser = new Parser();
+    const parser = new Parser<CustomItem>({
+      customFields: {
+        item: [['itunes:duration', 'itunesDuration']]
+      }
+    });
 
     const fetchPosts = async () => {
       // NOTE: Currently mocked up with local file to avoid CORS issues.
@@ -175,7 +207,7 @@ function App() {
 
       feed.items.forEach(item => {
         console.log(`* ${item.title} at ${item.link} with ${item.enclosure?.url}`);
-        shows.push({name: item.title, url: item.enclosure?.url})
+        shows.push({name: item.title, url: item.enclosure?.url, durationString: item.itunesDuration})
       });
       setPosts(shows);
       // setPosts(feed.items);
