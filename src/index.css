@@ -95,6 +95,7 @@ code {
 
 #playercontrols button {
   width: 75px;
+  border-radius: 0;
 }
 
 #playertimes {

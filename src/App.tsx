@@ -1,5 +1,5 @@
 import Parser from 'rss-parser';
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useLayoutEffect, useState, useRef } from 'react';
 
 import './App.css';
 import * as storage from './Storage';
@@ -106,7 +106,7 @@ function Player(props: PlayerProps) {
     }
   }, [playing, show, previousShow]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     console.log(`playing is now ${playing}`);
     if (playing) {
       audio?.play();
