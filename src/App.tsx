@@ -42,12 +42,14 @@ function Player(props: PlayerProps) {
   const {playing, setPlaying, show, previousShow} = props;
   const [currentTime, setCurrentTime] = useState(0 as number | undefined);
   const [duration, setDuration] = useState(undefined as number | undefined);
+  const [speed, setSpeed] = useState(1);
 
   useEffect(() => {
     if (show.url && show.url !== previousShow?.url) {
       console.log(`set show to ${show.name} at URL: ${show.url}`);
       audio?.pause();  // Stop any previous player
       audio = new Audio(show.url);
+      setSpeed(audio.playbackRate);
       audio.addEventListener('timeupdate', (event) => {
         let source = event.target as HTMLAudioElement;
         setCurrentTime(source.currentTime);
@@ -72,6 +74,13 @@ function Player(props: PlayerProps) {
     }
   }, [playing]);
 
+  useEffect(() => {
+    console.log(`speed set to ${speed}`);
+    if (audio) {
+       audio.playbackRate = speed;
+    }
+  }, [speed]);
+
   const buttonText = playing ? 'Stop' : 'Play';
   let currentTimeString = '';
   if (currentTime) {
@@ -88,6 +97,7 @@ function Player(props: PlayerProps) {
       </button>
       <div id="showname">{show.name || ''}</div>
       <div id="currenttime">{currentTimeString}</div> 
+      <input id="speed" type="range" value={speed} min="0.5" max="2" step="0.25" onInput={(event) => {setSpeed((event.target as HTMLInputElement).valueAsNumber)}}/>
     </div>
   );
 }
