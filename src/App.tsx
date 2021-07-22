@@ -25,6 +25,19 @@ interface PlayerProps {
   previousShow: Show;
 }
 
+function timeStringFromSeconds(seconds: number): string {
+  const roundedSeconds = Math.round(seconds);
+  const hourInSeconds = 60 * 60;
+  const secondsString = `${roundedSeconds % 60}`.padStart(2, '0');
+  const minutesString = (Math.trunc(roundedSeconds / 60) % 60).toString();
+  if (seconds > hourInSeconds) {
+    const hours = Math.trunc(roundedSeconds / hourInSeconds);
+    return `${hours}:${minutesString.padStart(2, '0')}:${secondsString}`;
+  } else {
+    return `${minutesString}:${secondsString}`;
+  }
+}
+
 function Player(props: PlayerProps) {
   const {playing, setPlaying, show, previousShow} = props;
   const [currentTime, setCurrentTime] = useState(0 as number | undefined);
@@ -55,8 +68,7 @@ function Player(props: PlayerProps) {
   const buttonText = playing ? 'Stop' : 'Play';
   var currentTimeString = '';
   if (currentTime) {
-    const secondString = `${Math.round(currentTime) % 60}`.padStart(2, '0');
-    currentTimeString = `${Math.trunc(Math.round(currentTime) / 60)}:${secondString}`;
+    currentTimeString = timeStringFromSeconds(currentTime);
   }
 
   return (
