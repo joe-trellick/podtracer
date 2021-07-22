@@ -75,6 +75,10 @@ function Player(props: PlayerProps) {
       if (audio && playback?.playbackSeconds) {
         audio.currentTime = playback.playbackSeconds;
       }
+      if (audio && playback?.playbackSpeed) {
+        audio.playbackRate = playback.playbackSpeed;
+        setSpeed(playback.playbackSpeed);
+      }
       if (playing) {
         audio?.play();
       }
@@ -120,11 +124,11 @@ function Player(props: PlayerProps) {
 
   useEffect(() => {
     if (show.guid) {
-      const playback: EpisodePlayback = {episodeGuid: show.guid, lastPlayed: new Date(), playbackSeconds: currentTime};
+      const playback: EpisodePlayback = {episodeGuid: show.guid, lastPlayed: new Date(), playbackSeconds: currentTime, playbackSpeed: speed};
       console.log("Attempting to store playback", playback);
       storage.putEpisodePlayback(db, playback);
     }
-  }, [show, currentTime]);
+  }, [show, currentTime, speed]);
 
   const buttonText = playing ? 'Stop' : 'Play';
   let currentTimeString = '';

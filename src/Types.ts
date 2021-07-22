@@ -11,5 +11,6 @@ export interface EpisodePlayback {
     episodeGuid: string;
     lastPlayed: Date;
     playbackSeconds?: number;  // Seconds into the episode last played; things like streams don't have this
+    playbackSpeed?: number;
 }
   
