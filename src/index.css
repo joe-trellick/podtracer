@@ -41,5 +41,8 @@ code {
   position: fixed;
   height: 50px;
   top: 0;
+  align-self: flex-start;
   padding: 10px;
+  display: flex;
+  gap: 10px;
 }

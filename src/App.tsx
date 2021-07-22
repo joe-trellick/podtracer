@@ -27,12 +27,16 @@ interface PlayerProps {
 
 function Player(props: PlayerProps) {
   const {playing, setPlaying, show, previousShow} = props;
+  const [currentTime, setCurrentTime] = useState(0 as number | undefined);
 
   useEffect(() => {
     if (show.url && show.url !== previousShow?.url) {
       console.log(`set show to ${show.name} at URL: ${show.url}`);
       audio?.pause();  // Stop any previous player
       audio = new Audio(show.url);
+      audio.addEventListener('timeupdate', (event) => {
+        setCurrentTime(audio?.currentTime);
+      })
       if (playing) {
         audio.play();
       }
@@ -49,13 +53,19 @@ function Player(props: PlayerProps) {
   }, [playing]);
 
   const buttonText = playing ? 'Stop' : 'Play';
+  var currentTimeString = '';
+  if (currentTime) {
+    const secondString = `${Math.round(currentTime) % 60}`.padStart(2, '0');
+    currentTimeString = `${Math.trunc(Math.round(currentTime) / 60)}:${secondString}`;
+  }
 
   return (
     <div id="player">
       <button onClick={() => setPlaying(!playing)} disabled={show.url === undefined}>
         {buttonText}
       </button>
-      <div>{show.name || ''}</div>
+      <div id="showname">{show.name || ''}</div>
+      <div id="currenttime">{currentTimeString}</div> 
     </div>
   );
 }
