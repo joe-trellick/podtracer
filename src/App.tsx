@@ -181,7 +181,7 @@ function Player(props: PlayerProps) {
               </div>
             </div>
             <div id="speedcontrols">
-              <input id="speed" type="range" value={speed} min="0.5" max="2" step="0.25" onInput={(event) => {setSpeed((event.target as HTMLInputElement).valueAsNumber)}} />
+              <input id="speed" type="range" value={speed} min="0.5" max="2" step="0.25" disabled={!hasDuration} onInput={(event) => {setSpeed((event.target as HTMLInputElement).valueAsNumber)}} />
               <span>{speed}x</span>
             </div>
           </div>
