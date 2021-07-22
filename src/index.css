@@ -28,6 +28,7 @@ code {
 #showpicker li {
   list-style-type: none;
   cursor: default;
+  padding-bottom: 5px;
 }
 
 #showpicker li:hover {
@@ -47,8 +48,15 @@ code {
   gap: 10px;
 }
 
+#showname {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
 #playerart {
-  background-color: lightgray;
+  background-color: rgb(179, 179, 179);
   width: 150px;
   height: 150px;
 }
@@ -58,7 +66,27 @@ code {
 }
 
 #playbackbox {
-  width: 200px;
+  width: 50%;
+}
+
+#speed {
+  width: 10%;
+}
+
+#playervstack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#playercontrols {
+  display: flex;
+  height: 75px;
+  gap: 10px;
+}
+
+#playercontrols button {
+  width: 75px;
 }
 
 #timeslider {

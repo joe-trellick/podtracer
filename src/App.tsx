@@ -153,23 +153,27 @@ function Player(props: PlayerProps) {
       <div id="playerart">
         {show.imageUrl ? <img src={show.imageUrl} alt="Episode Art" /> : ''}
       </div>
-      <button onClick={() => setPlaying(!playing)} disabled={show.url === undefined}>
-        {buttonText}
-      </button>
-      <div id="showname">{show.name || ''}</div>
-      <div id="playbackbox">
-        <input id="timeslider" type="range" value={hasDuration ? currentTime : 0}
-          disabled={!hasDuration} min={0} max={duration}
-          onChange={(event) => {setCurrentTime((event.target as HTMLInputElement).valueAsNumber)}}
-          onMouseDown={interactionStart}
-          onTouchStart={interactionStart}
-          onMouseUp={interactionEnd}
-          onTouchEnd={interactionEnd}
-          ref={timeSlider}
-        />
-        <div id="currenttime">{currentTimeString}</div> 
+      <div id="playervstack">
+        <div id="showname">{show.name || ''}</div>
+        <div id="playercontrols">
+          <button onClick={() => setPlaying(!playing)} disabled={show.url === undefined}>
+            {buttonText}
+          </button>
+          <div id="playbackbox">
+            <input id="timeslider" type="range" value={hasDuration ? currentTime : 0}
+              disabled={!hasDuration} min={0} max={duration}
+              onChange={(event) => {setCurrentTime((event.target as HTMLInputElement).valueAsNumber)}}
+              onMouseDown={interactionStart}
+              onTouchStart={interactionStart}
+              onMouseUp={interactionEnd}
+              onTouchEnd={interactionEnd}
+              ref={timeSlider}
+            />
+            <div id="currenttime">{currentTimeString}</div> 
+          </div>
+          <input id="speed" type="range" value={speed} min="0.5" max="2" step="0.25" onInput={(event) => {setSpeed((event.target as HTMLInputElement).valueAsNumber)}} />
+        </div>
       </div>
-      <input id="speed" type="range" value={speed} min="0.5" max="2" step="0.25" onInput={(event) => {setSpeed((event.target as HTMLInputElement).valueAsNumber)}} />
     </div>
   );
 }
