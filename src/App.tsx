@@ -2,10 +2,12 @@ import Parser from 'rss-parser';
 import React, { useEffect, useState, useRef } from 'react';
 
 import './App.css';
+import * as storage from './Storage';
 
 var audio: HTMLAudioElement | null;
 
 interface Show {
+  guid: string;
   name?: string;
   url?: string;
   durationString?: string;
@@ -178,6 +180,8 @@ function ShowPicker(props: any) {
 
 type CustomItem = {itunesDuration: string};
 
+const db = storage.getDB();
+
 function App() {
   const [playing, setPlaying] = useState(false);
   const [activeShow, setActiveShow] = useState({} as Show);
@@ -201,16 +205,17 @@ function App() {
 
       var shows = [] as Show[];
       // A few test shows
-      shows.push({name: 'Metamuse', url: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3'});
-      shows.push({name: 'Psytrance', url: 'https://stream.psychedelik.com:8000/listen.mp3'});
-      shows.push({name: 'Drum N Bass', url: 'https://stream.psychedelik.com:8030/listen.mp3'});
+      shows.push({name: 'Metamuse', url: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3', guid: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3'});
+      shows.push({name: 'Psytrance', url: 'https://stream.psychedelik.com:8000/listen.mp3', guid: 'https://stream.psychedelik.com:8000/listen.mp3'});
+      shows.push({name: 'Drum N Bass', url: 'https://stream.psychedelik.com:8030/listen.mp3', guid: 'https://stream.psychedelik.com:8030/listen.mp3'});
 
-      feed.items.forEach(item => {
+      feed.items.forEach((item, i) => {
         console.log(`* ${item.title} at ${item.link} with ${item.enclosure?.url}`);
-        shows.push({name: item.title, url: item.enclosure?.url, durationString: item.itunesDuration})
+        let episode: Show = {guid: item.guid || item.link || `${url}@${i}`, name: item.title, url: item.enclosure?.url, durationString: item.itunesDuration}; 
+        shows.push(episode);
+        storage.putEpisode(db, episode);
       });
       setPosts(shows);
-      // setPosts(feed.items);
     }
 
     fetchPosts();
