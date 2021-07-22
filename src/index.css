@@ -74,6 +74,7 @@ code {
 }
 
 #playervstack {
+  width: calc(100% - 180px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,6 +88,13 @@ code {
 
 #playercontrols button {
   width: 75px;
+}
+
+#playertimes {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 #timeslider {

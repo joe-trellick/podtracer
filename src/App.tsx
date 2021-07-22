@@ -131,8 +131,9 @@ function Player(props: PlayerProps) {
   if (currentTime) {
     currentTimeString = timeStringFromSeconds(currentTime);
   }
+  let durationString = '';
   if (duration && hasDuration) {
-    currentTimeString += ` of ${timeStringFromSeconds(duration)}`;
+    durationString = timeStringFromSeconds(duration);
   }
 
   const interactionStart = (event: any) => {
@@ -169,7 +170,10 @@ function Player(props: PlayerProps) {
               onTouchEnd={interactionEnd}
               ref={timeSlider}
             />
-            <div id="currenttime">{currentTimeString}</div> 
+            <div id="playertimes">
+              <div id="currenttime">{currentTimeString}</div> 
+              <div id="duration">{durationString}</div>
+            </div>
           </div>
           <input id="speed" type="range" value={speed} min="0.5" max="2" step="0.25" onInput={(event) => {setSpeed((event.target as HTMLInputElement).valueAsNumber)}} />
         </div>
