@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from 'react';
 
 import './App.css';
 import * as storage from './Storage';
-import { EpisodePlayback, Show } from './Types';
+import { EpisodePlayback, Episode } from './Types';
 
 var audio: HTMLAudioElement | null;
 
@@ -18,8 +18,8 @@ function usePrevious(value: any) {
 interface PlayerProps {
   playing: boolean;
   setPlaying: (a: boolean) => void;
-  show: Show;
-  previousShow: Show;
+  show: Episode;
+  previousShow: Episode;
 }
 
 function timeStringFromSeconds(seconds: number): string {
@@ -177,7 +177,7 @@ function ShowPicker(props: any) {
   return (
     <div id="showpicker">
       <ul>
-      {shows.map((show: Show, i: number) => {
+      {shows.map((show: Episode, i: number) => {
         return (
           <li key={i} onClick={() => {setActiveShow(show)}}>
             {show.name}
@@ -195,10 +195,10 @@ const db = storage.getDB();
 
 function App() {
   const [playing, setPlaying] = useState(false);
-  const [activeShow, setActiveShow] = useState({} as Show);
-  const previousShow = usePrevious(activeShow) as unknown as Show;
+  const [activeShow, setActiveShow] = useState({} as Episode);
+  const previousShow = usePrevious(activeShow) as unknown as Episode;
 
-  const [posts, setPosts] = useState([] as Show[]);
+  const [posts, setPosts] = useState([] as Episode[]);
 
   useEffect(() => {
     const parser = new Parser<CustomItem>({
@@ -214,7 +214,7 @@ function App() {
       const feed = await parser.parseURL(url);
       console.log(`got feed with title ${feed.title}`);
 
-      var shows = [] as Show[];
+      var shows = [] as Episode[];
       // A few test shows
       shows.push({name: 'Metamuse', url: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3', guid: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3'});
       shows.push({name: 'Psytrance', url: 'https://stream.psychedelik.com:8000/listen.mp3', guid: 'https://stream.psychedelik.com:8000/listen.mp3'});
@@ -222,7 +222,7 @@ function App() {
 
       feed.items.forEach((item, i) => {
         console.log(`* ${item.title} at ${item.link} with ${item.enclosure?.url}`);
-        let episode: Show = {guid: item.guid || item.link || `${url}@${i}`, name: item.title, url: item.enclosure?.url, durationString: item.itunesDuration}; 
+        let episode: Episode = {guid: item.guid || item.link || `${url}@${i}`, name: item.title, url: item.enclosure?.url, durationString: item.itunesDuration}; 
         shows.push(episode);
         storage.putEpisode(db, episode);
       });

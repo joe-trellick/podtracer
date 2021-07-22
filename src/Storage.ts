@@ -1,5 +1,5 @@
 import { openDB, IDBPDatabase } from 'idb';
-import { EpisodePlayback, Show } from './Types';
+import { EpisodePlayback, Episode } from './Types';
 
 console.log("loading the storage!");
 
@@ -34,7 +34,7 @@ export async function getDB(): Promise<IDBPDatabase> {
     return db;
 }
 
-export async function putEpisode(db: Promise<IDBPDatabase>, episode: Show) {
+export async function putEpisode(db: Promise<IDBPDatabase>, episode: Episode) {
     db.then(function(db) {
         const tx = db.transaction(episodesStore, 'readwrite');
         const store = tx.objectStore(episodesStore);

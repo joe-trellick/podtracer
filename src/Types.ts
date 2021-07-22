@@ -1,4 +1,4 @@
-export interface Show {
+export interface Episode {
     guid: string;
     name?: string;
     url?: string;
