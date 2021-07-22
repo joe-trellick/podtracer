@@ -1,4 +1,5 @@
 import { openDB, IDBPDatabase } from 'idb';
+import { EpisodePlayback, Show } from './Types';
 
 console.log("loading the storage!");
 
@@ -17,7 +18,7 @@ export async function getDB(): Promise<IDBPDatabase> {
                 db.createObjectStore(sourcesStore, {keyPath: 'guid'});
             }
             if (!db.objectStoreNames.contains(playbackStateStore)) {
-                db.createObjectStore(playbackStateStore, {keyPath: 'guid'});
+                db.createObjectStore(playbackStateStore, {keyPath: 'episodeGuid'});
             }
         },
         blocked() {
@@ -33,13 +34,36 @@ export async function getDB(): Promise<IDBPDatabase> {
     return db;
 }
 
-export async function putEpisode(db: Promise<IDBPDatabase>, episode: any) {
+export async function putEpisode(db: Promise<IDBPDatabase>, episode: Show) {
     db.then(function(db) {
         const tx = db.transaction(episodesStore, 'readwrite');
         const store = tx.objectStore(episodesStore);
         store.put(episode);
         return tx.done;
     }).then(function() {
-        console.log('added item to the store os!');
+        console.log('added episode to the store!');
+    });
+}
+
+export async function putEpisodePlayback(db: Promise<IDBPDatabase>, playback: EpisodePlayback) {
+    db.then(function(db) {
+        const tx = db.transaction(playbackStateStore, 'readwrite');
+        const store = tx.objectStore(playbackStateStore);
+        console.log('trying to store playback', playback);
+        store.put(playback);
+        return tx.done;
+    }).then(function() {
+        console.log('added playback to the store!');
+    });
+}
+
+export async function getEpisodePlayback(db: Promise<IDBPDatabase>, episodeGuid: string): Promise<EpisodePlayback> {
+    return db.then(function (db) {
+        var tx = db.transaction(playbackStateStore, 'readonly');
+        var store = tx.objectStore(playbackStateStore);
+        return store.get(episodeGuid);
+    }).then(function (playback) {
+        console.log('found the playback', playback);
+        return playback;
     });
 }

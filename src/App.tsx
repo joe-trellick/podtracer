@@ -3,15 +3,9 @@ import React, { useEffect, useState, useRef } from 'react';
 
 import './App.css';
 import * as storage from './Storage';
+import { EpisodePlayback, Show } from './Types';
 
 var audio: HTMLAudioElement | null;
-
-interface Show {
-  guid: string;
-  name?: string;
-  url?: string;
-  durationString?: string;
-}
 
 function usePrevious(value: any) {
   const ref = useRef();
@@ -75,6 +69,17 @@ function Player(props: PlayerProps) {
   let hasDuration = duration && duration !== Infinity;
 
   useEffect(() => {
+    const getStoredPlayback = async () => {
+      let playback = await storage.getEpisodePlayback(db, show.guid);
+      console.log('found previous awaited playback', playback);
+      if (audio && playback?.playbackSeconds) {
+        audio.currentTime = playback.playbackSeconds;
+      }
+      if (playing) {
+        audio?.play();
+      }
+    };
+
     if (show.url && show.url !== previousShow?.url) {
       console.log(`set show to ${show.name} at URL: ${show.url}`);
       audio?.pause();  // Stop any previous player
@@ -93,9 +98,7 @@ function Player(props: PlayerProps) {
         console.log(`duration changed to ${source.duration}`);
         setDuration(source.duration);
       });
-      if (playing) {
-        audio.play();
-      }
+      getStoredPlayback();
     }
   }, [playing, show, previousShow]);
 
@@ -114,6 +117,14 @@ function Player(props: PlayerProps) {
        audio.playbackRate = speed;
     }
   }, [speed]);
+
+  useEffect(() => {
+    if (show.guid) {
+      const playback: EpisodePlayback = {episodeGuid: show.guid, lastPlayed: new Date(), playbackSeconds: currentTime};
+      console.log("Attempting to store playback", playback);
+      storage.putEpisodePlayback(db, playback);
+    }
+  }, [show, currentTime]);
 
   const buttonText = playing ? 'Stop' : 'Play';
   let currentTimeString = '';
