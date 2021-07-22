@@ -43,6 +43,7 @@ function Player(props: PlayerProps) {
   const [currentTime, setCurrentTime] = useState(0 as number | undefined);
   const [duration, setDuration] = useState(undefined as number | undefined);
   const [speed, setSpeed] = useState(1);
+  const timeSlider = useRef(null);
 
   let hasDuration = duration && duration !== Infinity;
 
@@ -54,7 +55,9 @@ function Player(props: PlayerProps) {
       setSpeed(audio.playbackRate);
       audio.addEventListener('timeupdate', (event) => {
         let source = event.target as HTMLAudioElement;
-        setCurrentTime(source.currentTime);
+        if ((timeSlider.current as unknown as HTMLInputElement).dataset.interacting !== "true") {
+          setCurrentTime(source.currentTime);
+        }
       });
       audio.addEventListener('durationchange', (event) => {
         let source = event.target as HTMLAudioElement;
@@ -92,8 +95,15 @@ function Player(props: PlayerProps) {
     currentTimeString += ` of ${timeStringFromSeconds(duration)}`;
   }
 
+  const interactionStart = (event: any) => {
+    if (audio) {
+      (timeSlider.current as unknown as HTMLInputElement).dataset.interacting = "true";
+    }
+  };
+
   const interactionEnd = (event: any) => {
     if (audio) {
+      (timeSlider.current as unknown as HTMLInputElement).dataset.interacting = "false";
       audio.currentTime = (event.target as HTMLInputElement).valueAsNumber;
     }
   };
@@ -108,8 +118,11 @@ function Player(props: PlayerProps) {
         <input id="timeslider" type="range" value={hasDuration ? currentTime : 0}
           disabled={!hasDuration} min={0} max={duration}
           onChange={(event) => {setCurrentTime((event.target as HTMLInputElement).valueAsNumber)}}
+          onMouseDown={interactionStart}
+          onTouchStart={interactionStart}
           onMouseUp={interactionEnd}
           onTouchEnd={interactionEnd}
+          ref={timeSlider}
         />
         <div id="currenttime">{currentTimeString}</div> 
       </div>
