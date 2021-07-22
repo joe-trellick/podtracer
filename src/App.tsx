@@ -46,14 +46,14 @@ function durationStringToSeconds(durationString: string | undefined): number | u
 
   let seconds = 0;
   const parts = durationString.split(':').reverse();
-  if (parts.length == 0) {
+  if (parts.length === 0) {
     return undefined;
   }
 
   let multiplier = 1;
   parts.forEach(partString => {
     const partNumber = Number.parseInt(partString);
-    if (partNumber == NaN) {
+    if (isNaN(partNumber)) {
       return undefined;
     }
     seconds += partNumber * multiplier;
