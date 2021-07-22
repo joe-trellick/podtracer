@@ -73,14 +73,19 @@ function Player(props: PlayerProps) {
       let playback = await storage.getEpisodePlayback(db, show.guid);
       console.log('found previous awaited playback', playback);
       if (audio && playback?.playbackSeconds) {
+        audio.addEventListener('canplay', (event) => {
+          if (audio && playback.playbackSeconds) {
+            audio.currentTime = playback.playbackSeconds;
+          }
+          if (playing) {
+            audio?.play();
+          }
+        });
         audio.currentTime = playback.playbackSeconds;
       }
       if (audio && playback?.playbackSpeed) {
         audio.playbackRate = playback.playbackSpeed;
         setSpeed(playback.playbackSpeed);
-      }
-      if (playing) {
-        audio?.play();
       }
     };
 
@@ -102,7 +107,7 @@ function Player(props: PlayerProps) {
         console.log(`duration changed to ${source.duration}`);
         setDuration(source.duration);
       });
-      getStoredPlayback();
+      getStoredPlayback();  // need to wait for this for mobile safari
     }
   }, [playing, show, previousShow]);
 
