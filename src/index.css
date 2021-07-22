@@ -67,10 +67,16 @@ code {
 
 #playbackbox {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 #speed {
-  width: 10%;
+  width: 20%;
+  min-width: 60px;
 }
 
 #playervstack {
@@ -84,6 +90,7 @@ code {
   display: flex;
   height: 75px;
   gap: 10px;
+  align-self: left;
 }
 
 #playercontrols button {
@@ -93,8 +100,11 @@ code {
 #playertimes {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
-  font-weight: bold;
+}
+
+#speedcontrols {
+  display: flex;
+  justify-content: flex-start;
 }
 
 #timeslider {

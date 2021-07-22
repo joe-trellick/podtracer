@@ -161,21 +161,26 @@ function Player(props: PlayerProps) {
             {buttonText}
           </button>
           <div id="playbackbox">
-            <input id="timeslider" type="range" value={hasDuration ? currentTime : 0}
-              disabled={!hasDuration} min={0} max={duration}
-              onChange={(event) => {setCurrentTime((event.target as HTMLInputElement).valueAsNumber)}}
-              onMouseDown={interactionStart}
-              onTouchStart={interactionStart}
-              onMouseUp={interactionEnd}
-              onTouchEnd={interactionEnd}
-              ref={timeSlider}
-            />
-            <div id="playertimes">
-              <div id="currenttime">{currentTimeString}</div> 
-              <div id="duration">{durationString}</div>
+            <div id="sliderwithtimes">
+              <input id="timeslider" type="range" value={hasDuration ? currentTime : 0}
+                disabled={!hasDuration} min={0} max={duration}
+                onChange={(event) => {setCurrentTime((event.target as HTMLInputElement).valueAsNumber)}}
+                onMouseDown={interactionStart}
+                onTouchStart={interactionStart}
+                onMouseUp={interactionEnd}
+                onTouchEnd={interactionEnd}
+                ref={timeSlider}
+              />
+              <div id="playertimes">
+                <div id="currenttime">{currentTimeString}</div> 
+                <div id="duration">{durationString}</div>
+              </div>
+            </div>
+            <div id="speedcontrols">
+              <input id="speed" type="range" value={speed} min="0.5" max="2" step="0.25" onInput={(event) => {setSpeed((event.target as HTMLInputElement).valueAsNumber)}} />
+              <span>{speed}x</span>
             </div>
           </div>
-          <input id="speed" type="range" value={speed} min="0.5" max="2" step="0.25" onInput={(event) => {setSpeed((event.target as HTMLInputElement).valueAsNumber)}} />
         </div>
       </div>
     </div>
