@@ -41,6 +41,7 @@ function timeStringFromSeconds(seconds: number): string {
 function Player(props: PlayerProps) {
   const {playing, setPlaying, show, previousShow} = props;
   const [currentTime, setCurrentTime] = useState(0 as number | undefined);
+  const [duration, setDuration] = useState(undefined as number | undefined);
 
   useEffect(() => {
     if (show.url && show.url !== previousShow?.url) {
@@ -48,8 +49,14 @@ function Player(props: PlayerProps) {
       audio?.pause();  // Stop any previous player
       audio = new Audio(show.url);
       audio.addEventListener('timeupdate', (event) => {
-        setCurrentTime(audio?.currentTime);
-      })
+        let source = event.target as HTMLAudioElement;
+        setCurrentTime(source.currentTime);
+      });
+      audio.addEventListener('durationchange', (event) => {
+        let source = event.target as HTMLAudioElement;
+        console.log(`duration changed to ${source.duration}`);
+        setDuration(source.duration);
+      });
       if (playing) {
         audio.play();
       }
@@ -66,9 +73,12 @@ function Player(props: PlayerProps) {
   }, [playing]);
 
   const buttonText = playing ? 'Stop' : 'Play';
-  var currentTimeString = '';
+  let currentTimeString = '';
   if (currentTime) {
     currentTimeString = timeStringFromSeconds(currentTime);
+  }
+  if (duration && duration !== Infinity) {
+    currentTimeString += ` of ${timeStringFromSeconds(duration)}`;
   }
 
   return (
