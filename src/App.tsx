@@ -150,6 +150,9 @@ function Player(props: PlayerProps) {
 
   return (
     <div id="player">
+      <div id="playerart">
+        {show.imageUrl ? <img src={show.imageUrl} alt="Episode Art" /> : ''}
+      </div>
       <button onClick={() => setPlaying(!playing)} disabled={show.url === undefined}>
         {buttonText}
       </button>
@@ -189,7 +192,7 @@ function ShowPicker(props: any) {
   );
 }
 
-type CustomItem = {itunesDuration: string};
+type CustomItem = {itunesDuration: string, itunesImage: string};
 
 const db = storage.getDB();
 
@@ -203,7 +206,10 @@ function App() {
   useEffect(() => {
     const parser = new Parser<CustomItem>({
       customFields: {
-        item: [['itunes:duration', 'itunesDuration']]
+        item: [
+          ['itunes:duration', 'itunesDuration'],
+          ['itunes:image', 'itunesImage']
+        ]
       }
     });
 
@@ -216,8 +222,8 @@ function App() {
 
       var shows = [] as Episode[];
       // A few test shows
-      shows.push({name: 'Toby Schachman: Cuttle, Apparatus, and Recursive Drawing', url: 'https://traffic.omny.fm/d/clips/c4157e60-c7f8-470d-b13f-a7b30040df73/564f493f-af32-4c48-862f-a7b300e4df49/27b6ee00-c968-4889-bb61-ad6c000a9322/audio.mp3?utm_source=Podcast&in_playlist=ac317852-8807-44b8-8eff-a7b300e4df52', guid: '27b6ee00-c968-4889-bb61-ad6c000a9322', indexInSource: 4});
-      shows.push({name: 'Metamuse', url: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3', guid: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3', indexInSource: 0});
+      shows.push({name: 'Toby Schachman: Cuttle, Apparatus, and Recursive Drawing', url: 'https://traffic.omny.fm/d/clips/c4157e60-c7f8-470d-b13f-a7b30040df73/564f493f-af32-4c48-862f-a7b300e4df49/27b6ee00-c968-4889-bb61-ad6c000a9322/audio.mp3?utm_source=Podcast&in_playlist=ac317852-8807-44b8-8eff-a7b300e4df52', imageUrl: 'https://www.omnycontent.com/d/playlist/c4157e60-c7f8-470d-b13f-a7b30040df73/564f493f-af32-4c48-862f-a7b300e4df49/ac317852-8807-44b8-8eff-a7b300e4df52/image.jpg?t=1501366431&size=Large', guid: '27b6ee00-c968-4889-bb61-ad6c000a9322', indexInSource: 4});
+      shows.push({name: '34 // Bring your own client with Geoffrey Litt', url: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3', imageUrl: 'https://media.museapp.com/podcast/metamuse-cover-2.png', guid: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3', indexInSource: 0});
       shows.push({name: 'Psytrance', url: 'https://stream.psychedelik.com:8000/listen.mp3', guid: 'https://stream.psychedelik.com:8000/listen.mp3', indexInSource: 1});
       shows.push({name: 'Drum N Bass', url: 'https://stream.psychedelik.com:8030/listen.mp3', guid: 'https://stream.psychedelik.com:8030/listen.mp3', indexInSource: 2});
 
@@ -225,7 +231,9 @@ function App() {
         console.log(`* ${item.title} at ${item.link} with ${item.enclosure?.url}`);
         let episode: Episode = {
           guid: item.guid || item.link || `${url}@${i}`,
-          name: item.title, url: item.enclosure?.url,
+          name: item.title,
+          url: item.enclosure?.url,
+          imageUrl: item.itunesImage,
           durationString: item.itunesDuration,
           indexInSource: i}; 
         shows.push(episode);

@@ -15,7 +15,7 @@ code {
 #showpicker {
   padding: 10px;
   position: fixed;
-  top: 70px;
+  top: 170px;
   bottom: 0px;
   overflow-y: scroll;
   width: 100%;
@@ -39,12 +39,22 @@ code {
   background-color: darkgrey;
   width: 100%;
   position: fixed;
-  height: 50px;
+  height: 150px;
   top: 0;
   align-self: flex-start;
   padding: 10px;
   display: flex;
   gap: 10px;
+}
+
+#playerart {
+  background-color: lightgray;
+  width: 150px;
+  height: 150px;
+}
+
+#playerart img {
+  width: 100%;
 }
 
 #playbackbox {

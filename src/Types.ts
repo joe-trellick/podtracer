@@ -2,6 +2,7 @@ export interface Episode {
     guid: string;
     name?: string;
     url?: string;
+    imageUrl?: string;
     durationString?: string;
     indexInSource: number;
 }
