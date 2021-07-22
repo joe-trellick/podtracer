@@ -216,13 +216,17 @@ function App() {
 
       var shows = [] as Episode[];
       // A few test shows
-      shows.push({name: 'Metamuse', url: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3', guid: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3'});
-      shows.push({name: 'Psytrance', url: 'https://stream.psychedelik.com:8000/listen.mp3', guid: 'https://stream.psychedelik.com:8000/listen.mp3'});
-      shows.push({name: 'Drum N Bass', url: 'https://stream.psychedelik.com:8030/listen.mp3', guid: 'https://stream.psychedelik.com:8030/listen.mp3'});
+      shows.push({name: 'Metamuse', url: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3', guid: 'https://media.museapp.com/podcast/34-bring-your-own-client.mp3', indexInSource: 0});
+      shows.push({name: 'Psytrance', url: 'https://stream.psychedelik.com:8000/listen.mp3', guid: 'https://stream.psychedelik.com:8000/listen.mp3', indexInSource: 1});
+      shows.push({name: 'Drum N Bass', url: 'https://stream.psychedelik.com:8030/listen.mp3', guid: 'https://stream.psychedelik.com:8030/listen.mp3', indexInSource: 2});
 
       feed.items.forEach((item, i) => {
         console.log(`* ${item.title} at ${item.link} with ${item.enclosure?.url}`);
-        let episode: Episode = {guid: item.guid || item.link || `${url}@${i}`, name: item.title, url: item.enclosure?.url, durationString: item.itunesDuration}; 
+        let episode: Episode = {
+          guid: item.guid || item.link || `${url}@${i}`,
+          name: item.title, url: item.enclosure?.url,
+          durationString: item.itunesDuration,
+          indexInSource: i}; 
         shows.push(episode);
         storage.putEpisode(db, episode);
       });

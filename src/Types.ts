@@ -3,6 +3,7 @@ export interface Episode {
     name?: string;
     url?: string;
     durationString?: string;
+    indexInSource: number;
 }
 
 export interface EpisodePlayback {
