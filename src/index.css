@@ -46,6 +46,7 @@ code {
   padding: 10px;
   display: flex;
   gap: 10px;
+  user-select: none;
 }
 
 #showname {
@@ -100,6 +101,19 @@ code {
 #playercontrols button {
   width: 75px;
   border-radius: 0;
+  border: none;
+  background: #00000000;
+}
+
+#playercontrols button img {
+  scale: 1.3;
+  opacity: 0.7;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+#playercontrols button img:active {
+  opacity: 1;
 }
 
 #playertimes {
