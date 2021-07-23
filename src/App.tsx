@@ -65,6 +65,8 @@ function Player(props: PlayerProps) {
   const [duration, setDuration] = useState(undefined as number | undefined);
   const [speed, setSpeed] = useState(1);
   const timeSlider = useRef(null);
+  const episodeArt = useRef(null);
+  const loadingSpinner = useRef(null);
 
   let hasDuration = duration && duration !== Infinity;
 
@@ -91,6 +93,8 @@ function Player(props: PlayerProps) {
 
     if (show.url && show.url !== previousShow?.url) {
       console.log(`set show to ${show.name} at URL: ${show.url}`);
+      (episodeArt.current as unknown as HTMLDivElement).style.opacity = "0.5";
+      (loadingSpinner.current as unknown as HTMLDivElement).style.visibility = "visible";
       audio?.pause();  // Stop any previous player
       audio = new Audio(show.url);
       setSpeed(audio.playbackRate);
@@ -106,6 +110,10 @@ function Player(props: PlayerProps) {
         let source = event.target as HTMLAudioElement;
         console.log(`duration changed to ${source.duration}`);
         setDuration(source.duration);
+      });
+      audio.addEventListener('canplay', () => {
+        (episodeArt.current as unknown as HTMLDivElement).style.opacity = "1";
+        (loadingSpinner.current as unknown as HTMLDivElement).style.visibility = "hidden";
       });
       getStoredPlayback();  // need to wait for this for mobile safari
     }
@@ -164,8 +172,9 @@ function Player(props: PlayerProps) {
 
   return (
     <div id="player">
-      <div id="playerart">
+      <div id="playerart" ref={episodeArt}>
         {show.imageUrl ? <img src={show.imageUrl} alt="Episode Art" /> : ''}
+        <div id="spinner" ref={loadingSpinner} style={{visibility: 'hidden'}}><div></div><div></div></div>
       </div>
       <div id="playervstack">
         <div id="showname">{show.name || ''}</div>
