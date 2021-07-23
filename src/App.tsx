@@ -109,7 +109,7 @@ function Player(props: PlayerProps) {
       });
       getStoredPlayback();  // need to wait for this for mobile safari
     }
-  }, [playing, show, previousShow]);
+  }, [playing, show, previousShow, setPlaying]);
 
   useLayoutEffect(() => {
     console.log(`playing is now ${playing}`);
@@ -137,7 +137,7 @@ function Player(props: PlayerProps) {
       console.log("Attempting to store playback", playback);
       storage.putEpisodePlayback(db, playback);
     }
-  }, [show, currentTime, speed]);
+  }, [show, currentTime, speed, hasDuration]);
 
   const buttonText = playing ? 'Stop' : 'Play';
   let currentTimeString = '';
@@ -185,7 +185,7 @@ function Player(props: PlayerProps) {
                 ref={timeSlider}
               />
               <div id="playertimes">
-                <div id="currenttime">{currentTimeString}</div> 
+                <div id="currenttime" style={hasDuration ? {visibility: "visible"} : {visibility: "hidden"}}>{currentTimeString}</div> 
                 <div id="duration">{durationString}</div>
               </div>
             </div>
