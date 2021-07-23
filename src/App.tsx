@@ -68,25 +68,25 @@ function Player(props: PlayerProps) {
 
   let hasDuration = duration && duration !== Infinity;
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const getStoredPlayback = async () => {
       let playback = await storage.getEpisodePlayback(db, show.guid);
       console.log('found previous awaited playback', playback);
       if (audio && playback?.playbackSeconds) {
-        audio.addEventListener('canplay', (event) => {
+        const timeSetterListener = () => {
+          audio?.removeEventListener('durationchange', timeSetterListener);
           if (audio && playback.playbackSeconds) {
             audio.currentTime = playback.playbackSeconds;
           }
-          if (playing) {
-            audio?.play();
-          }
-        });
-        audio.currentTime = playback.playbackSeconds;
+        };
+        audio.addEventListener('durationchange', timeSetterListener);
       }
       if (audio && playback?.playbackSpeed) {
         audio.playbackRate = playback.playbackSpeed;
         setSpeed(playback.playbackSpeed);
       }
+      audio?.play();
+      setPlaying(true);
     };
 
     if (show.url && show.url !== previousShow?.url) {
