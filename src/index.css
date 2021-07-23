@@ -60,6 +60,9 @@ code {
   background-color: rgb(179, 179, 179);
   width: 150px;
   height: 150px;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 #playerart img {
