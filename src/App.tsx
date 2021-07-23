@@ -75,7 +75,7 @@ function Player(props: PlayerProps) {
       if (audio && playback?.playbackSeconds) {
         const timeSetterListener = () => {
           audio?.removeEventListener('durationchange', timeSetterListener);
-          if (audio && playback.playbackSeconds) {
+          if (audio && playback.playbackSeconds && audio.duration && audio.duration !== Infinity) {
             audio.currentTime = playback.playbackSeconds;
           }
         };
@@ -129,7 +129,11 @@ function Player(props: PlayerProps) {
 
   useEffect(() => {
     if (show.guid) {
-      const playback: EpisodePlayback = {episodeGuid: show.guid, lastPlayed: new Date(), playbackSeconds: currentTime, playbackSpeed: speed};
+      const playback: EpisodePlayback = {
+        episodeGuid: show.guid,
+        lastPlayed: new Date(),
+        playbackSeconds: hasDuration ? currentTime : undefined,
+        playbackSpeed: speed};
       console.log("Attempting to store playback", playback);
       storage.putEpisodePlayback(db, playback);
     }
