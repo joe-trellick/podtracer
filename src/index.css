@@ -105,15 +105,19 @@ code {
   background: #00000000;
 }
 
+#playercontrols button:disabled {
+  opacity: 0.2;
+}
+
 #playercontrols button img {
-  scale: 1.3;
-  opacity: 0.7;
+  transform: scale(1.2);
+  opacity: 0.8;
   -webkit-touch-callout: none;
   user-select: none;
 }
 
 #playercontrols button img:active {
-  opacity: 1;
+  transform: scale(1.15);
 }
 
 #playertimes {
