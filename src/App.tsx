@@ -4,6 +4,8 @@ import React, { useEffect, useLayoutEffect, useState, useRef } from 'react';
 import './App.css';
 import * as storage from './Storage';
 import { EpisodePlayback, Episode } from './Types';
+import playImage from './play.svg';
+import pauseImage from './pause.svg';
 
 var audio: HTMLAudioElement | null;
 
@@ -147,7 +149,6 @@ function Player(props: PlayerProps) {
     }
   }, [show, currentTime, speed, hasDuration]);
 
-  const buttonText = playing ? 'Stop' : 'Play';
   let currentTimeString = '';
   if (currentTime) {
     currentTimeString = timeStringFromSeconds(currentTime);
@@ -180,7 +181,7 @@ function Player(props: PlayerProps) {
         <div id="showname">{show.name || ''}</div>
         <div id="playercontrols">
           <button onClick={() => setPlaying(!playing)} disabled={show.url === undefined}>
-            {buttonText}
+            <img src={playing ? pauseImage : playImage} alt={playing ? 'Pause' : 'Play'} />
           </button>
           <div id="playbackbox">
             <div id="sliderwithtimes">
