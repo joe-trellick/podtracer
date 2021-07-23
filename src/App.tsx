@@ -99,6 +99,9 @@ function Player(props: PlayerProps) {
       (loadingSpinner.current as unknown as HTMLDivElement).style.visibility = "visible";
       audio?.pause();  // Stop any previous player
       audio = new Audio(show.url);
+      if (show.name) {
+        audio.title = show.name;
+      }
       setSpeed(audio.playbackRate);
       setDuration(durationStringToSeconds(show.durationString));
       setCurrentTime(0);
