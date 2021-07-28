@@ -3,11 +3,13 @@ import React, { useEffect, useLayoutEffect, useState, useRef } from 'react';
 
 import './App.css';
 import * as storage from './Storage';
+import { WebnativeConnection } from './Fission';
 import { EpisodePlayback, Episode } from './Types';
 import playImage from './play.svg';
 import pauseImage from './pause.svg';
 
 var audio: HTMLAudioElement | null;
+var fission = new WebnativeConnection();
 
 function usePrevious(value: any) {
   const ref = useRef();
@@ -22,6 +24,45 @@ interface PlayerProps {
   setPlaying: (a: boolean) => void;
   show: Episode;
   previousShow: Episode;
+}
+
+// Test this on startup, mostly to remove extra Fission-related query params
+// TODO: Also store whether we think we should be signed in in IndexedDB?
+// TODO: Just always try to login on startup, to initialize?
+function checkForLoginComplete() {
+  const params = new URLSearchParams(window.location.search);
+  if (!fission.isConnected() &&
+    (params.get('newUrl') || params.get('username') || params.get('authorised'))) {
+    tryLogin();
+  }
+}
+
+function tryLogin() {
+  if (!fission.isConnected()) {
+    console.log("Trying login");
+    const connect = async () => {
+      await fission.connect();
+      console.log("Done—needs auth?", fission.needsAuthentication());
+      console.log("Done—is connected?", fission.isConnected());
+      if (fission.needsAuthentication()) {
+        fission.presentAuthenticationUI();
+      } else {
+        fission.testPrintFiles();
+      }
+    };
+    connect();
+  } else {
+    fission.testPrintFiles();
+  }
+}
+
+function tryLogout() {
+  console.log("Trying logout");
+  const logout = async () => {
+    await fission.disconnect();
+    console.log("Logged out");
+  };
+  logout();
 }
 
 function timeStringFromSeconds(seconds: number): string {
@@ -182,6 +223,10 @@ function Player(props: PlayerProps) {
       </div>
       <div id="playervstack">
         <div id="showname">{show.name || ''}</div>
+        {/*  <div id="settings">
+          <button onClick={tryLogin}>Login</button>
+          <button onClick={tryLogout}>Logout</button>
+        </div> */}
         <div id="playercontrols">
           <button onClick={() => setPlaying(!playing)} disabled={show.url === undefined}>
             <img src={playing ? pauseImage : playImage} alt={playing ? 'Pause' : 'Play'} />
@@ -241,6 +286,11 @@ function App() {
   const previousShow = usePrevious(activeShow) as unknown as Episode;
 
   const [posts, setPosts] = useState([] as Episode[]);
+
+  // Initial load
+  useEffect(() => {
+    checkForLoginComplete();
+  }, []);
 
   useEffect(() => {
     const parser = new Parser<CustomItem>({
