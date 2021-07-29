@@ -308,8 +308,7 @@ function App() {
   const [playing, setPlaying] = useState(false);
   const [activeShow, setActiveShow] = useState({} as Episode);
   const previousShow = usePrevious(activeShow) as unknown as Episode;
-
-  const [posts, setPosts] = useState([] as Episode[]);
+  const [episodes, setEpisodes] = useState([] as Episode[]);
 
   // Initial load
   useEffect(() => {
@@ -322,7 +321,7 @@ function App() {
       let episodes = await storage.getAllEpisodes(db);
 
       console.log(`loaded ${episodes.length} episodes`);
-      setPosts(episodes);
+      setEpisodes(episodes);
     };
     getAllEpisodes();
   }
@@ -375,7 +374,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Player playing={playing} setPlaying={setPlaying} show={activeShow} previousShow={previousShow} />
-        <ShowPicker setActiveShow={setActiveShow} shows={posts} addFeedContents={addFeedContents} addEpisodes={addEpisodes}/>
+        <ShowPicker setActiveShow={setActiveShow} shows={episodes} addFeedContents={addFeedContents} addEpisodes={addEpisodes}/>
       </header>
     </div>
   );
