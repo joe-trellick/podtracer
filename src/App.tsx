@@ -376,6 +376,11 @@ function App() {
 
   const removeEpisodeFromQueue = (episode: Episode) => {
     console.log('remove episode from queue:', episode);
+    const removeEpisode = async (episode: Episode) => {
+      await storage.deleteEpisode(db, episode.guid);
+      loadEpisodes();
+    };
+    removeEpisode(episode);
   }
 
   return (

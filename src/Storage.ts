@@ -45,6 +45,15 @@ export async function putEpisode(db: Promise<IDBPDatabase>, episode: Episode) {
     });
 }
 
+export async function deleteEpisode(db: Promise<IDBPDatabase>, episodeGuid: string) {
+    db.then(function(db) {
+        const tx = db.transaction(episodesStore, 'readwrite');
+        const store = tx.objectStore(episodesStore);
+        store.delete(episodeGuid);
+        return tx.done;
+    });
+}
+
 export async function getAllEpisodes(db: Promise<IDBPDatabase>): Promise<Array<Episode>> {
     return db.then(function (db) {
         var tx = db.transaction(episodesStore, 'readonly');
