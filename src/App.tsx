@@ -259,7 +259,7 @@ function Player(props: PlayerProps) {
 }
 
 function ShowPicker(props: any) {
-  const {setActiveShow, shows, addFeedContents, addEpisodes} = props;
+  const {setActiveShow, shows, addFeedContents, addEpisodes, removeEpisodeFromQueue} = props;
 
   const addSampleEpisodes = () => {
     var episodes = [] as Episode[];
@@ -291,7 +291,8 @@ function ShowPicker(props: any) {
       {shows.map((show: Episode, i: number) => {
         return (
           <li key={i} onClick={() => {setActiveShow(show)}}>
-            {show.name}
+            <div>{show.name}</div>
+            <div className="deletebutton" onClick={(event) => {event.stopPropagation(); removeEpisodeFromQueue(show);}}>delete</div>
           </li>
         );
       })}
@@ -373,11 +374,20 @@ function App() {
     putEpisodes(newEpisodes);
   }
 
+  const removeEpisodeFromQueue = (episode: Episode) => {
+    console.log('remove episode from queue:', episode);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <Player playing={playing} setPlaying={setPlaying} show={activeShow} previousShow={previousShow} />
-        <ShowPicker setActiveShow={setActiveShow} shows={episodes} addFeedContents={addFeedContents} addEpisodes={addEpisodes}/>
+        <ShowPicker
+          setActiveShow={setActiveShow}
+          shows={episodes}
+          addFeedContents={addFeedContents}
+          addEpisodes={addEpisodes}
+          removeEpisodeFromQueue={removeEpisodeFromQueue} />
       </header>
     </div>
   );
