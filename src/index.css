@@ -172,3 +172,22 @@ code {
     opacity: 1;
   }
 }
+
+/* Add shows (temporary?) */
+#addshows {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  user-select: none;
+}
+
+#addshows > div {
+  font-size: 12px;
+  border: 1px dotted lightgray;
+  padding: 2px;
+}
+
+#addshows > div:hover {
+  background-color: lightgray;
+  color: black;
+}
