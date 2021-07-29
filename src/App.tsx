@@ -348,7 +348,7 @@ function App() {
           guid: item.guid || item.link || `${url}@${i}`,
           name: item.title,
           url: item.enclosure?.url,
-          imageUrl: item.itunesImage || feed.image?.url,
+          imageUrl: item.itunesImage.href || feed.image?.url,
           durationString: item.itunesDuration,
           indexInSource: i}; 
         shows.push(episode);
