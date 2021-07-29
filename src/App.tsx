@@ -321,6 +321,7 @@ function App() {
       let episodes = await storage.getAllEpisodes(db);
 
       console.log(`loaded ${episodes.length} episodes`);
+      episodes.sort((a,b) => (a.indexInQueue || 0) > (b.indexInQueue || 0) ? -1 : (((b.indexInQueue || 0) > (a.indexInQueue || 0)) ? 1 : 0));
       setEpisodes(episodes);
     };
     getAllEpisodes();
@@ -347,11 +348,10 @@ function App() {
           guid: item.guid || item.link || `${url}@${i}`,
           name: item.title,
           url: item.enclosure?.url,
-          imageUrl: item.itunesImage.href || feed.image?.url,
+          imageUrl: item.itunesImage?.href || feed.image?.url,
           durationString: item.itunesDuration,
           indexInSource: i}; 
         shows.push(episode);
-        storage.putEpisode(db, episode);
       });
       addEpisodes(shows);
     }
@@ -359,15 +359,18 @@ function App() {
     fetchPosts(feed);
   }
 
-  const addEpisodes = (episodes: Array<Episode>) => {
-    console.log('add episodes:', episodes);
-    const putEpisodes = async (episodes: Array<Episode>) => {
-      episodes.forEach(async episode => {
+  const addEpisodes = (newEpisodes: Array<Episode>) => {
+    console.log('add episodes:', newEpisodes);
+    newEpisodes.reverse();
+    let maxIndex = Math.max.apply(Math, episodes.map(episode => {return episode.indexInQueue || 0}));
+    const putEpisodes = async (newEpisodes: Array<Episode>) => {
+      newEpisodes.forEach(async episode => {
+        episode.indexInQueue = maxIndex++;
         await storage.putEpisode(db, episode);
       });
       loadEpisodes();
     };
-    putEpisodes(episodes);
+    putEpisodes(newEpisodes);
   }
 
   return (

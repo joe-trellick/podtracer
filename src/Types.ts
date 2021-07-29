@@ -5,6 +5,9 @@ export interface Episode {
     imageUrl?: string;
     durationString?: string;
     indexInSource: number;
+
+    // TODO: Put this somewhere external to the episode (belongs to queue concept instead)?
+    indexInQueue?: number;
 }
 
 export interface EpisodePlayback {
