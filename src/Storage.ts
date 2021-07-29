@@ -41,7 +41,15 @@ export async function putEpisode(db: Promise<IDBPDatabase>, episode: Episode) {
         store.put(episode);
         return tx.done;
     }).then(function() {
-        console.log('added episode to the store!');
+        console.log('added episode to the store!', episode);
+    });
+}
+
+export async function getAllEpisodes(db: Promise<IDBPDatabase>): Promise<Array<Episode>> {
+    return db.then(function (db) {
+        var tx = db.transaction(episodesStore, 'readonly');
+        var store = tx.objectStore(episodesStore);
+        return store.getAll();
     });
 }
 
@@ -62,8 +70,5 @@ export async function getEpisodePlayback(db: Promise<IDBPDatabase>, episodeGuid:
         var tx = db.transaction(playbackStateStore, 'readonly');
         var store = tx.objectStore(playbackStateStore);
         return store.get(episodeGuid);
-    }).then(function (playback) {
-        console.log('found the playback', playback);
-        return playback;
     });
 }

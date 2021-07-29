@@ -314,7 +314,18 @@ function App() {
   // Initial load
   useEffect(() => {
     checkForLoginComplete();
+    loadEpisodes();
   }, []);
+
+  const loadEpisodes = () => {
+    const getAllEpisodes = async () => {
+      let episodes = await storage.getAllEpisodes(db);
+
+      console.log(`loaded ${episodes.length} episodes`);
+      setPosts(episodes);
+    };
+    getAllEpisodes();
+  }
 
   const addFeedContents = (feed: string) => {
     console.log('add feed:', feed);
