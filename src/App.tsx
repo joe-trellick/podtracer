@@ -362,7 +362,13 @@ function App() {
 
   const addEpisodes = (episodes: Array<Episode>) => {
     console.log('add episodes:', episodes);
-    setPosts(episodes.concat(posts));
+    const putEpisodes = async (episodes: Array<Episode>) => {
+      episodes.forEach(async episode => {
+        await storage.putEpisode(db, episode);
+      });
+      loadEpisodes();
+    };
+    putEpisodes(episodes);
   }
 
   return (
