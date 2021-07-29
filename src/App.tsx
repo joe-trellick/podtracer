@@ -271,8 +271,8 @@ function ShowPicker(props: any) {
       imageUrl: 'https://trellick.work/files/dnb-bike-brighton.png',
       guid: 'https://trellick.work/files/dnb-bike-brighton.mp3',
       indexInSource: 5});
-      episodes.push({name: 'Psytrance', url: 'https://stream.psychedelik.com:8000/listen.mp3', imageUrl: 'https://www.psychedelik.com/img/psytrance.jpg', guid: 'https://stream.psychedelik.com:8000/listen.mp3', indexInSource: 1});
-      episodes.push({name: 'Drum N Bass', url: 'https://stream.psychedelik.com:8030/listen.mp3', imageUrl: 'https://www.psychedelik.com/img/drumnbass.jpg', guid: 'https://stream.psychedelik.com:8030/listen.mp3', indexInSource: 2});
+      episodes.push({name: 'Psytrance stream', url: 'https://stream.psychedelik.com:8000/listen.mp3', imageUrl: 'https://www.psychedelik.com/img/psytrance.jpg', guid: 'https://stream.psychedelik.com:8000/listen.mp3', indexInSource: 1});
+      episodes.push({name: 'Drum N Bass stream', url: 'https://stream.psychedelik.com:8030/listen.mp3', imageUrl: 'https://www.psychedelik.com/img/drumnbass.jpg', guid: 'https://stream.psychedelik.com:8030/listen.mp3', indexInSource: 2});
     addEpisodes(episodes);
   }
 
@@ -290,7 +290,7 @@ function ShowPicker(props: any) {
       {shows.map((show: Episode, i: number) => {
         return (
           <li key={i} onClick={() => {setActiveShow(show)}}>
-            <div>{show.name}</div>
+            <div className="title">{show.name}</div>
             <div className="deletebutton" onClick={(event) => {event.stopPropagation(); removeEpisodeFromQueue(show);}}>delete</div>
           </li>
         );
