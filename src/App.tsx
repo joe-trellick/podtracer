@@ -291,12 +291,6 @@ function ShowPicker(props: any) {
     var episodes = [] as Episode[];
     // A few test shows
     episodes.push({name: 'Toby Schachman: Cuttle, Apparatus, and Recursive Drawing', url: 'https://traffic.omny.fm/d/clips/c4157e60-c7f8-470d-b13f-a7b30040df73/564f493f-af32-4c48-862f-a7b300e4df49/27b6ee00-c968-4889-bb61-ad6c000a9322/audio.mp3?utm_source=Podcast&in_playlist=ac317852-8807-44b8-8eff-a7b300e4df52', imageUrl: 'https://www.omnycontent.com/d/playlist/c4157e60-c7f8-470d-b13f-a7b30040df73/564f493f-af32-4c48-862f-a7b300e4df49/ac317852-8807-44b8-8eff-a7b300e4df52/image.jpg?t=1501366431&size=Large', guid: '27b6ee00-c968-4889-bb61-ad6c000a9322', indexInSource: 4});
-    episodes.push({
-      name: 'Drum & Bass On The Bike 4 - Brighton',
-      url: 'https://trellick.work/files/dnb-bike-brighton.mp3',
-      imageUrl: 'https://trellick.work/files/dnb-bike-brighton.png',
-      guid: 'https://trellick.work/files/dnb-bike-brighton.mp3',
-      indexInSource: 5});
       episodes.push({name: 'Psytrance stream', url: 'https://stream.psychedelik.com:8000/listen.mp3', imageUrl: 'https://www.psychedelik.com/img/psytrance.jpg', guid: 'https://stream.psychedelik.com:8000/listen.mp3', indexInSource: 1});
       episodes.push({name: 'Drum N Bass stream', url: 'https://stream.psychedelik.com:8030/listen.mp3', imageUrl: 'https://www.psychedelik.com/img/drumnbass.jpg', guid: 'https://stream.psychedelik.com:8030/listen.mp3', indexInSource: 2});
     addEpisodes(episodes);
