@@ -82,6 +82,7 @@ function tryLogin() {
   }
 }
 
+/*
 function tryLogout() {
   console.log("Trying logout");
   const logout = async () => {
@@ -90,6 +91,7 @@ function tryLogout() {
   };
   logout();
 }
+*/
 
 function timeStringFromSeconds(seconds: number): string {
   const roundedSeconds = Math.round(seconds);
