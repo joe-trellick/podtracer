@@ -1,5 +1,5 @@
 import Parser from 'rss-parser';
-import React, { useEffect, useLayoutEffect, useState, useRef } from 'react';
+import React, { useEffect, useLayoutEffect, useState, useRef, useCallback } from 'react';
 
 import './App.css';
 import * as storage from './Storage';
@@ -349,7 +349,19 @@ function App() {
   }, []);
 
   
-  const addEpisodes = (newEpisodes: Array<Episode>) => {
+  const getAllEpisodes = async () => {
+    let episodes = await storage.getAllEpisodes(db);
+
+    console.log(`loaded ${episodes.length} episodes`);
+    episodes.sort((a,b) => (a.indexInQueue || 0) > (b.indexInQueue || 0) ? -1 : (((b.indexInQueue || 0) > (a.indexInQueue || 0)) ? 1 : 0));
+    setEpisodes(episodes);
+  };
+
+  const loadEpisodes = useCallback(() => {
+    getAllEpisodes();
+  }, []);
+
+  const addEpisodes = useCallback((newEpisodes: Array<Episode>) => {
     console.log('add episodes:', newEpisodes);
     newEpisodes.reverse();
     let maxIndex = Math.max.apply(Math, episodes.map(episode => {return episode.indexInQueue || 0}));
@@ -363,7 +375,7 @@ function App() {
       loadEpisodes();
     };
     putEpisodes(newEpisodes);
-  }
+  }, [episodes, loadEpisodes]);
 
   useEffect(() => {
     if (!initialLoadComplete) {
@@ -374,18 +386,6 @@ function App() {
       addEpisodes([parsedEpisode]);
     }
   }, [initialLoadComplete, addEpisodes]);
-
-  const getAllEpisodes = async () => {
-    let episodes = await storage.getAllEpisodes(db);
-
-    console.log(`loaded ${episodes.length} episodes`);
-    episodes.sort((a,b) => (a.indexInQueue || 0) > (b.indexInQueue || 0) ? -1 : (((b.indexInQueue || 0) > (a.indexInQueue || 0)) ? 1 : 0));
-    setEpisodes(episodes);
-  };
-
-  const loadEpisodes = () => {
-    getAllEpisodes();
-  }
 
   const addFeedContents = (feed: string) => {
     console.log('add feed:', feed);
