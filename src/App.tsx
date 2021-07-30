@@ -55,6 +55,10 @@ function parseEpisodeFromURL(): Episode | undefined {
       imageUrl: decodedParam('addepimage'),
       indexInSource: 0
     }
+    // Now remove all query strings so we don't re-add on reload
+    if (window.history) {
+      window.history.replaceState(null, document.title, window.location.href.split('?')[0]);
+    }
     return episode;
   }
 }
