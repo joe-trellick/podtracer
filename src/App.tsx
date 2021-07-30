@@ -37,6 +37,28 @@ function checkForLoginComplete() {
   }
 }
 
+function parseEpisodeFromURL(): Episode | undefined {
+  // for example, localhost:3000/?addepaudio=https%3A%2F%2Fchtbl.com%2Ftrack%2F736CG3%2Ftraffic.omny.fm%2Fd%2Fclips%2Faaea4e69-af51-495e-afc9-a9760146922b%2Fdc5b55ca-5f00-4063-b47f-ab870163d2b7%2Ffe9cc682-d044-40ce-ad9c-ad6e013f6d93%2Faudio.mp3&addeptitle=61.%20Should%20We%20Just%20Ignore%20Our%20Weaknesses%3F&addepimage=https%3A%2F%2Fwww.omnycontent.com%2Fd%2Fprograms%2Faaea4e69-af51-495e-afc9-a9760146922b%2Fdc5b55ca-5f00-4063-b47f-ab870163d2b7%2Fimage.jpg%3Ft%3D1620750043%26size%3DLarge&addepguid=fe9cc682-d044-40ce-ad9c-ad6e013f6d93&addepsourcetitle=No%20Stupid%20Questions
+  const params = new URLSearchParams(window.location.search);
+
+  const decodedParam = (paramName: string): string | undefined => {
+    const val = params.get(paramName);
+    return val ? decodeURIComponent(val) : undefined;
+  }
+
+  if (params.get('addepaudio')) {
+    const audio = decodedParam('addepaudio')!
+    let episode: Episode = {
+      url: audio,
+      guid: decodedParam('addepguid') || audio,
+      name: decodedParam('addeptitle'),
+      imageUrl: decodedParam('addepimage'),
+      indexInSource: 0
+    }
+    return episode;
+  }
+}
+
 function tryLogin() {
   if (!fission.isConnected()) {
     console.log("Trying login");
@@ -313,17 +335,26 @@ function App() {
   // Initial load
   useEffect(() => {
     checkForLoginComplete();
-    loadEpisodes();
+
+    const initialLoad = async () => {
+      await getAllEpisodes();
+      const parsedEpisode = parseEpisodeFromURL();
+      if (parsedEpisode) {
+        addEpisodes([parsedEpisode]);
+      }
+    }
+    initialLoad();
   }, []);
 
-  const loadEpisodes = () => {
-    const getAllEpisodes = async () => {
-      let episodes = await storage.getAllEpisodes(db);
+  const getAllEpisodes = async () => {
+    let episodes = await storage.getAllEpisodes(db);
 
-      console.log(`loaded ${episodes.length} episodes`);
-      episodes.sort((a,b) => (a.indexInQueue || 0) > (b.indexInQueue || 0) ? -1 : (((b.indexInQueue || 0) > (a.indexInQueue || 0)) ? 1 : 0));
-      setEpisodes(episodes);
-    };
+    console.log(`loaded ${episodes.length} episodes`);
+    episodes.sort((a,b) => (a.indexInQueue || 0) > (b.indexInQueue || 0) ? -1 : (((b.indexInQueue || 0) > (a.indexInQueue || 0)) ? 1 : 0));
+    setEpisodes(episodes);
+  };
+
+  const loadEpisodes = () => {
     getAllEpisodes();
   }
 
