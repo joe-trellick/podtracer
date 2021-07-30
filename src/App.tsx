@@ -335,6 +335,7 @@ function App() {
   const [activeShow, setActiveShow] = useState({} as Episode);
   const previousShow = usePrevious(activeShow) as unknown as Episode;
   const [episodes, setEpisodes] = useState([] as Episode[]);
+  const [initialLoadComplete, setInitialLoadComplete] = useState(false);
 
   // Initial load
   useEffect(() => {
@@ -342,13 +343,37 @@ function App() {
 
     const initialLoad = async () => {
       await getAllEpisodes();
-      const parsedEpisode = parseEpisodeFromURL();
-      if (parsedEpisode) {
-        addEpisodes([parsedEpisode]);
-      }
+      setInitialLoadComplete(true);
     }
     initialLoad();
   }, []);
+
+  
+  const addEpisodes = (newEpisodes: Array<Episode>) => {
+    console.log('add episodes:', newEpisodes);
+    newEpisodes.reverse();
+    let maxIndex = Math.max.apply(Math, episodes.map(episode => {return episode.indexInQueue || 0}));
+    maxIndex = Math.max(0, maxIndex + 1);  // Make sure we don't start at -Infinity, or the previous max (which breaks order)
+
+    const putEpisodes = async (newEpisodes: Array<Episode>) => {
+      newEpisodes.forEach(async episode => {
+        episode.indexInQueue = maxIndex++;
+        await storage.putEpisode(db, episode);
+      });
+      loadEpisodes();
+    };
+    putEpisodes(newEpisodes);
+  }
+
+  useEffect(() => {
+    if (!initialLoadComplete) {
+      return;
+    }
+    const parsedEpisode = parseEpisodeFromURL();
+    if (parsedEpisode) {
+      addEpisodes([parsedEpisode]);
+    }
+  }, [initialLoadComplete, addEpisodes]);
 
   const getAllEpisodes = async () => {
     let episodes = await storage.getAllEpisodes(db);
@@ -392,20 +417,6 @@ function App() {
     }
 
     fetchPosts(feed);
-  }
-
-  const addEpisodes = (newEpisodes: Array<Episode>) => {
-    console.log('add episodes:', newEpisodes);
-    newEpisodes.reverse();
-    let maxIndex = Math.max.apply(Math, episodes.map(episode => {return episode.indexInQueue || 0}));
-    const putEpisodes = async (newEpisodes: Array<Episode>) => {
-      newEpisodes.forEach(async episode => {
-        episode.indexInQueue = maxIndex++;
-        await storage.putEpisode(db, episode);
-      });
-      loadEpisodes();
-    };
-    putEpisodes(newEpisodes);
   }
 
   const removeEpisodeFromQueue = (episode: Episode) => {
