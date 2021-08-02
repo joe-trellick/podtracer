@@ -3,13 +3,13 @@ import React, { useEffect, useLayoutEffect, useState, useRef, useCallback } from
 
 import './App.css';
 import * as storage from './Storage';
-// import { WebnativeConnection } from './Fission';
+import { WebnativeConnection } from './Fission';
 import { EpisodePlayback, Episode } from './Types';
 import playImage from './play.svg';
 import pauseImage from './pause.svg';
 
 var audio: HTMLAudioElement | null;
-// var fission = new WebnativeConnection();
+var fission = new WebnativeConnection();
 
 function usePrevious(value: any) {
   const ref = useRef();
@@ -29,7 +29,7 @@ interface PlayerProps {
 // Test this on startup, mostly to remove extra Fission-related query params
 // TODO: Also store whether we think we should be signed in in IndexedDB?
 // TODO: Just always try to login on startup, to initialize?
-/*
+
 function checkForLoginComplete() {
   const params = new URLSearchParams(window.location.search);
   if (!fission.isConnected() &&
@@ -37,7 +37,6 @@ function checkForLoginComplete() {
     tryLogin();
   }
 }
-*/
 
 function parseEpisodeFromURL(): Episode | undefined {
   // for example, localhost:3000/?addepaudio=https%3A%2F%2Fchtbl.com%2Ftrack%2F736CG3%2Ftraffic.omny.fm%2Fd%2Fclips%2Faaea4e69-af51-495e-afc9-a9760146922b%2Fdc5b55ca-5f00-4063-b47f-ab870163d2b7%2Ffe9cc682-d044-40ce-ad9c-ad6e013f6d93%2Faudio.mp3&addeptitle=61.%20Should%20We%20Just%20Ignore%20Our%20Weaknesses%3F&addepimage=https%3A%2F%2Fwww.omnycontent.com%2Fd%2Fprograms%2Faaea4e69-af51-495e-afc9-a9760146922b%2Fdc5b55ca-5f00-4063-b47f-ab870163d2b7%2Fimage.jpg%3Ft%3D1620750043%26size%3DLarge&addepguid=fe9cc682-d044-40ce-ad9c-ad6e013f6d93&addepsourcetitle=No%20Stupid%20Questions
@@ -65,7 +64,6 @@ function parseEpisodeFromURL(): Episode | undefined {
   }
 }
 
-/*
 function tryLogin() {
   if (!fission.isConnected()) {
     console.log("Trying login");
@@ -93,7 +91,6 @@ function tryLogout() {
   };
   logout();
 }
-*/
 
 function timeStringFromSeconds(seconds: number): string {
   const roundedSeconds = Math.round(seconds);
@@ -253,10 +250,10 @@ function Player(props: PlayerProps) {
       </div>
       <div id="playervstack">
         <div id="showname">{show.name || ''}</div>
-        {/*  <div id="settings">
+        <div id="settings">
           <button onClick={tryLogin}>Login</button>
           <button onClick={tryLogout}>Logout</button>
-        </div> */}
+        </div>
         <div id="playercontrols">
           <button onClick={() => setPlaying(!playing)} disabled={show.url === undefined}>
             <img src={playing ? pauseImage : playImage} alt={playing ? 'Pause' : 'Play'} />
@@ -337,7 +334,7 @@ function App() {
 
   // Initial load
   useEffect(() => {
-    // checkForLoginComplete();
+    checkForLoginComplete();
 
     const initialLoad = async () => {
       await getAllEpisodes();

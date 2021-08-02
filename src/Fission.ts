@@ -1,5 +1,3 @@
-export {}
-/*
 import * as wn from 'webnative';
 
 export class WebnativeConnection {
@@ -85,4 +83,3 @@ export class WebnativeConnection {
         this.state = undefined;
     }
 }
-*/
