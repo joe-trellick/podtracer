@@ -1,46 +1,19 @@
-# Getting Started with Create React App
+# PodTracer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+PodTracer is **a simple web-based podcast player** built as a learning project during
+my time at the [Recurse Center](https://www.recurse.com/).
 
-## Available Scripts
+![](podtracer-screenshot.png)
 
-In the project directory, you can run:
+Why another podcast player? Mostly I wanted a testbed for experimenting with **local-first user data** and decentralized sync technologies. A podcast player is something that (1) I can legitimately use while (2) not being too sad when I mess up and have to reset the data store.
 
-### `yarn start`
+It also gave me a way to get more familiar with React hooks and web media player APIs, and to generally see how far I could get without a server component.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Limitations
+You should consider this an unsupported toy project. The biggest limitation is that due to [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) restrictions, client javascript code can't request most podcast/RSS feeds from other servers, so PodTracer comes with some hardcoded feed content to test with.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Running
 
-### `yarn test`
+As a fairly basic React app, PodTracer can be run locally via `yarn start` and built for production with `yarn build` as usual.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+PodTracer uses IndexedDB to persist your list of shows and playback state in your browers. When you first run it on a particular device, the list will be empty. Click one of the `+ Add...` buttons to add some sample episodes, then click one of them to play. The play progress and speed setting for each episode should be preserved even after reloading the page.
