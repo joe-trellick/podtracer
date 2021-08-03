@@ -7,7 +7,9 @@ const episodesStore = 'episodes';
 const sourcesStore = 'sources';
 const playbackStateStore = 'playbackState';
 
-export async function getDB(): Promise<IDBPDatabase> {
+const db = getDB();
+
+async function getDB(): Promise<IDBPDatabase> {
     const db = await openDB('podtracer', 1, {
         upgrade(db, oldVersion, newVersion, transaction) {
             console.log('making a new object store');
@@ -34,7 +36,7 @@ export async function getDB(): Promise<IDBPDatabase> {
     return db;
 }
 
-export async function putEpisode(db: Promise<IDBPDatabase>, episode: Episode) {
+export async function putEpisode(episode: Episode) {
     db.then(function(db) {
         const tx = db.transaction(episodesStore, 'readwrite');
         const store = tx.objectStore(episodesStore);
@@ -45,7 +47,7 @@ export async function putEpisode(db: Promise<IDBPDatabase>, episode: Episode) {
     });
 }
 
-export async function deleteEpisode(db: Promise<IDBPDatabase>, episodeGuid: string) {
+export async function deleteEpisode(episodeGuid: string) {
     db.then(function(db) {
         const tx = db.transaction(episodesStore, 'readwrite');
         const store = tx.objectStore(episodesStore);
@@ -54,15 +56,18 @@ export async function deleteEpisode(db: Promise<IDBPDatabase>, episodeGuid: stri
     });
 }
 
-export async function getAllEpisodes(db: Promise<IDBPDatabase>): Promise<Array<Episode>> {
+export async function getAllEpisodes(): Promise<Array<Episode>> {
     return db.then(function (db) {
         var tx = db.transaction(episodesStore, 'readonly');
         var store = tx.objectStore(episodesStore);
         return store.getAll();
+    }).then(function(episodes) {
+        episodes.sort((a,b) => (a.indexInQueue || 0) > (b.indexInQueue || 0) ? -1 : (((b.indexInQueue || 0) > (a.indexInQueue || 0)) ? 1 : 0));
+        return episodes;
     });
 }
 
-export async function putEpisodePlayback(db: Promise<IDBPDatabase>, playback: EpisodePlayback) {
+export async function putEpisodePlayback(playback: EpisodePlayback) {
     db.then(function(db) {
         const tx = db.transaction(playbackStateStore, 'readwrite');
         const store = tx.objectStore(playbackStateStore);
@@ -74,7 +79,7 @@ export async function putEpisodePlayback(db: Promise<IDBPDatabase>, playback: Ep
     });
 }
 
-export async function getEpisodePlayback(db: Promise<IDBPDatabase>, episodeGuid: string): Promise<EpisodePlayback> {
+export async function getEpisodePlayback(episodeGuid: string): Promise<EpisodePlayback> {
     return db.then(function (db) {
         var tx = db.transaction(playbackStateStore, 'readonly');
         var store = tx.objectStore(playbackStateStore);

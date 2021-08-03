@@ -2,8 +2,8 @@ import Parser from 'rss-parser';
 import { useEffect, useLayoutEffect, useState, useRef, useCallback } from 'react';
 
 import './App.css';
-// import * as storage from './Storage';
-import * as ystorage from './YjsStorage';
+//import * as storage from './Storage';
+import * as storage from './YjsStorage';
 import { EpisodePlayback, Episode } from './Types';
 import playImage from './play.svg';
 import pauseImage from './pause.svg';
@@ -101,8 +101,7 @@ function Player(props: PlayerProps) {
 
   useLayoutEffect(() => {
     const getStoredPlayback = async () => {
-//      let playback = await storage.getEpisodePlayback(db, show.guid);
-      let playback = await ystorage.getEpisodePlayback(show.guid);
+      let playback = await storage.getEpisodePlayback(show.guid);
       console.log('found previous awaited playback', playback);
       if (audio && playback?.playbackSeconds) {
         const timeSetterListener = () => {
@@ -176,8 +175,7 @@ function Player(props: PlayerProps) {
         playbackSeconds: hasDuration ? currentTime : undefined,
         playbackSpeed: speed};
       console.log("Attempting to store playback", playback);
- //     storage.putEpisodePlayback(db, playback);
-      ystorage.putEpisodePlayback(playback);
+      storage.putEpisodePlayback(playback);
     }
   }, [show, currentTime, speed, hasDuration]);
 
@@ -280,8 +278,6 @@ function ShowPicker(props: any) {
 
 type CustomItem = {itunesDuration: string, itunesImage: string};
 
-// const db = storage.getDB();
-
 function App() {
   const [playing, setPlaying] = useState(false);
   const [activeShow, setActiveShow] = useState({} as Episode);
@@ -300,9 +296,7 @@ function App() {
 
   
   const getAllEpisodes = async () => {
-    // let episodes = await storage.getAllEpisodes(db);
-    // episodes.sort((a,b) => (a.indexInQueue || 0) > (b.indexInQueue || 0) ? -1 : (((b.indexInQueue || 0) > (a.indexInQueue || 0)) ? 1 : 0));
-    let episodes = await ystorage.getAllEpisodes();
+    let episodes = await storage.getAllEpisodes();
     console.log(`loaded ${episodes.length} episodes`);
     setEpisodes(episodes);
   };
@@ -320,8 +314,7 @@ function App() {
     const putEpisodes = async (newEpisodes: Array<Episode>) => {
       newEpisodes.forEach(async episode => {
         episode.indexInQueue = maxIndex++;
-//        await storage.putEpisode(db, episode);
-        await ystorage.putEpisode(episode);
+        await storage.putEpisode(episode);
       });
       loadEpisodes();
     };
@@ -373,8 +366,7 @@ function App() {
   const removeEpisodeFromQueue = (episode: Episode) => {
     console.log('remove episode from queue:', episode);
     const removeEpisode = async (episode: Episode) => {
-//      await storage.deleteEpisode(db, episode.guid);
-        await ystorage.deleteEpisode(episode.guid);
+        await storage.deleteEpisode(episode.guid);
       loadEpisodes();
     };
     removeEpisode(episode);
